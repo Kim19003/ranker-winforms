@@ -1,1 +1,1 @@
-väli: 49px
+gap: 49px

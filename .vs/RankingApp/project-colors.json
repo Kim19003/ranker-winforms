@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "b66b8dce-e3a1-4d8d-9bfb-da823e863e0c": {
+      "ProjectGuid": "b66b8dce-e3a1-4d8d-9bfb-da823e863e0c",
+      "DisplayName": "RankingApp",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}

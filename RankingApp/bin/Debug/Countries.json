@@ -1,0 +1,452 @@
+[
+  {
+    "Rank": 8,
+    "Team": "Poland",
+    "Country": "Poland",
+    "Points": 9300,
+    "Change": 0,
+    "PositionChange": 0,
+    "Panel": "panel1"
+  },
+  {
+    "Rank": 10,
+    "Team": "Andorra",
+    "Country": "Andorra",
+    "Points": 9100,
+    "Change": 0,
+    "PositionChange": 0,
+    "Panel": "panel2"
+  },
+  {
+    "Rank": 6,
+    "Team": "Indonesia",
+    "Country": "Indonesia",
+    "Points": 9500,
+    "Change": 0,
+    "PositionChange": 0,
+    "Panel": "panel3"
+  },
+  {
+    "Rank": 45,
+    "Team": "ASEAN",
+    "Country": "Asean",
+    "Points": 5600,
+    "Change": 0,
+    "PositionChange": 0,
+    "Panel": "panel4"
+  },
+  {
+    "Rank": 7,
+    "Team": "China",
+    "Country": "China",
+    "Points": 9400,
+    "Change": 0,
+    "PositionChange": 0,
+    "Panel": "panel5"
+  },
+  {
+    "Rank": 9,
+    "Team": "Spain",
+    "Country": "Spain",
+    "Points": 9200,
+    "Change": 0,
+    "PositionChange": 0,
+    "Panel": "panel6"
+  },
+  {
+    "Rank": 4,
+    "Team": "Israel",
+    "Country": "Israel",
+    "Points": 9700,
+    "Change": 0,
+    "PositionChange": 0,
+    "Panel": "panel7"
+  },
+  {
+    "Rank": 2,
+    "Team": "Thailand",
+    "Country": "Thailand",
+    "Points": 9900,
+    "Change": 0,
+    "PositionChange": 0,
+    "Panel": "panel8"
+  },
+  {
+    "Rank": 46,
+    "Team": "Philippines",
+    "Country": "Philippines",
+    "Points": 5500,
+    "Change": 0,
+    "PositionChange": 0,
+    "Panel": "panel9"
+  },
+  {
+    "Rank": 3,
+    "Team": "South Korea",
+    "Country": "South Korea",
+    "Points": 9800,
+    "Change": 0,
+    "PositionChange": 0,
+    "Panel": "panel10"
+  },
+  {
+    "Rank": 47,
+    "Team": "Malaysia",
+    "Country": "Malaysia",
+    "Points": 5400,
+    "Change": 0,
+    "PositionChange": 0,
+    "Panel": "panel11"
+  },
+  {
+    "Rank": 11,
+    "Team": "Japan",
+    "Country": "Japan",
+    "Points": 9000,
+    "Change": 0,
+    "PositionChange": 0,
+    "Panel": "panel12"
+  },
+  {
+    "Rank": 48,
+    "Team": "Hong Kong",
+    "Country": "Hong Kong",
+    "Points": 5300,
+    "Change": 0,
+    "PositionChange": 0,
+    "Panel": "panel13"
+  },
+  {
+    "Rank": 12,
+    "Team": "Taiwan",
+    "Country": "Taiwan",
+    "Points": 8900,
+    "Change": 0,
+    "PositionChange": 0,
+    "Panel": "panel14"
+  },
+  {
+    "Rank": 13,
+    "Team": "Belgium",
+    "Country": "Belgium",
+    "Points": 8800,
+    "Change": 0,
+    "PositionChange": 0,
+    "Panel": "panel15"
+  },
+  {
+    "Rank": 18,
+    "Team": "Gabon",
+    "Country": "Gabon",
+    "Points": 8300,
+    "Change": 0,
+    "PositionChange": 0,
+    "Panel": "panel16"
+  },
+  {
+    "Rank": 23,
+    "Team": "Kyrgyzstan",
+    "Country": "Kazakhstan",
+    "Points": 7800,
+    "Change": 0,
+    "PositionChange": 0,
+    "Panel": "panel17"
+  },
+  {
+    "Rank": 24,
+    "Team": "Mali",
+    "Country": "Mali",
+    "Points": 7700,
+    "Change": 0,
+    "PositionChange": 0,
+    "Panel": "panel18"
+  },
+  {
+    "Rank": 25,
+    "Team": "Nauru",
+    "Country": "Nauru",
+    "Points": 7600,
+    "Change": 0,
+    "PositionChange": 0,
+    "Panel": "panel19"
+  },
+  {
+    "Rank": 28,
+    "Team": "Togo",
+    "Country": "Togo",
+    "Points": 7300,
+    "Change": 0,
+    "PositionChange": 0,
+    "Panel": "panel20"
+  },
+  {
+    "Rank": 27,
+    "Team": "Serbia",
+    "Country": "Serbia",
+    "Points": 7400,
+    "Change": 0,
+    "PositionChange": 0,
+    "Panel": "panel21"
+  },
+  {
+    "Rank": 30,
+    "Team": "Uganda",
+    "Country": "Uganda",
+    "Points": 7100,
+    "Change": 0,
+    "PositionChange": 0,
+    "Panel": "panel22"
+  },
+  {
+    "Rank": 31,
+    "Team": "United Kingdom",
+    "Country": "United kingdom",
+    "Points": 7000,
+    "Change": 0,
+    "PositionChange": 0,
+    "Panel": "panel23"
+  },
+  {
+    "Rank": 32,
+    "Team": "Vietnam",
+    "Country": "Vietnam",
+    "Points": 6900,
+    "Change": 0,
+    "PositionChange": 0,
+    "Panel": "panel24"
+  },
+  {
+    "Rank": 33,
+    "Team": "Norway",
+    "Country": "Norway",
+    "Points": 6800,
+    "Change": 0,
+    "PositionChange": 0,
+    "Panel": "panel25"
+  },
+  {
+    "Rank": 34,
+    "Team": "Mexico",
+    "Country": "Mexico",
+    "Points": 6700,
+    "Change": 0,
+    "PositionChange": 0,
+    "Panel": "panel26"
+  },
+  {
+    "Rank": 35,
+    "Team": "Malta",
+    "Country": "Malta",
+    "Points": 6600,
+    "Change": 0,
+    "PositionChange": 0,
+    "Panel": "panel27"
+  },
+  {
+    "Rank": 37,
+    "Team": "Gambia",
+    "Country": "Gambia",
+    "Points": 6400,
+    "Change": 0,
+    "PositionChange": 0,
+    "Panel": "panel28"
+  },
+  {
+    "Rank": 38,
+    "Team": "Iran",
+    "Country": "Iran",
+    "Points": 6300,
+    "Change": 0,
+    "PositionChange": 0,
+    "Panel": "panel29"
+  },
+  {
+    "Rank": 39,
+    "Team": "Iraq",
+    "Country": "Iraq",
+    "Points": 6200,
+    "Change": 0,
+    "PositionChange": 0,
+    "Panel": "panel30"
+  },
+  {
+    "Rank": 50,
+    "Team": "Bhutan",
+    "Country": "Bhutan",
+    "Points": 5100,
+    "Change": 0,
+    "PositionChange": 0,
+    "Panel": "panel31"
+  },
+  {
+    "Rank": 16,
+    "Team": "Estonia",
+    "Country": "Estonia",
+    "Points": 8500,
+    "Change": 0,
+    "PositionChange": 0,
+    "Panel": "panel32"
+  },
+  {
+    "Rank": 17,
+    "Team": "Ethiopia",
+    "Country": "Ethiopia",
+    "Points": 8400,
+    "Change": 0,
+    "PositionChange": 0,
+    "Panel": "panel33"
+  },
+  {
+    "Rank": 15,
+    "Team": "European Union",
+    "Country": "European union",
+    "Points": 8600,
+    "Change": 0,
+    "PositionChange": 0,
+    "Panel": "panel34"
+  },
+  {
+    "Rank": 19,
+    "Team": "United States",
+    "Country": "United States",
+    "Points": 8200,
+    "Change": 0,
+    "PositionChange": 0,
+    "Panel": "panel35"
+  },
+  {
+    "Rank": 22,
+    "Team": "Italy",
+    "Country": "Italy",
+    "Points": 7900,
+    "Change": 0,
+    "PositionChange": 0,
+    "Panel": "panel36"
+  },
+  {
+    "Rank": 26,
+    "Team": "Portugal",
+    "Country": "Portugal",
+    "Points": 7500,
+    "Change": 0,
+    "PositionChange": 0,
+    "Panel": "panel37"
+  },
+  {
+    "Rank": 29,
+    "Team": "Turkey",
+    "Country": "Turkey",
+    "Points": 7200,
+    "Change": 0,
+    "PositionChange": 0,
+    "Panel": "panel38"
+  },
+  {
+    "Rank": 5,
+    "Team": "Denmark",
+    "Country": "Denmark",
+    "Points": 9600,
+    "Change": 0,
+    "PositionChange": 0,
+    "Panel": "panel39"
+  },
+  {
+    "Rank": 36,
+    "Team": "Kenya",
+    "Country": "Kenya",
+    "Points": 6500,
+    "Change": 0,
+    "PositionChange": 0,
+    "Panel": "panel40"
+  },
+  {
+    "Rank": 41,
+    "Team": "Germany",
+    "Country": "Germany",
+    "Points": 6000,
+    "Change": 0,
+    "PositionChange": 0,
+    "Panel": "panel41"
+  },
+  {
+    "Rank": 49,
+    "Team": "Bahrain",
+    "Country": "Bahrain",
+    "Points": 5200,
+    "Change": 0,
+    "PositionChange": 0,
+    "Panel": "panel42"
+  },
+  {
+    "Rank": 44,
+    "Team": "Cambodia",
+    "Country": "Cambodia",
+    "Points": 5700,
+    "Change": 0,
+    "PositionChange": 0,
+    "Panel": "panel43"
+  },
+  {
+    "Rank": 1,
+    "Team": "Azerbaijan",
+    "Country": "Azerbaijan",
+    "Points": 10000,
+    "Change": 0,
+    "PositionChange": 0,
+    "Panel": "panel44"
+  },
+  {
+    "Rank": 20,
+    "Team": "Georgia",
+    "Country": "Georgia",
+    "Points": 8100,
+    "Change": 0,
+    "PositionChange": 0,
+    "Panel": "panel45"
+  },
+  {
+    "Rank": 40,
+    "Team": "Honduras",
+    "Country": "Honduras",
+    "Points": 6100,
+    "Change": 0,
+    "PositionChange": 0,
+    "Panel": "panel46"
+  },
+  {
+    "Rank": 42,
+    "Team": "Djibouti",
+    "Country": "Djibouti",
+    "Points": 5900,
+    "Change": 0,
+    "PositionChange": 0,
+    "Panel": "panel47"
+  },
+  {
+    "Rank": 43,
+    "Team": "Chad",
+    "Country": "Chad",
+    "Points": 5800,
+    "Change": 0,
+    "PositionChange": 0,
+    "Panel": "panel48"
+  },
+  {
+    "Rank": 21,
+    "Team": "Greece",
+    "Country": "Greece",
+    "Points": 8000,
+    "Change": 0,
+    "PositionChange": 0,
+    "Panel": "panel49"
+  },
+  {
+    "Rank": 14,
+    "Team": "Chile",
+    "Country": "Chile",
+    "Points": 8700,
+    "Change": 0,
+    "PositionChange": 0,
+    "Panel": "panel50"
+  }
+]

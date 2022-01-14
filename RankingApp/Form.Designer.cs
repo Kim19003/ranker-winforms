@@ -1,7 +1,7 @@
 ﻿
 namespace RankingApp
 {
-    partial class Form
+    partial class Form1
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@ namespace RankingApp
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.backgroundPanel = new System.Windows.Forms.Panel();
             this.locationPanel50 = new System.Windows.Forms.Panel();
             this.locationPanel45 = new System.Windows.Forms.Panel();
@@ -343,89 +343,9 @@ namespace RankingApp
             this.label10 = new System.Windows.Forms.Label();
             this.updatedLabel = new System.Windows.Forms.Label();
             this.changeConfigPathButton = new System.Windows.Forms.Button();
-            this.changePicture10 = new System.Windows.Forms.PictureBox();
-            this.changePicture9 = new System.Windows.Forms.PictureBox();
-            this.changePicture8 = new System.Windows.Forms.PictureBox();
-            this.changePicture7 = new System.Windows.Forms.PictureBox();
-            this.changePicture6 = new System.Windows.Forms.PictureBox();
-            this.changePicture5 = new System.Windows.Forms.PictureBox();
-            this.changePicture4 = new System.Windows.Forms.PictureBox();
-            this.changePicture3 = new System.Windows.Forms.PictureBox();
-            this.changePicture2 = new System.Windows.Forms.PictureBox();
-            this.changePicture1 = new System.Windows.Forms.PictureBox();
             this.teamNameLabel = new System.Windows.Forms.Label();
             this.pointsLabel = new System.Windows.Forms.Label();
             this.containerPanel = new System.Windows.Forms.Panel();
-            this.positionChangeLabel50 = new System.Windows.Forms.Label();
-            this.positionChangeLabel49 = new System.Windows.Forms.Label();
-            this.positionChangeLabel48 = new System.Windows.Forms.Label();
-            this.positionChangeLabel47 = new System.Windows.Forms.Label();
-            this.positionChangeLabel46 = new System.Windows.Forms.Label();
-            this.positionChangeLabel45 = new System.Windows.Forms.Label();
-            this.positionChangeLabel44 = new System.Windows.Forms.Label();
-            this.positionChangeLabel43 = new System.Windows.Forms.Label();
-            this.positionChangeLabel42 = new System.Windows.Forms.Label();
-            this.positionChangeLabel41 = new System.Windows.Forms.Label();
-            this.positionChangeLabel40 = new System.Windows.Forms.Label();
-            this.positionChangeLabel39 = new System.Windows.Forms.Label();
-            this.positionChangeLabel38 = new System.Windows.Forms.Label();
-            this.positionChangeLabel37 = new System.Windows.Forms.Label();
-            this.positionChangeLabel36 = new System.Windows.Forms.Label();
-            this.positionChangeLabel35 = new System.Windows.Forms.Label();
-            this.positionChangeLabel34 = new System.Windows.Forms.Label();
-            this.positionChangeLabel33 = new System.Windows.Forms.Label();
-            this.positionChangeLabel32 = new System.Windows.Forms.Label();
-            this.positionChangeLabel31 = new System.Windows.Forms.Label();
-            this.positionChangeLabel30 = new System.Windows.Forms.Label();
-            this.positionChangeLabel29 = new System.Windows.Forms.Label();
-            this.positionChangeLabel28 = new System.Windows.Forms.Label();
-            this.positionChangeLabel27 = new System.Windows.Forms.Label();
-            this.positionChangeLabel26 = new System.Windows.Forms.Label();
-            this.positionChangeLabel25 = new System.Windows.Forms.Label();
-            this.positionChangeLabel24 = new System.Windows.Forms.Label();
-            this.positionChangeLabel23 = new System.Windows.Forms.Label();
-            this.positionChangeLabel22 = new System.Windows.Forms.Label();
-            this.positionChangeLabel21 = new System.Windows.Forms.Label();
-            this.positionChangeLabel20 = new System.Windows.Forms.Label();
-            this.positionChangeLabel19 = new System.Windows.Forms.Label();
-            this.positionChangeLabel18 = new System.Windows.Forms.Label();
-            this.positionChangeLabel17 = new System.Windows.Forms.Label();
-            this.positionChangeLabel16 = new System.Windows.Forms.Label();
-            this.positionChangeLabel15 = new System.Windows.Forms.Label();
-            this.positionChangeLabel14 = new System.Windows.Forms.Label();
-            this.positionChangeLabel13 = new System.Windows.Forms.Label();
-            this.positionChangeLabel12 = new System.Windows.Forms.Label();
-            this.positionChangeLabel11 = new System.Windows.Forms.Label();
-            this.positionChangeLabel10 = new System.Windows.Forms.Label();
-            this.positionChangeLabel9 = new System.Windows.Forms.Label();
-            this.positionChangeLabel8 = new System.Windows.Forms.Label();
-            this.positionChangeLabel7 = new System.Windows.Forms.Label();
-            this.positionChangeLabel5 = new System.Windows.Forms.Label();
-            this.positionChangeLabel6 = new System.Windows.Forms.Label();
-            this.positionChangeLabel4 = new System.Windows.Forms.Label();
-            this.positionChangeLabel3 = new System.Windows.Forms.Label();
-            this.positionChangeLabel1 = new System.Windows.Forms.Label();
-            this.positionChangeLabel2 = new System.Windows.Forms.Label();
-            this.changePicture50 = new System.Windows.Forms.PictureBox();
-            this.changePicture49 = new System.Windows.Forms.PictureBox();
-            this.changePicture48 = new System.Windows.Forms.PictureBox();
-            this.changePicture47 = new System.Windows.Forms.PictureBox();
-            this.changePicture46 = new System.Windows.Forms.PictureBox();
-            this.changePicture45 = new System.Windows.Forms.PictureBox();
-            this.changePicture44 = new System.Windows.Forms.PictureBox();
-            this.changePicture43 = new System.Windows.Forms.PictureBox();
-            this.changePicture42 = new System.Windows.Forms.PictureBox();
-            this.changePicture41 = new System.Windows.Forms.PictureBox();
-            this.changePicture40 = new System.Windows.Forms.PictureBox();
-            this.changePicture37 = new System.Windows.Forms.PictureBox();
-            this.changePicture39 = new System.Windows.Forms.PictureBox();
-            this.changePicture38 = new System.Windows.Forms.PictureBox();
-            this.changePicture36 = new System.Windows.Forms.PictureBox();
-            this.changePicture35 = new System.Windows.Forms.PictureBox();
-            this.changePicture34 = new System.Windows.Forms.PictureBox();
-            this.changePicture33 = new System.Windows.Forms.PictureBox();
-            this.changePicture32 = new System.Windows.Forms.PictureBox();
-            this.changePicture31 = new System.Windows.Forms.PictureBox();
             this.label50 = new System.Windows.Forms.Label();
             this.label49 = new System.Windows.Forms.Label();
             this.label48 = new System.Windows.Forms.Label();
@@ -461,32 +381,14 @@ namespace RankingApp
             this.label23 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
-            this.changePicture30 = new System.Windows.Forms.PictureBox();
-            this.changePicture29 = new System.Windows.Forms.PictureBox();
-            this.changePicture28 = new System.Windows.Forms.PictureBox();
-            this.changePicture27 = new System.Windows.Forms.PictureBox();
-            this.changePicture26 = new System.Windows.Forms.PictureBox();
-            this.changePicture25 = new System.Windows.Forms.PictureBox();
-            this.changePicture24 = new System.Windows.Forms.PictureBox();
-            this.changePicture23 = new System.Windows.Forms.PictureBox();
-            this.changePicture22 = new System.Windows.Forms.PictureBox();
-            this.changePicture21 = new System.Windows.Forms.PictureBox();
-            this.changePicture20 = new System.Windows.Forms.PictureBox();
-            this.changePicture19 = new System.Windows.Forms.PictureBox();
-            this.changePicture16 = new System.Windows.Forms.PictureBox();
-            this.changePicture18 = new System.Windows.Forms.PictureBox();
-            this.changePicture17 = new System.Windows.Forms.PictureBox();
-            this.changePicture15 = new System.Windows.Forms.PictureBox();
-            this.changePicture14 = new System.Windows.Forms.PictureBox();
-            this.changePicture13 = new System.Windows.Forms.PictureBox();
-            this.changePicture12 = new System.Windows.Forms.PictureBox();
-            this.changePicture11 = new System.Windows.Forms.PictureBox();
             this.label15 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.updateButton = new System.Windows.Forms.Button();
+            this.saveButton = new System.Windows.Forms.Button();
+            this.getConfigPathButton = new System.Windows.Forms.Button();
             this.backgroundPanel.SuspendLayout();
             this.panel50.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox50)).BeginInit();
@@ -588,57 +490,7 @@ namespace RankingApp
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.changePicture10)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.changePicture9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.changePicture8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.changePicture7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.changePicture6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.changePicture5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.changePicture4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.changePicture3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.changePicture2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.changePicture1)).BeginInit();
             this.containerPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.changePicture50)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.changePicture49)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.changePicture48)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.changePicture47)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.changePicture46)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.changePicture45)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.changePicture44)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.changePicture43)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.changePicture42)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.changePicture41)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.changePicture40)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.changePicture37)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.changePicture39)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.changePicture38)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.changePicture36)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.changePicture35)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.changePicture34)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.changePicture33)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.changePicture32)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.changePicture31)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.changePicture30)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.changePicture29)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.changePicture28)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.changePicture27)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.changePicture26)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.changePicture25)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.changePicture24)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.changePicture23)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.changePicture22)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.changePicture21)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.changePicture20)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.changePicture19)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.changePicture16)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.changePicture18)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.changePicture17)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.changePicture15)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.changePicture14)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.changePicture13)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.changePicture12)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.changePicture11)).BeginInit();
             this.SuspendLayout();
             // 
             // backgroundPanel
@@ -746,61 +598,61 @@ namespace RankingApp
             this.backgroundPanel.Controls.Add(this.panel1);
             this.backgroundPanel.Location = new System.Drawing.Point(48, 0);
             this.backgroundPanel.Name = "backgroundPanel";
-            this.backgroundPanel.Size = new System.Drawing.Size(477, 2467);
+            this.backgroundPanel.Size = new System.Drawing.Size(477, 2271);
             this.backgroundPanel.TabIndex = 0;
             // 
             // locationPanel50
             // 
-            this.locationPanel50.Location = new System.Drawing.Point(467, 2413);
+            this.locationPanel50.Location = new System.Drawing.Point(467, 2217);
             this.locationPanel50.Name = "locationPanel50";
             this.locationPanel50.Size = new System.Drawing.Size(10, 43);
             this.locationPanel50.TabIndex = 74;
             // 
             // locationPanel45
             // 
-            this.locationPanel45.Location = new System.Drawing.Point(467, 2168);
+            this.locationPanel45.Location = new System.Drawing.Point(467, 1992);
             this.locationPanel45.Name = "locationPanel45";
             this.locationPanel45.Size = new System.Drawing.Size(10, 43);
             this.locationPanel45.TabIndex = 51;
             // 
             // locationPanel46
             // 
-            this.locationPanel46.Location = new System.Drawing.Point(467, 2217);
+            this.locationPanel46.Location = new System.Drawing.Point(467, 2037);
             this.locationPanel46.Name = "locationPanel46";
             this.locationPanel46.Size = new System.Drawing.Size(10, 43);
             this.locationPanel46.TabIndex = 70;
             // 
             // locationPanel41
             // 
-            this.locationPanel41.Location = new System.Drawing.Point(467, 1972);
+            this.locationPanel41.Location = new System.Drawing.Point(467, 1812);
             this.locationPanel41.Name = "locationPanel41";
             this.locationPanel41.Size = new System.Drawing.Size(10, 43);
             this.locationPanel41.TabIndex = 47;
             // 
             // locationPanel49
             // 
-            this.locationPanel49.Location = new System.Drawing.Point(467, 2364);
+            this.locationPanel49.Location = new System.Drawing.Point(467, 2172);
             this.locationPanel49.Name = "locationPanel49";
             this.locationPanel49.Size = new System.Drawing.Size(10, 43);
             this.locationPanel49.TabIndex = 73;
             // 
             // locationPanel44
             // 
-            this.locationPanel44.Location = new System.Drawing.Point(467, 2119);
+            this.locationPanel44.Location = new System.Drawing.Point(467, 1947);
             this.locationPanel44.Name = "locationPanel44";
             this.locationPanel44.Size = new System.Drawing.Size(10, 43);
             this.locationPanel44.TabIndex = 50;
             // 
             // locationPanel48
             // 
-            this.locationPanel48.Location = new System.Drawing.Point(467, 2315);
+            this.locationPanel48.Location = new System.Drawing.Point(467, 2127);
             this.locationPanel48.Name = "locationPanel48";
             this.locationPanel48.Size = new System.Drawing.Size(10, 43);
             this.locationPanel48.TabIndex = 72;
             // 
             // locationPanel40
             // 
-            this.locationPanel40.Location = new System.Drawing.Point(467, 1923);
+            this.locationPanel40.Location = new System.Drawing.Point(467, 1767);
             this.locationPanel40.Name = "locationPanel40";
             this.locationPanel40.Size = new System.Drawing.Size(10, 43);
             this.locationPanel40.TabIndex = 46;
@@ -812,7 +664,7 @@ namespace RankingApp
             this.panel50.Controls.Add(this.textBox100);
             this.panel50.Controls.Add(this.textBox99);
             this.panel50.Controls.Add(this.pictureBox50);
-            this.panel50.Location = new System.Drawing.Point(11, 2413);
+            this.panel50.Location = new System.Drawing.Point(11, 2217);
             this.panel50.Name = "panel50";
             this.panel50.Size = new System.Drawing.Size(455, 43);
             this.panel50.TabIndex = 79;
@@ -850,9 +702,8 @@ namespace RankingApp
             this.textBox99.ForeColor = System.Drawing.Color.White;
             this.textBox99.Location = new System.Drawing.Point(47, 8);
             this.textBox99.MaxLength = 28;
-            this.textBox99.Multiline = true;
             this.textBox99.Name = "textBox99";
-            this.textBox99.Size = new System.Drawing.Size(324, 31);
+            this.textBox99.Size = new System.Drawing.Size(324, 28);
             this.textBox99.TabIndex = 1;
             this.textBox99.TabStop = false;
             this.textBox99.Text = "Italy";
@@ -870,14 +721,14 @@ namespace RankingApp
             // 
             // locationPanel43
             // 
-            this.locationPanel43.Location = new System.Drawing.Point(467, 2070);
+            this.locationPanel43.Location = new System.Drawing.Point(467, 1902);
             this.locationPanel43.Name = "locationPanel43";
             this.locationPanel43.Size = new System.Drawing.Size(10, 43);
             this.locationPanel43.TabIndex = 49;
             // 
             // locationPanel47
             // 
-            this.locationPanel47.Location = new System.Drawing.Point(467, 2266);
+            this.locationPanel47.Location = new System.Drawing.Point(467, 2082);
             this.locationPanel47.Name = "locationPanel47";
             this.locationPanel47.Size = new System.Drawing.Size(10, 43);
             this.locationPanel47.TabIndex = 71;
@@ -889,7 +740,7 @@ namespace RankingApp
             this.panel45.Controls.Add(this.textBox90);
             this.panel45.Controls.Add(this.textBox89);
             this.panel45.Controls.Add(this.pictureBox45);
-            this.panel45.Location = new System.Drawing.Point(11, 2168);
+            this.panel45.Location = new System.Drawing.Point(11, 1992);
             this.panel45.Name = "panel45";
             this.panel45.Size = new System.Drawing.Size(455, 43);
             this.panel45.TabIndex = 69;
@@ -927,9 +778,8 @@ namespace RankingApp
             this.textBox89.ForeColor = System.Drawing.Color.White;
             this.textBox89.Location = new System.Drawing.Point(47, 8);
             this.textBox89.MaxLength = 28;
-            this.textBox89.Multiline = true;
             this.textBox89.Name = "textBox89";
-            this.textBox89.Size = new System.Drawing.Size(324, 31);
+            this.textBox89.Size = new System.Drawing.Size(324, 28);
             this.textBox89.TabIndex = 1;
             this.textBox89.TabStop = false;
             this.textBox89.Text = "Italy";
@@ -952,7 +802,7 @@ namespace RankingApp
             this.panel49.Controls.Add(this.textBox98);
             this.panel49.Controls.Add(this.textBox97);
             this.panel49.Controls.Add(this.pictureBox49);
-            this.panel49.Location = new System.Drawing.Point(11, 2364);
+            this.panel49.Location = new System.Drawing.Point(11, 2172);
             this.panel49.Name = "panel49";
             this.panel49.Size = new System.Drawing.Size(455, 43);
             this.panel49.TabIndex = 78;
@@ -990,9 +840,8 @@ namespace RankingApp
             this.textBox97.ForeColor = System.Drawing.Color.White;
             this.textBox97.Location = new System.Drawing.Point(47, 8);
             this.textBox97.MaxLength = 28;
-            this.textBox97.Multiline = true;
             this.textBox97.Name = "textBox97";
-            this.textBox97.Size = new System.Drawing.Size(324, 31);
+            this.textBox97.Size = new System.Drawing.Size(324, 28);
             this.textBox97.TabIndex = 1;
             this.textBox97.TabStop = false;
             this.textBox97.Text = "Italy";
@@ -1010,7 +859,7 @@ namespace RankingApp
             // 
             // locationPanel42
             // 
-            this.locationPanel42.Location = new System.Drawing.Point(467, 2021);
+            this.locationPanel42.Location = new System.Drawing.Point(467, 1857);
             this.locationPanel42.Name = "locationPanel42";
             this.locationPanel42.Size = new System.Drawing.Size(10, 43);
             this.locationPanel42.TabIndex = 48;
@@ -1022,7 +871,7 @@ namespace RankingApp
             this.panel48.Controls.Add(this.textBox96);
             this.panel48.Controls.Add(this.textBox95);
             this.panel48.Controls.Add(this.pictureBox48);
-            this.panel48.Location = new System.Drawing.Point(11, 2315);
+            this.panel48.Location = new System.Drawing.Point(11, 2127);
             this.panel48.Name = "panel48";
             this.panel48.Size = new System.Drawing.Size(455, 43);
             this.panel48.TabIndex = 77;
@@ -1060,9 +909,8 @@ namespace RankingApp
             this.textBox95.ForeColor = System.Drawing.Color.White;
             this.textBox95.Location = new System.Drawing.Point(47, 8);
             this.textBox95.MaxLength = 28;
-            this.textBox95.Multiline = true;
             this.textBox95.Name = "textBox95";
-            this.textBox95.Size = new System.Drawing.Size(324, 31);
+            this.textBox95.Size = new System.Drawing.Size(324, 28);
             this.textBox95.TabIndex = 1;
             this.textBox95.TabStop = false;
             this.textBox95.Text = "Italy";
@@ -1080,7 +928,7 @@ namespace RankingApp
             // 
             // locationPanel39
             // 
-            this.locationPanel39.Location = new System.Drawing.Point(467, 1874);
+            this.locationPanel39.Location = new System.Drawing.Point(467, 1722);
             this.locationPanel39.Name = "locationPanel39";
             this.locationPanel39.Size = new System.Drawing.Size(10, 43);
             this.locationPanel39.TabIndex = 45;
@@ -1092,7 +940,7 @@ namespace RankingApp
             this.panel47.Controls.Add(this.textBox94);
             this.panel47.Controls.Add(this.textBox93);
             this.panel47.Controls.Add(this.pictureBox47);
-            this.panel47.Location = new System.Drawing.Point(11, 2266);
+            this.panel47.Location = new System.Drawing.Point(11, 2082);
             this.panel47.Name = "panel47";
             this.panel47.Size = new System.Drawing.Size(455, 43);
             this.panel47.TabIndex = 76;
@@ -1130,9 +978,8 @@ namespace RankingApp
             this.textBox93.ForeColor = System.Drawing.Color.White;
             this.textBox93.Location = new System.Drawing.Point(47, 8);
             this.textBox93.MaxLength = 28;
-            this.textBox93.Multiline = true;
             this.textBox93.Name = "textBox93";
-            this.textBox93.Size = new System.Drawing.Size(324, 31);
+            this.textBox93.Size = new System.Drawing.Size(324, 28);
             this.textBox93.TabIndex = 1;
             this.textBox93.TabStop = false;
             this.textBox93.Text = "Italy";
@@ -1155,7 +1002,7 @@ namespace RankingApp
             this.panel44.Controls.Add(this.textBox88);
             this.panel44.Controls.Add(this.textBox87);
             this.panel44.Controls.Add(this.pictureBox44);
-            this.panel44.Location = new System.Drawing.Point(11, 2119);
+            this.panel44.Location = new System.Drawing.Point(11, 1947);
             this.panel44.Name = "panel44";
             this.panel44.Size = new System.Drawing.Size(455, 43);
             this.panel44.TabIndex = 68;
@@ -1193,9 +1040,8 @@ namespace RankingApp
             this.textBox87.ForeColor = System.Drawing.Color.White;
             this.textBox87.Location = new System.Drawing.Point(47, 8);
             this.textBox87.MaxLength = 28;
-            this.textBox87.Multiline = true;
             this.textBox87.Name = "textBox87";
-            this.textBox87.Size = new System.Drawing.Size(324, 31);
+            this.textBox87.Size = new System.Drawing.Size(324, 28);
             this.textBox87.TabIndex = 1;
             this.textBox87.TabStop = false;
             this.textBox87.Text = "Italy";
@@ -1218,7 +1064,7 @@ namespace RankingApp
             this.panel46.Controls.Add(this.textBox92);
             this.panel46.Controls.Add(this.textBox91);
             this.panel46.Controls.Add(this.pictureBox46);
-            this.panel46.Location = new System.Drawing.Point(11, 2217);
+            this.panel46.Location = new System.Drawing.Point(11, 2037);
             this.panel46.Name = "panel46";
             this.panel46.Size = new System.Drawing.Size(455, 43);
             this.panel46.TabIndex = 75;
@@ -1256,9 +1102,8 @@ namespace RankingApp
             this.textBox91.ForeColor = System.Drawing.Color.White;
             this.textBox91.Location = new System.Drawing.Point(47, 8);
             this.textBox91.MaxLength = 28;
-            this.textBox91.Multiline = true;
             this.textBox91.Name = "textBox91";
-            this.textBox91.Size = new System.Drawing.Size(324, 31);
+            this.textBox91.Size = new System.Drawing.Size(324, 28);
             this.textBox91.TabIndex = 1;
             this.textBox91.TabStop = false;
             this.textBox91.Text = "Italy";
@@ -1276,21 +1121,21 @@ namespace RankingApp
             // 
             // locationPanel38
             // 
-            this.locationPanel38.Location = new System.Drawing.Point(467, 1825);
+            this.locationPanel38.Location = new System.Drawing.Point(467, 1677);
             this.locationPanel38.Name = "locationPanel38";
             this.locationPanel38.Size = new System.Drawing.Size(10, 43);
             this.locationPanel38.TabIndex = 44;
             // 
             // locationPanel30
             // 
-            this.locationPanel30.Location = new System.Drawing.Point(467, 1433);
+            this.locationPanel30.Location = new System.Drawing.Point(467, 1317);
             this.locationPanel30.Name = "locationPanel30";
             this.locationPanel30.Size = new System.Drawing.Size(10, 43);
             this.locationPanel30.TabIndex = 36;
             // 
             // locationPanel37
             // 
-            this.locationPanel37.Location = new System.Drawing.Point(467, 1776);
+            this.locationPanel37.Location = new System.Drawing.Point(467, 1632);
             this.locationPanel37.Name = "locationPanel37";
             this.locationPanel37.Size = new System.Drawing.Size(10, 43);
             this.locationPanel37.TabIndex = 43;
@@ -1302,7 +1147,7 @@ namespace RankingApp
             this.panel43.Controls.Add(this.textBox86);
             this.panel43.Controls.Add(this.textBox85);
             this.panel43.Controls.Add(this.pictureBox43);
-            this.panel43.Location = new System.Drawing.Point(11, 2070);
+            this.panel43.Location = new System.Drawing.Point(11, 1902);
             this.panel43.Name = "panel43";
             this.panel43.Size = new System.Drawing.Size(455, 43);
             this.panel43.TabIndex = 67;
@@ -1340,9 +1185,8 @@ namespace RankingApp
             this.textBox85.ForeColor = System.Drawing.Color.White;
             this.textBox85.Location = new System.Drawing.Point(47, 8);
             this.textBox85.MaxLength = 28;
-            this.textBox85.Multiline = true;
             this.textBox85.Name = "textBox85";
-            this.textBox85.Size = new System.Drawing.Size(324, 31);
+            this.textBox85.Size = new System.Drawing.Size(324, 28);
             this.textBox85.TabIndex = 1;
             this.textBox85.TabStop = false;
             this.textBox85.Text = "Italy";
@@ -1360,7 +1204,7 @@ namespace RankingApp
             // 
             // locationPanel36
             // 
-            this.locationPanel36.Location = new System.Drawing.Point(467, 1727);
+            this.locationPanel36.Location = new System.Drawing.Point(467, 1587);
             this.locationPanel36.Name = "locationPanel36";
             this.locationPanel36.Size = new System.Drawing.Size(10, 43);
             this.locationPanel36.TabIndex = 42;
@@ -1372,7 +1216,7 @@ namespace RankingApp
             this.panel30.Controls.Add(this.textBox60);
             this.panel30.Controls.Add(this.textBox59);
             this.panel30.Controls.Add(this.pictureBox30);
-            this.panel30.Location = new System.Drawing.Point(11, 1433);
+            this.panel30.Location = new System.Drawing.Point(11, 1317);
             this.panel30.Name = "panel30";
             this.panel30.Size = new System.Drawing.Size(455, 43);
             this.panel30.TabIndex = 54;
@@ -1410,9 +1254,8 @@ namespace RankingApp
             this.textBox59.ForeColor = System.Drawing.Color.White;
             this.textBox59.Location = new System.Drawing.Point(47, 8);
             this.textBox59.MaxLength = 28;
-            this.textBox59.Multiline = true;
             this.textBox59.Name = "textBox59";
-            this.textBox59.Size = new System.Drawing.Size(324, 31);
+            this.textBox59.Size = new System.Drawing.Size(324, 28);
             this.textBox59.TabIndex = 1;
             this.textBox59.TabStop = false;
             this.textBox59.Text = "Italy";
@@ -1430,7 +1273,7 @@ namespace RankingApp
             // 
             // locationPanel35
             // 
-            this.locationPanel35.Location = new System.Drawing.Point(467, 1678);
+            this.locationPanel35.Location = new System.Drawing.Point(467, 1542);
             this.locationPanel35.Name = "locationPanel35";
             this.locationPanel35.Size = new System.Drawing.Size(10, 43);
             this.locationPanel35.TabIndex = 41;
@@ -1442,7 +1285,7 @@ namespace RankingApp
             this.panel42.Controls.Add(this.textBox84);
             this.panel42.Controls.Add(this.textBox83);
             this.panel42.Controls.Add(this.pictureBox42);
-            this.panel42.Location = new System.Drawing.Point(11, 2021);
+            this.panel42.Location = new System.Drawing.Point(11, 1857);
             this.panel42.Name = "panel42";
             this.panel42.Size = new System.Drawing.Size(455, 43);
             this.panel42.TabIndex = 66;
@@ -1480,9 +1323,8 @@ namespace RankingApp
             this.textBox83.ForeColor = System.Drawing.Color.White;
             this.textBox83.Location = new System.Drawing.Point(47, 8);
             this.textBox83.MaxLength = 28;
-            this.textBox83.Multiline = true;
             this.textBox83.Name = "textBox83";
-            this.textBox83.Size = new System.Drawing.Size(324, 31);
+            this.textBox83.Size = new System.Drawing.Size(324, 28);
             this.textBox83.TabIndex = 1;
             this.textBox83.TabStop = false;
             this.textBox83.Text = "Italy";
@@ -1500,21 +1342,21 @@ namespace RankingApp
             // 
             // locationPanel34
             // 
-            this.locationPanel34.Location = new System.Drawing.Point(467, 1629);
+            this.locationPanel34.Location = new System.Drawing.Point(467, 1497);
             this.locationPanel34.Name = "locationPanel34";
             this.locationPanel34.Size = new System.Drawing.Size(10, 43);
             this.locationPanel34.TabIndex = 40;
             // 
             // locationPanel29
             // 
-            this.locationPanel29.Location = new System.Drawing.Point(467, 1384);
+            this.locationPanel29.Location = new System.Drawing.Point(467, 1272);
             this.locationPanel29.Name = "locationPanel29";
             this.locationPanel29.Size = new System.Drawing.Size(10, 43);
             this.locationPanel29.TabIndex = 35;
             // 
             // locationPanel33
             // 
-            this.locationPanel33.Location = new System.Drawing.Point(467, 1580);
+            this.locationPanel33.Location = new System.Drawing.Point(467, 1452);
             this.locationPanel33.Name = "locationPanel33";
             this.locationPanel33.Size = new System.Drawing.Size(10, 43);
             this.locationPanel33.TabIndex = 39;
@@ -1526,7 +1368,7 @@ namespace RankingApp
             this.panel41.Controls.Add(this.textBox82);
             this.panel41.Controls.Add(this.textBox81);
             this.panel41.Controls.Add(this.pictureBox41);
-            this.panel41.Location = new System.Drawing.Point(11, 1972);
+            this.panel41.Location = new System.Drawing.Point(11, 1812);
             this.panel41.Name = "panel41";
             this.panel41.Size = new System.Drawing.Size(455, 43);
             this.panel41.TabIndex = 65;
@@ -1564,9 +1406,8 @@ namespace RankingApp
             this.textBox81.ForeColor = System.Drawing.Color.White;
             this.textBox81.Location = new System.Drawing.Point(47, 8);
             this.textBox81.MaxLength = 28;
-            this.textBox81.Multiline = true;
             this.textBox81.Name = "textBox81";
-            this.textBox81.Size = new System.Drawing.Size(324, 31);
+            this.textBox81.Size = new System.Drawing.Size(324, 28);
             this.textBox81.TabIndex = 1;
             this.textBox81.TabStop = false;
             this.textBox81.Text = "Italy";
@@ -1584,7 +1425,7 @@ namespace RankingApp
             // 
             // locationPanel32
             // 
-            this.locationPanel32.Location = new System.Drawing.Point(467, 1531);
+            this.locationPanel32.Location = new System.Drawing.Point(467, 1407);
             this.locationPanel32.Name = "locationPanel32";
             this.locationPanel32.Size = new System.Drawing.Size(10, 43);
             this.locationPanel32.TabIndex = 38;
@@ -1596,7 +1437,7 @@ namespace RankingApp
             this.panel29.Controls.Add(this.textBox58);
             this.panel29.Controls.Add(this.textBox57);
             this.panel29.Controls.Add(this.pictureBox29);
-            this.panel29.Location = new System.Drawing.Point(11, 1384);
+            this.panel29.Location = new System.Drawing.Point(11, 1272);
             this.panel29.Name = "panel29";
             this.panel29.Size = new System.Drawing.Size(455, 43);
             this.panel29.TabIndex = 53;
@@ -1634,9 +1475,8 @@ namespace RankingApp
             this.textBox57.ForeColor = System.Drawing.Color.White;
             this.textBox57.Location = new System.Drawing.Point(47, 8);
             this.textBox57.MaxLength = 28;
-            this.textBox57.Multiline = true;
             this.textBox57.Name = "textBox57";
-            this.textBox57.Size = new System.Drawing.Size(324, 31);
+            this.textBox57.Size = new System.Drawing.Size(324, 28);
             this.textBox57.TabIndex = 1;
             this.textBox57.TabStop = false;
             this.textBox57.Text = "Italy";
@@ -1654,7 +1494,7 @@ namespace RankingApp
             // 
             // locationPanel31
             // 
-            this.locationPanel31.Location = new System.Drawing.Point(467, 1482);
+            this.locationPanel31.Location = new System.Drawing.Point(467, 1362);
             this.locationPanel31.Name = "locationPanel31";
             this.locationPanel31.Size = new System.Drawing.Size(10, 43);
             this.locationPanel31.TabIndex = 37;
@@ -1666,7 +1506,7 @@ namespace RankingApp
             this.panel40.Controls.Add(this.textBox80);
             this.panel40.Controls.Add(this.textBox79);
             this.panel40.Controls.Add(this.pictureBox40);
-            this.panel40.Location = new System.Drawing.Point(11, 1923);
+            this.panel40.Location = new System.Drawing.Point(11, 1767);
             this.panel40.Name = "panel40";
             this.panel40.Size = new System.Drawing.Size(455, 43);
             this.panel40.TabIndex = 64;
@@ -1704,9 +1544,8 @@ namespace RankingApp
             this.textBox79.ForeColor = System.Drawing.Color.White;
             this.textBox79.Location = new System.Drawing.Point(47, 8);
             this.textBox79.MaxLength = 28;
-            this.textBox79.Multiline = true;
             this.textBox79.Name = "textBox79";
-            this.textBox79.Size = new System.Drawing.Size(324, 31);
+            this.textBox79.Size = new System.Drawing.Size(324, 28);
             this.textBox79.TabIndex = 1;
             this.textBox79.TabStop = false;
             this.textBox79.Text = "Italy";
@@ -1729,7 +1568,7 @@ namespace RankingApp
             this.panel28.Controls.Add(this.textBox56);
             this.panel28.Controls.Add(this.textBox55);
             this.panel28.Controls.Add(this.pictureBox28);
-            this.panel28.Location = new System.Drawing.Point(11, 1335);
+            this.panel28.Location = new System.Drawing.Point(11, 1227);
             this.panel28.Name = "panel28";
             this.panel28.Size = new System.Drawing.Size(455, 43);
             this.panel28.TabIndex = 52;
@@ -1767,9 +1606,8 @@ namespace RankingApp
             this.textBox55.ForeColor = System.Drawing.Color.White;
             this.textBox55.Location = new System.Drawing.Point(47, 8);
             this.textBox55.MaxLength = 28;
-            this.textBox55.Multiline = true;
             this.textBox55.Name = "textBox55";
-            this.textBox55.Size = new System.Drawing.Size(324, 31);
+            this.textBox55.Size = new System.Drawing.Size(324, 28);
             this.textBox55.TabIndex = 1;
             this.textBox55.TabStop = false;
             this.textBox55.Text = "Italy";
@@ -1792,7 +1630,7 @@ namespace RankingApp
             this.panel39.Controls.Add(this.textBox78);
             this.panel39.Controls.Add(this.textBox77);
             this.panel39.Controls.Add(this.pictureBox39);
-            this.panel39.Location = new System.Drawing.Point(11, 1874);
+            this.panel39.Location = new System.Drawing.Point(11, 1722);
             this.panel39.Name = "panel39";
             this.panel39.Size = new System.Drawing.Size(455, 43);
             this.panel39.TabIndex = 63;
@@ -1830,9 +1668,8 @@ namespace RankingApp
             this.textBox77.ForeColor = System.Drawing.Color.White;
             this.textBox77.Location = new System.Drawing.Point(47, 8);
             this.textBox77.MaxLength = 28;
-            this.textBox77.Multiline = true;
             this.textBox77.Name = "textBox77";
-            this.textBox77.Size = new System.Drawing.Size(324, 31);
+            this.textBox77.Size = new System.Drawing.Size(324, 28);
             this.textBox77.TabIndex = 1;
             this.textBox77.TabStop = false;
             this.textBox77.Text = "Egypt";
@@ -1850,7 +1687,7 @@ namespace RankingApp
             // 
             // locationPanel28
             // 
-            this.locationPanel28.Location = new System.Drawing.Point(467, 1335);
+            this.locationPanel28.Location = new System.Drawing.Point(467, 1227);
             this.locationPanel28.Name = "locationPanel28";
             this.locationPanel28.Size = new System.Drawing.Size(10, 43);
             this.locationPanel28.TabIndex = 34;
@@ -1862,7 +1699,7 @@ namespace RankingApp
             this.panel38.Controls.Add(this.textBox76);
             this.panel38.Controls.Add(this.textBox75);
             this.panel38.Controls.Add(this.pictureBox38);
-            this.panel38.Location = new System.Drawing.Point(11, 1825);
+            this.panel38.Location = new System.Drawing.Point(11, 1677);
             this.panel38.Name = "panel38";
             this.panel38.Size = new System.Drawing.Size(455, 43);
             this.panel38.TabIndex = 62;
@@ -1900,9 +1737,8 @@ namespace RankingApp
             this.textBox75.ForeColor = System.Drawing.Color.White;
             this.textBox75.Location = new System.Drawing.Point(47, 8);
             this.textBox75.MaxLength = 28;
-            this.textBox75.Multiline = true;
             this.textBox75.Name = "textBox75";
-            this.textBox75.Size = new System.Drawing.Size(324, 31);
+            this.textBox75.Size = new System.Drawing.Size(324, 28);
             this.textBox75.TabIndex = 1;
             this.textBox75.TabStop = false;
             this.textBox75.Text = "France";
@@ -1925,7 +1761,7 @@ namespace RankingApp
             this.panel27.Controls.Add(this.textBox54);
             this.panel27.Controls.Add(this.textBox53);
             this.panel27.Controls.Add(this.pictureBox27);
-            this.panel27.Location = new System.Drawing.Point(11, 1286);
+            this.panel27.Location = new System.Drawing.Point(11, 1182);
             this.panel27.Name = "panel27";
             this.panel27.Size = new System.Drawing.Size(455, 43);
             this.panel27.TabIndex = 51;
@@ -1963,9 +1799,8 @@ namespace RankingApp
             this.textBox53.ForeColor = System.Drawing.Color.White;
             this.textBox53.Location = new System.Drawing.Point(47, 8);
             this.textBox53.MaxLength = 28;
-            this.textBox53.Multiline = true;
             this.textBox53.Name = "textBox53";
-            this.textBox53.Size = new System.Drawing.Size(324, 31);
+            this.textBox53.Size = new System.Drawing.Size(324, 28);
             this.textBox53.TabIndex = 1;
             this.textBox53.TabStop = false;
             this.textBox53.Text = "Italy";
@@ -1988,7 +1823,7 @@ namespace RankingApp
             this.panel37.Controls.Add(this.textBox74);
             this.panel37.Controls.Add(this.textBox73);
             this.panel37.Controls.Add(this.pictureBox37);
-            this.panel37.Location = new System.Drawing.Point(11, 1776);
+            this.panel37.Location = new System.Drawing.Point(11, 1632);
             this.panel37.Name = "panel37";
             this.panel37.Size = new System.Drawing.Size(455, 43);
             this.panel37.TabIndex = 61;
@@ -2026,9 +1861,8 @@ namespace RankingApp
             this.textBox73.ForeColor = System.Drawing.Color.White;
             this.textBox73.Location = new System.Drawing.Point(47, 8);
             this.textBox73.MaxLength = 28;
-            this.textBox73.Multiline = true;
             this.textBox73.Name = "textBox73";
-            this.textBox73.Size = new System.Drawing.Size(324, 31);
+            this.textBox73.Size = new System.Drawing.Size(324, 28);
             this.textBox73.TabIndex = 1;
             this.textBox73.TabStop = false;
             this.textBox73.Text = "Canada";
@@ -2051,7 +1885,7 @@ namespace RankingApp
             this.panel26.Controls.Add(this.textBox52);
             this.panel26.Controls.Add(this.textBox51);
             this.panel26.Controls.Add(this.pictureBox26);
-            this.panel26.Location = new System.Drawing.Point(11, 1237);
+            this.panel26.Location = new System.Drawing.Point(11, 1137);
             this.panel26.Name = "panel26";
             this.panel26.Size = new System.Drawing.Size(455, 43);
             this.panel26.TabIndex = 50;
@@ -2089,9 +1923,8 @@ namespace RankingApp
             this.textBox51.ForeColor = System.Drawing.Color.White;
             this.textBox51.Location = new System.Drawing.Point(47, 8);
             this.textBox51.MaxLength = 28;
-            this.textBox51.Multiline = true;
             this.textBox51.Name = "textBox51";
-            this.textBox51.Size = new System.Drawing.Size(324, 31);
+            this.textBox51.Size = new System.Drawing.Size(324, 28);
             this.textBox51.TabIndex = 1;
             this.textBox51.TabStop = false;
             this.textBox51.Text = "Italy";
@@ -2114,7 +1947,7 @@ namespace RankingApp
             this.panel36.Controls.Add(this.textBox72);
             this.panel36.Controls.Add(this.textBox71);
             this.panel36.Controls.Add(this.pictureBox36);
-            this.panel36.Location = new System.Drawing.Point(11, 1727);
+            this.panel36.Location = new System.Drawing.Point(11, 1587);
             this.panel36.Name = "panel36";
             this.panel36.Size = new System.Drawing.Size(455, 43);
             this.panel36.TabIndex = 60;
@@ -2152,9 +1985,8 @@ namespace RankingApp
             this.textBox71.ForeColor = System.Drawing.Color.White;
             this.textBox71.Location = new System.Drawing.Point(47, 8);
             this.textBox71.MaxLength = 28;
-            this.textBox71.Multiline = true;
             this.textBox71.Name = "textBox71";
-            this.textBox71.Size = new System.Drawing.Size(324, 31);
+            this.textBox71.Size = new System.Drawing.Size(324, 28);
             this.textBox71.TabIndex = 1;
             this.textBox71.TabStop = false;
             this.textBox71.Text = "Belgium";
@@ -2172,7 +2004,7 @@ namespace RankingApp
             // 
             // locationPanel27
             // 
-            this.locationPanel27.Location = new System.Drawing.Point(467, 1286);
+            this.locationPanel27.Location = new System.Drawing.Point(467, 1182);
             this.locationPanel27.Name = "locationPanel27";
             this.locationPanel27.Size = new System.Drawing.Size(10, 43);
             this.locationPanel27.TabIndex = 33;
@@ -2184,7 +2016,7 @@ namespace RankingApp
             this.panel35.Controls.Add(this.textBox70);
             this.panel35.Controls.Add(this.textBox69);
             this.panel35.Controls.Add(this.pictureBox35);
-            this.panel35.Location = new System.Drawing.Point(11, 1678);
+            this.panel35.Location = new System.Drawing.Point(11, 1542);
             this.panel35.Name = "panel35";
             this.panel35.Size = new System.Drawing.Size(455, 43);
             this.panel35.TabIndex = 59;
@@ -2222,9 +2054,8 @@ namespace RankingApp
             this.textBox69.ForeColor = System.Drawing.Color.White;
             this.textBox69.Location = new System.Drawing.Point(47, 8);
             this.textBox69.MaxLength = 28;
-            this.textBox69.Multiline = true;
             this.textBox69.Name = "textBox69";
-            this.textBox69.Size = new System.Drawing.Size(324, 31);
+            this.textBox69.Size = new System.Drawing.Size(324, 28);
             this.textBox69.TabIndex = 1;
             this.textBox69.TabStop = false;
             this.textBox69.Text = "Denmark";
@@ -2247,7 +2078,7 @@ namespace RankingApp
             this.panel25.Controls.Add(this.textBox50);
             this.panel25.Controls.Add(this.textBox49);
             this.panel25.Controls.Add(this.pictureBox25);
-            this.panel25.Location = new System.Drawing.Point(11, 1188);
+            this.panel25.Location = new System.Drawing.Point(11, 1092);
             this.panel25.Name = "panel25";
             this.panel25.Size = new System.Drawing.Size(455, 43);
             this.panel25.TabIndex = 49;
@@ -2285,9 +2116,8 @@ namespace RankingApp
             this.textBox49.ForeColor = System.Drawing.Color.White;
             this.textBox49.Location = new System.Drawing.Point(47, 8);
             this.textBox49.MaxLength = 28;
-            this.textBox49.Multiline = true;
             this.textBox49.Name = "textBox49";
-            this.textBox49.Size = new System.Drawing.Size(324, 31);
+            this.textBox49.Size = new System.Drawing.Size(324, 28);
             this.textBox49.TabIndex = 1;
             this.textBox49.TabStop = false;
             this.textBox49.Text = "Italy";
@@ -2310,7 +2140,7 @@ namespace RankingApp
             this.panel34.Controls.Add(this.textBox68);
             this.panel34.Controls.Add(this.textBox67);
             this.panel34.Controls.Add(this.pictureBox34);
-            this.panel34.Location = new System.Drawing.Point(11, 1629);
+            this.panel34.Location = new System.Drawing.Point(11, 1497);
             this.panel34.Name = "panel34";
             this.panel34.Size = new System.Drawing.Size(455, 43);
             this.panel34.TabIndex = 58;
@@ -2348,9 +2178,8 @@ namespace RankingApp
             this.textBox67.ForeColor = System.Drawing.Color.White;
             this.textBox67.Location = new System.Drawing.Point(47, 8);
             this.textBox67.MaxLength = 28;
-            this.textBox67.Multiline = true;
             this.textBox67.Name = "textBox67";
-            this.textBox67.Size = new System.Drawing.Size(324, 31);
+            this.textBox67.Size = new System.Drawing.Size(324, 28);
             this.textBox67.TabIndex = 1;
             this.textBox67.TabStop = false;
             this.textBox67.Text = "Bahrain";
@@ -2373,7 +2202,7 @@ namespace RankingApp
             this.panel24.Controls.Add(this.textBox48);
             this.panel24.Controls.Add(this.textBox47);
             this.panel24.Controls.Add(this.pictureBox24);
-            this.panel24.Location = new System.Drawing.Point(11, 1139);
+            this.panel24.Location = new System.Drawing.Point(11, 1047);
             this.panel24.Name = "panel24";
             this.panel24.Size = new System.Drawing.Size(455, 43);
             this.panel24.TabIndex = 48;
@@ -2411,9 +2240,8 @@ namespace RankingApp
             this.textBox47.ForeColor = System.Drawing.Color.White;
             this.textBox47.Location = new System.Drawing.Point(47, 8);
             this.textBox47.MaxLength = 28;
-            this.textBox47.Multiline = true;
             this.textBox47.Name = "textBox47";
-            this.textBox47.Size = new System.Drawing.Size(324, 31);
+            this.textBox47.Size = new System.Drawing.Size(324, 28);
             this.textBox47.TabIndex = 1;
             this.textBox47.TabStop = false;
             this.textBox47.Text = "Egypt";
@@ -2436,7 +2264,7 @@ namespace RankingApp
             this.panel33.Controls.Add(this.textBox66);
             this.panel33.Controls.Add(this.textBox65);
             this.panel33.Controls.Add(this.pictureBox33);
-            this.panel33.Location = new System.Drawing.Point(11, 1580);
+            this.panel33.Location = new System.Drawing.Point(11, 1452);
             this.panel33.Name = "panel33";
             this.panel33.Size = new System.Drawing.Size(455, 43);
             this.panel33.TabIndex = 57;
@@ -2474,9 +2302,8 @@ namespace RankingApp
             this.textBox65.ForeColor = System.Drawing.Color.White;
             this.textBox65.Location = new System.Drawing.Point(47, 8);
             this.textBox65.MaxLength = 28;
-            this.textBox65.Multiline = true;
             this.textBox65.Name = "textBox65";
-            this.textBox65.Size = new System.Drawing.Size(324, 31);
+            this.textBox65.Size = new System.Drawing.Size(324, 28);
             this.textBox65.TabIndex = 1;
             this.textBox65.TabStop = false;
             this.textBox65.Text = "Armenia";
@@ -2494,7 +2321,7 @@ namespace RankingApp
             // 
             // locationPanel26
             // 
-            this.locationPanel26.Location = new System.Drawing.Point(467, 1237);
+            this.locationPanel26.Location = new System.Drawing.Point(467, 1137);
             this.locationPanel26.Name = "locationPanel26";
             this.locationPanel26.Size = new System.Drawing.Size(10, 43);
             this.locationPanel26.TabIndex = 32;
@@ -2506,7 +2333,7 @@ namespace RankingApp
             this.panel32.Controls.Add(this.textBox64);
             this.panel32.Controls.Add(this.textBox63);
             this.panel32.Controls.Add(this.pictureBox32);
-            this.panel32.Location = new System.Drawing.Point(11, 1531);
+            this.panel32.Location = new System.Drawing.Point(11, 1407);
             this.panel32.Name = "panel32";
             this.panel32.Size = new System.Drawing.Size(455, 43);
             this.panel32.TabIndex = 56;
@@ -2544,9 +2371,8 @@ namespace RankingApp
             this.textBox63.ForeColor = System.Drawing.Color.White;
             this.textBox63.Location = new System.Drawing.Point(47, 8);
             this.textBox63.MaxLength = 28;
-            this.textBox63.Multiline = true;
             this.textBox63.Name = "textBox63";
-            this.textBox63.Size = new System.Drawing.Size(324, 31);
+            this.textBox63.Size = new System.Drawing.Size(324, 28);
             this.textBox63.TabIndex = 1;
             this.textBox63.TabStop = false;
             this.textBox63.Text = "Åland Islands";
@@ -2569,7 +2395,7 @@ namespace RankingApp
             this.panel23.Controls.Add(this.textBox46);
             this.panel23.Controls.Add(this.textBox45);
             this.panel23.Controls.Add(this.pictureBox23);
-            this.panel23.Location = new System.Drawing.Point(11, 1090);
+            this.panel23.Location = new System.Drawing.Point(11, 1002);
             this.panel23.Name = "panel23";
             this.panel23.Size = new System.Drawing.Size(455, 43);
             this.panel23.TabIndex = 47;
@@ -2607,9 +2433,8 @@ namespace RankingApp
             this.textBox45.ForeColor = System.Drawing.Color.White;
             this.textBox45.Location = new System.Drawing.Point(47, 8);
             this.textBox45.MaxLength = 28;
-            this.textBox45.Multiline = true;
             this.textBox45.Name = "textBox45";
-            this.textBox45.Size = new System.Drawing.Size(324, 31);
+            this.textBox45.Size = new System.Drawing.Size(324, 28);
             this.textBox45.TabIndex = 1;
             this.textBox45.TabStop = false;
             this.textBox45.Text = "France";
@@ -2632,7 +2457,7 @@ namespace RankingApp
             this.panel31.Controls.Add(this.textBox62);
             this.panel31.Controls.Add(this.textBox61);
             this.panel31.Controls.Add(this.pictureBox31);
-            this.panel31.Location = new System.Drawing.Point(11, 1482);
+            this.panel31.Location = new System.Drawing.Point(11, 1362);
             this.panel31.Name = "panel31";
             this.panel31.Size = new System.Drawing.Size(455, 43);
             this.panel31.TabIndex = 55;
@@ -2670,9 +2495,8 @@ namespace RankingApp
             this.textBox61.ForeColor = System.Drawing.Color.White;
             this.textBox61.Location = new System.Drawing.Point(47, 8);
             this.textBox61.MaxLength = 28;
-            this.textBox61.Multiline = true;
             this.textBox61.Name = "textBox61";
-            this.textBox61.Size = new System.Drawing.Size(324, 31);
+            this.textBox61.Size = new System.Drawing.Size(324, 28);
             this.textBox61.TabIndex = 1;
             this.textBox61.TabStop = false;
             this.textBox61.Text = "Bosnia and Herzegovina";
@@ -2695,7 +2519,7 @@ namespace RankingApp
             this.panel22.Controls.Add(this.textBox44);
             this.panel22.Controls.Add(this.textBox43);
             this.panel22.Controls.Add(this.pictureBox22);
-            this.panel22.Location = new System.Drawing.Point(11, 1041);
+            this.panel22.Location = new System.Drawing.Point(11, 957);
             this.panel22.Name = "panel22";
             this.panel22.Size = new System.Drawing.Size(455, 43);
             this.panel22.TabIndex = 46;
@@ -2733,9 +2557,8 @@ namespace RankingApp
             this.textBox43.ForeColor = System.Drawing.Color.White;
             this.textBox43.Location = new System.Drawing.Point(47, 8);
             this.textBox43.MaxLength = 28;
-            this.textBox43.Multiline = true;
             this.textBox43.Name = "textBox43";
-            this.textBox43.Size = new System.Drawing.Size(324, 31);
+            this.textBox43.Size = new System.Drawing.Size(324, 28);
             this.textBox43.TabIndex = 1;
             this.textBox43.TabStop = false;
             this.textBox43.Text = "Canada";
@@ -2753,7 +2576,7 @@ namespace RankingApp
             // 
             // locationPanel25
             // 
-            this.locationPanel25.Location = new System.Drawing.Point(467, 1188);
+            this.locationPanel25.Location = new System.Drawing.Point(467, 1092);
             this.locationPanel25.Name = "locationPanel25";
             this.locationPanel25.Size = new System.Drawing.Size(10, 43);
             this.locationPanel25.TabIndex = 31;
@@ -2765,7 +2588,7 @@ namespace RankingApp
             this.panel21.Controls.Add(this.textBox42);
             this.panel21.Controls.Add(this.textBox41);
             this.panel21.Controls.Add(this.pictureBox21);
-            this.panel21.Location = new System.Drawing.Point(11, 992);
+            this.panel21.Location = new System.Drawing.Point(11, 912);
             this.panel21.Name = "panel21";
             this.panel21.Size = new System.Drawing.Size(455, 43);
             this.panel21.TabIndex = 45;
@@ -2803,9 +2626,8 @@ namespace RankingApp
             this.textBox41.ForeColor = System.Drawing.Color.White;
             this.textBox41.Location = new System.Drawing.Point(47, 8);
             this.textBox41.MaxLength = 28;
-            this.textBox41.Multiline = true;
             this.textBox41.Name = "textBox41";
-            this.textBox41.Size = new System.Drawing.Size(324, 31);
+            this.textBox41.Size = new System.Drawing.Size(324, 28);
             this.textBox41.TabIndex = 1;
             this.textBox41.TabStop = false;
             this.textBox41.Text = "Belgium";
@@ -2828,7 +2650,7 @@ namespace RankingApp
             this.panel20.Controls.Add(this.textBox40);
             this.panel20.Controls.Add(this.textBox39);
             this.panel20.Controls.Add(this.pictureBox20);
-            this.panel20.Location = new System.Drawing.Point(11, 943);
+            this.panel20.Location = new System.Drawing.Point(11, 867);
             this.panel20.Name = "panel20";
             this.panel20.Size = new System.Drawing.Size(455, 43);
             this.panel20.TabIndex = 44;
@@ -2866,9 +2688,8 @@ namespace RankingApp
             this.textBox39.ForeColor = System.Drawing.Color.White;
             this.textBox39.Location = new System.Drawing.Point(47, 8);
             this.textBox39.MaxLength = 28;
-            this.textBox39.Multiline = true;
             this.textBox39.Name = "textBox39";
-            this.textBox39.Size = new System.Drawing.Size(324, 31);
+            this.textBox39.Size = new System.Drawing.Size(324, 28);
             this.textBox39.TabIndex = 1;
             this.textBox39.TabStop = false;
             this.textBox39.Text = "Denmark";
@@ -2886,7 +2707,7 @@ namespace RankingApp
             // 
             // locationPanel24
             // 
-            this.locationPanel24.Location = new System.Drawing.Point(467, 1139);
+            this.locationPanel24.Location = new System.Drawing.Point(467, 1047);
             this.locationPanel24.Name = "locationPanel24";
             this.locationPanel24.Size = new System.Drawing.Size(10, 43);
             this.locationPanel24.TabIndex = 30;
@@ -2898,7 +2719,7 @@ namespace RankingApp
             this.panel19.Controls.Add(this.textBox38);
             this.panel19.Controls.Add(this.textBox37);
             this.panel19.Controls.Add(this.pictureBox19);
-            this.panel19.Location = new System.Drawing.Point(11, 894);
+            this.panel19.Location = new System.Drawing.Point(11, 822);
             this.panel19.Name = "panel19";
             this.panel19.Size = new System.Drawing.Size(455, 43);
             this.panel19.TabIndex = 43;
@@ -2936,9 +2757,8 @@ namespace RankingApp
             this.textBox37.ForeColor = System.Drawing.Color.White;
             this.textBox37.Location = new System.Drawing.Point(47, 8);
             this.textBox37.MaxLength = 28;
-            this.textBox37.Multiline = true;
             this.textBox37.Name = "textBox37";
-            this.textBox37.Size = new System.Drawing.Size(324, 31);
+            this.textBox37.Size = new System.Drawing.Size(324, 28);
             this.textBox37.TabIndex = 1;
             this.textBox37.TabStop = false;
             this.textBox37.Text = "Bahrain";
@@ -2961,7 +2781,7 @@ namespace RankingApp
             this.panel18.Controls.Add(this.textBox36);
             this.panel18.Controls.Add(this.textBox35);
             this.panel18.Controls.Add(this.pictureBox18);
-            this.panel18.Location = new System.Drawing.Point(11, 845);
+            this.panel18.Location = new System.Drawing.Point(11, 777);
             this.panel18.Name = "panel18";
             this.panel18.Size = new System.Drawing.Size(455, 43);
             this.panel18.TabIndex = 42;
@@ -2999,9 +2819,8 @@ namespace RankingApp
             this.textBox35.ForeColor = System.Drawing.Color.White;
             this.textBox35.Location = new System.Drawing.Point(47, 8);
             this.textBox35.MaxLength = 28;
-            this.textBox35.Multiline = true;
             this.textBox35.Name = "textBox35";
-            this.textBox35.Size = new System.Drawing.Size(324, 31);
+            this.textBox35.Size = new System.Drawing.Size(324, 28);
             this.textBox35.TabIndex = 1;
             this.textBox35.TabStop = false;
             this.textBox35.Text = "Armenia";
@@ -3019,7 +2838,7 @@ namespace RankingApp
             // 
             // locationPanel23
             // 
-            this.locationPanel23.Location = new System.Drawing.Point(467, 1090);
+            this.locationPanel23.Location = new System.Drawing.Point(467, 1002);
             this.locationPanel23.Name = "locationPanel23";
             this.locationPanel23.Size = new System.Drawing.Size(10, 43);
             this.locationPanel23.TabIndex = 29;
@@ -3031,7 +2850,7 @@ namespace RankingApp
             this.panel17.Controls.Add(this.textBox34);
             this.panel17.Controls.Add(this.textBox33);
             this.panel17.Controls.Add(this.pictureBox17);
-            this.panel17.Location = new System.Drawing.Point(11, 796);
+            this.panel17.Location = new System.Drawing.Point(11, 732);
             this.panel17.Name = "panel17";
             this.panel17.Size = new System.Drawing.Size(455, 43);
             this.panel17.TabIndex = 41;
@@ -3069,9 +2888,8 @@ namespace RankingApp
             this.textBox33.ForeColor = System.Drawing.Color.White;
             this.textBox33.Location = new System.Drawing.Point(47, 8);
             this.textBox33.MaxLength = 28;
-            this.textBox33.Multiline = true;
             this.textBox33.Name = "textBox33";
-            this.textBox33.Size = new System.Drawing.Size(324, 31);
+            this.textBox33.Size = new System.Drawing.Size(324, 28);
             this.textBox33.TabIndex = 1;
             this.textBox33.TabStop = false;
             this.textBox33.Text = "Åland Islands";
@@ -3094,7 +2912,7 @@ namespace RankingApp
             this.panel16.Controls.Add(this.textBox32);
             this.panel16.Controls.Add(this.textBox31);
             this.panel16.Controls.Add(this.pictureBox16);
-            this.panel16.Location = new System.Drawing.Point(11, 747);
+            this.panel16.Location = new System.Drawing.Point(11, 687);
             this.panel16.Name = "panel16";
             this.panel16.Size = new System.Drawing.Size(455, 43);
             this.panel16.TabIndex = 40;
@@ -3132,9 +2950,8 @@ namespace RankingApp
             this.textBox31.ForeColor = System.Drawing.Color.White;
             this.textBox31.Location = new System.Drawing.Point(47, 8);
             this.textBox31.MaxLength = 28;
-            this.textBox31.Multiline = true;
             this.textBox31.Name = "textBox31";
-            this.textBox31.Size = new System.Drawing.Size(324, 31);
+            this.textBox31.Size = new System.Drawing.Size(324, 28);
             this.textBox31.TabIndex = 1;
             this.textBox31.TabStop = false;
             this.textBox31.Text = "Bosnia and Herzegovina";
@@ -3152,56 +2969,56 @@ namespace RankingApp
             // 
             // locationPanel22
             // 
-            this.locationPanel22.Location = new System.Drawing.Point(467, 1041);
+            this.locationPanel22.Location = new System.Drawing.Point(467, 957);
             this.locationPanel22.Name = "locationPanel22";
             this.locationPanel22.Size = new System.Drawing.Size(10, 43);
             this.locationPanel22.TabIndex = 28;
             // 
             // locationPanel15
             // 
-            this.locationPanel15.Location = new System.Drawing.Point(467, 698);
+            this.locationPanel15.Location = new System.Drawing.Point(467, 642);
             this.locationPanel15.Name = "locationPanel15";
             this.locationPanel15.Size = new System.Drawing.Size(10, 43);
             this.locationPanel15.TabIndex = 21;
             // 
             // locationPanel14
             // 
-            this.locationPanel14.Location = new System.Drawing.Point(467, 649);
+            this.locationPanel14.Location = new System.Drawing.Point(467, 597);
             this.locationPanel14.Name = "locationPanel14";
             this.locationPanel14.Size = new System.Drawing.Size(10, 43);
             this.locationPanel14.TabIndex = 20;
             // 
             // locationPanel21
             // 
-            this.locationPanel21.Location = new System.Drawing.Point(467, 992);
+            this.locationPanel21.Location = new System.Drawing.Point(467, 912);
             this.locationPanel21.Name = "locationPanel21";
             this.locationPanel21.Size = new System.Drawing.Size(10, 43);
             this.locationPanel21.TabIndex = 27;
             // 
             // locationPanel13
             // 
-            this.locationPanel13.Location = new System.Drawing.Point(467, 600);
+            this.locationPanel13.Location = new System.Drawing.Point(467, 552);
             this.locationPanel13.Name = "locationPanel13";
             this.locationPanel13.Size = new System.Drawing.Size(10, 43);
             this.locationPanel13.TabIndex = 19;
             // 
             // locationPanel12
             // 
-            this.locationPanel12.Location = new System.Drawing.Point(467, 551);
+            this.locationPanel12.Location = new System.Drawing.Point(467, 507);
             this.locationPanel12.Name = "locationPanel12";
             this.locationPanel12.Size = new System.Drawing.Size(10, 43);
             this.locationPanel12.TabIndex = 18;
             // 
             // locationPanel20
             // 
-            this.locationPanel20.Location = new System.Drawing.Point(467, 943);
+            this.locationPanel20.Location = new System.Drawing.Point(467, 867);
             this.locationPanel20.Name = "locationPanel20";
             this.locationPanel20.Size = new System.Drawing.Size(10, 43);
             this.locationPanel20.TabIndex = 26;
             // 
             // locationPanel11
             // 
-            this.locationPanel11.Location = new System.Drawing.Point(467, 502);
+            this.locationPanel11.Location = new System.Drawing.Point(467, 462);
             this.locationPanel11.Name = "locationPanel11";
             this.locationPanel11.Size = new System.Drawing.Size(10, 43);
             this.locationPanel11.TabIndex = 17;
@@ -3213,7 +3030,7 @@ namespace RankingApp
             this.panel15.Controls.Add(this.textBox30);
             this.panel15.Controls.Add(this.textBox29);
             this.panel15.Controls.Add(this.pictureBox15);
-            this.panel15.Location = new System.Drawing.Point(11, 698);
+            this.panel15.Location = new System.Drawing.Point(11, 642);
             this.panel15.Name = "panel15";
             this.panel15.Size = new System.Drawing.Size(455, 43);
             this.panel15.TabIndex = 39;
@@ -3251,9 +3068,8 @@ namespace RankingApp
             this.textBox29.ForeColor = System.Drawing.Color.White;
             this.textBox29.Location = new System.Drawing.Point(47, 8);
             this.textBox29.MaxLength = 28;
-            this.textBox29.Multiline = true;
             this.textBox29.Name = "textBox29";
-            this.textBox29.Size = new System.Drawing.Size(324, 31);
+            this.textBox29.Size = new System.Drawing.Size(324, 28);
             this.textBox29.TabIndex = 1;
             this.textBox29.TabStop = false;
             this.textBox29.Text = "Italy";
@@ -3271,7 +3087,7 @@ namespace RankingApp
             // 
             // locationPanel19
             // 
-            this.locationPanel19.Location = new System.Drawing.Point(467, 894);
+            this.locationPanel19.Location = new System.Drawing.Point(467, 822);
             this.locationPanel19.Name = "locationPanel19";
             this.locationPanel19.Size = new System.Drawing.Size(10, 43);
             this.locationPanel19.TabIndex = 25;
@@ -3283,7 +3099,7 @@ namespace RankingApp
             this.panel14.Controls.Add(this.textBox28);
             this.panel14.Controls.Add(this.textBox27);
             this.panel14.Controls.Add(this.pictureBox14);
-            this.panel14.Location = new System.Drawing.Point(11, 649);
+            this.panel14.Location = new System.Drawing.Point(11, 597);
             this.panel14.Name = "panel14";
             this.panel14.Size = new System.Drawing.Size(455, 43);
             this.panel14.TabIndex = 38;
@@ -3321,9 +3137,8 @@ namespace RankingApp
             this.textBox27.ForeColor = System.Drawing.Color.White;
             this.textBox27.Location = new System.Drawing.Point(47, 8);
             this.textBox27.MaxLength = 28;
-            this.textBox27.Multiline = true;
             this.textBox27.Name = "textBox27";
-            this.textBox27.Size = new System.Drawing.Size(324, 31);
+            this.textBox27.Size = new System.Drawing.Size(324, 28);
             this.textBox27.TabIndex = 1;
             this.textBox27.TabStop = false;
             this.textBox27.Text = "Italy";
@@ -3346,7 +3161,7 @@ namespace RankingApp
             this.panel13.Controls.Add(this.textBox26);
             this.panel13.Controls.Add(this.textBox25);
             this.panel13.Controls.Add(this.pictureBox13);
-            this.panel13.Location = new System.Drawing.Point(11, 600);
+            this.panel13.Location = new System.Drawing.Point(11, 552);
             this.panel13.Name = "panel13";
             this.panel13.Size = new System.Drawing.Size(455, 43);
             this.panel13.TabIndex = 37;
@@ -3384,9 +3199,8 @@ namespace RankingApp
             this.textBox25.ForeColor = System.Drawing.Color.White;
             this.textBox25.Location = new System.Drawing.Point(47, 8);
             this.textBox25.MaxLength = 28;
-            this.textBox25.Multiline = true;
             this.textBox25.Name = "textBox25";
-            this.textBox25.Size = new System.Drawing.Size(324, 31);
+            this.textBox25.Size = new System.Drawing.Size(324, 28);
             this.textBox25.TabIndex = 1;
             this.textBox25.TabStop = false;
             this.textBox25.Text = "Italy";
@@ -3404,7 +3218,7 @@ namespace RankingApp
             // 
             // locationPanel18
             // 
-            this.locationPanel18.Location = new System.Drawing.Point(467, 845);
+            this.locationPanel18.Location = new System.Drawing.Point(467, 777);
             this.locationPanel18.Name = "locationPanel18";
             this.locationPanel18.Size = new System.Drawing.Size(10, 43);
             this.locationPanel18.TabIndex = 24;
@@ -3416,7 +3230,7 @@ namespace RankingApp
             this.panel12.Controls.Add(this.textBox24);
             this.panel12.Controls.Add(this.textBox23);
             this.panel12.Controls.Add(this.pictureBox12);
-            this.panel12.Location = new System.Drawing.Point(11, 551);
+            this.panel12.Location = new System.Drawing.Point(11, 507);
             this.panel12.Name = "panel12";
             this.panel12.Size = new System.Drawing.Size(455, 43);
             this.panel12.TabIndex = 36;
@@ -3454,9 +3268,8 @@ namespace RankingApp
             this.textBox23.ForeColor = System.Drawing.Color.White;
             this.textBox23.Location = new System.Drawing.Point(47, 8);
             this.textBox23.MaxLength = 28;
-            this.textBox23.Multiline = true;
             this.textBox23.Name = "textBox23";
-            this.textBox23.Size = new System.Drawing.Size(324, 31);
+            this.textBox23.Size = new System.Drawing.Size(324, 28);
             this.textBox23.TabIndex = 1;
             this.textBox23.TabStop = false;
             this.textBox23.Text = "Italy";
@@ -3479,7 +3292,7 @@ namespace RankingApp
             this.panel11.Controls.Add(this.textBox22);
             this.panel11.Controls.Add(this.textBox21);
             this.panel11.Controls.Add(this.pictureBox11);
-            this.panel11.Location = new System.Drawing.Point(11, 502);
+            this.panel11.Location = new System.Drawing.Point(11, 462);
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(455, 43);
             this.panel11.TabIndex = 35;
@@ -3517,9 +3330,8 @@ namespace RankingApp
             this.textBox21.ForeColor = System.Drawing.Color.White;
             this.textBox21.Location = new System.Drawing.Point(47, 8);
             this.textBox21.MaxLength = 28;
-            this.textBox21.Multiline = true;
             this.textBox21.Name = "textBox21";
-            this.textBox21.Size = new System.Drawing.Size(324, 31);
+            this.textBox21.Size = new System.Drawing.Size(324, 28);
             this.textBox21.TabIndex = 1;
             this.textBox21.TabStop = false;
             this.textBox21.Text = "Italy";
@@ -3537,35 +3349,35 @@ namespace RankingApp
             // 
             // locationPanel17
             // 
-            this.locationPanel17.Location = new System.Drawing.Point(467, 796);
+            this.locationPanel17.Location = new System.Drawing.Point(467, 732);
             this.locationPanel17.Name = "locationPanel17";
             this.locationPanel17.Size = new System.Drawing.Size(10, 43);
             this.locationPanel17.TabIndex = 23;
             // 
             // locationPanel10
             // 
-            this.locationPanel10.Location = new System.Drawing.Point(467, 453);
+            this.locationPanel10.Location = new System.Drawing.Point(467, 417);
             this.locationPanel10.Name = "locationPanel10";
             this.locationPanel10.Size = new System.Drawing.Size(10, 43);
             this.locationPanel10.TabIndex = 16;
             // 
             // locationPanel9
             // 
-            this.locationPanel9.Location = new System.Drawing.Point(467, 404);
+            this.locationPanel9.Location = new System.Drawing.Point(467, 372);
             this.locationPanel9.Name = "locationPanel9";
             this.locationPanel9.Size = new System.Drawing.Size(10, 43);
             this.locationPanel9.TabIndex = 15;
             // 
             // locationPanel16
             // 
-            this.locationPanel16.Location = new System.Drawing.Point(467, 747);
+            this.locationPanel16.Location = new System.Drawing.Point(467, 687);
             this.locationPanel16.Name = "locationPanel16";
             this.locationPanel16.Size = new System.Drawing.Size(10, 43);
             this.locationPanel16.TabIndex = 22;
             // 
             // locationPanel8
             // 
-            this.locationPanel8.Location = new System.Drawing.Point(467, 355);
+            this.locationPanel8.Location = new System.Drawing.Point(467, 327);
             this.locationPanel8.Name = "locationPanel8";
             this.locationPanel8.Size = new System.Drawing.Size(10, 43);
             this.locationPanel8.TabIndex = 14;
@@ -3577,7 +3389,7 @@ namespace RankingApp
             this.panel10.Controls.Add(this.textBox20);
             this.panel10.Controls.Add(this.textBox19);
             this.panel10.Controls.Add(this.pictureBox10);
-            this.panel10.Location = new System.Drawing.Point(11, 453);
+            this.panel10.Location = new System.Drawing.Point(11, 417);
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(455, 43);
             this.panel10.TabIndex = 10;
@@ -3615,9 +3427,8 @@ namespace RankingApp
             this.textBox19.ForeColor = System.Drawing.Color.White;
             this.textBox19.Location = new System.Drawing.Point(47, 8);
             this.textBox19.MaxLength = 28;
-            this.textBox19.Multiline = true;
             this.textBox19.Name = "textBox19";
-            this.textBox19.Size = new System.Drawing.Size(324, 31);
+            this.textBox19.Size = new System.Drawing.Size(324, 28);
             this.textBox19.TabIndex = 1;
             this.textBox19.TabStop = false;
             this.textBox19.Text = "Italy";
@@ -3640,7 +3451,7 @@ namespace RankingApp
             this.panel9.Controls.Add(this.textBox18);
             this.panel9.Controls.Add(this.textBox17);
             this.panel9.Controls.Add(this.pictureBox9);
-            this.panel9.Location = new System.Drawing.Point(11, 404);
+            this.panel9.Location = new System.Drawing.Point(11, 372);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(455, 43);
             this.panel9.TabIndex = 9;
@@ -3678,9 +3489,8 @@ namespace RankingApp
             this.textBox17.ForeColor = System.Drawing.Color.White;
             this.textBox17.Location = new System.Drawing.Point(47, 8);
             this.textBox17.MaxLength = 28;
-            this.textBox17.Multiline = true;
             this.textBox17.Name = "textBox17";
-            this.textBox17.Size = new System.Drawing.Size(324, 31);
+            this.textBox17.Size = new System.Drawing.Size(324, 28);
             this.textBox17.TabIndex = 1;
             this.textBox17.TabStop = false;
             this.textBox17.Text = "Egypt";
@@ -3703,7 +3513,7 @@ namespace RankingApp
             this.panel8.Controls.Add(this.textBox16);
             this.panel8.Controls.Add(this.textBox15);
             this.panel8.Controls.Add(this.pictureBox8);
-            this.panel8.Location = new System.Drawing.Point(11, 355);
+            this.panel8.Location = new System.Drawing.Point(11, 327);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(455, 43);
             this.panel8.TabIndex = 8;
@@ -3741,9 +3551,8 @@ namespace RankingApp
             this.textBox15.ForeColor = System.Drawing.Color.White;
             this.textBox15.Location = new System.Drawing.Point(47, 8);
             this.textBox15.MaxLength = 28;
-            this.textBox15.Multiline = true;
             this.textBox15.Name = "textBox15";
-            this.textBox15.Size = new System.Drawing.Size(324, 31);
+            this.textBox15.Size = new System.Drawing.Size(324, 28);
             this.textBox15.TabIndex = 1;
             this.textBox15.TabStop = false;
             this.textBox15.Text = "France";
@@ -3761,7 +3570,7 @@ namespace RankingApp
             // 
             // locationPanel7
             // 
-            this.locationPanel7.Location = new System.Drawing.Point(467, 306);
+            this.locationPanel7.Location = new System.Drawing.Point(467, 282);
             this.locationPanel7.Name = "locationPanel7";
             this.locationPanel7.Size = new System.Drawing.Size(10, 43);
             this.locationPanel7.TabIndex = 13;
@@ -3773,7 +3582,7 @@ namespace RankingApp
             this.panel7.Controls.Add(this.textBox14);
             this.panel7.Controls.Add(this.textBox13);
             this.panel7.Controls.Add(this.pictureBox7);
-            this.panel7.Location = new System.Drawing.Point(11, 306);
+            this.panel7.Location = new System.Drawing.Point(11, 282);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(455, 43);
             this.panel7.TabIndex = 7;
@@ -3811,9 +3620,8 @@ namespace RankingApp
             this.textBox13.ForeColor = System.Drawing.Color.White;
             this.textBox13.Location = new System.Drawing.Point(47, 8);
             this.textBox13.MaxLength = 28;
-            this.textBox13.Multiline = true;
             this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(324, 31);
+            this.textBox13.Size = new System.Drawing.Size(324, 28);
             this.textBox13.TabIndex = 1;
             this.textBox13.TabStop = false;
             this.textBox13.Text = "Canada";
@@ -3831,7 +3639,7 @@ namespace RankingApp
             // 
             // locationPanel6
             // 
-            this.locationPanel6.Location = new System.Drawing.Point(467, 257);
+            this.locationPanel6.Location = new System.Drawing.Point(467, 237);
             this.locationPanel6.Name = "locationPanel6";
             this.locationPanel6.Size = new System.Drawing.Size(10, 43);
             this.locationPanel6.TabIndex = 12;
@@ -3843,7 +3651,7 @@ namespace RankingApp
             this.panel6.Controls.Add(this.textBox12);
             this.panel6.Controls.Add(this.textBox11);
             this.panel6.Controls.Add(this.pictureBox6);
-            this.panel6.Location = new System.Drawing.Point(11, 257);
+            this.panel6.Location = new System.Drawing.Point(11, 237);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(455, 43);
             this.panel6.TabIndex = 6;
@@ -3881,9 +3689,8 @@ namespace RankingApp
             this.textBox11.ForeColor = System.Drawing.Color.White;
             this.textBox11.Location = new System.Drawing.Point(47, 8);
             this.textBox11.MaxLength = 28;
-            this.textBox11.Multiline = true;
             this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(324, 31);
+            this.textBox11.Size = new System.Drawing.Size(324, 28);
             this.textBox11.TabIndex = 1;
             this.textBox11.TabStop = false;
             this.textBox11.Text = "Belgium";
@@ -3901,28 +3708,28 @@ namespace RankingApp
             // 
             // locationPanel5
             // 
-            this.locationPanel5.Location = new System.Drawing.Point(467, 208);
+            this.locationPanel5.Location = new System.Drawing.Point(467, 192);
             this.locationPanel5.Name = "locationPanel5";
             this.locationPanel5.Size = new System.Drawing.Size(10, 43);
             this.locationPanel5.TabIndex = 11;
             // 
             // locationPanel4
             // 
-            this.locationPanel4.Location = new System.Drawing.Point(467, 159);
+            this.locationPanel4.Location = new System.Drawing.Point(467, 147);
             this.locationPanel4.Name = "locationPanel4";
             this.locationPanel4.Size = new System.Drawing.Size(10, 43);
             this.locationPanel4.TabIndex = 10;
             // 
             // locationPanel3
             // 
-            this.locationPanel3.Location = new System.Drawing.Point(467, 110);
+            this.locationPanel3.Location = new System.Drawing.Point(467, 102);
             this.locationPanel3.Name = "locationPanel3";
             this.locationPanel3.Size = new System.Drawing.Size(10, 43);
             this.locationPanel3.TabIndex = 9;
             // 
             // locationPanel2
             // 
-            this.locationPanel2.Location = new System.Drawing.Point(467, 61);
+            this.locationPanel2.Location = new System.Drawing.Point(467, 57);
             this.locationPanel2.Name = "locationPanel2";
             this.locationPanel2.Size = new System.Drawing.Size(10, 43);
             this.locationPanel2.TabIndex = 8;
@@ -3934,7 +3741,7 @@ namespace RankingApp
             this.panel5.Controls.Add(this.textBox10);
             this.panel5.Controls.Add(this.textBox9);
             this.panel5.Controls.Add(this.pictureBox5);
-            this.panel5.Location = new System.Drawing.Point(11, 208);
+            this.panel5.Location = new System.Drawing.Point(11, 192);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(455, 43);
             this.panel5.TabIndex = 5;
@@ -3972,9 +3779,8 @@ namespace RankingApp
             this.textBox9.ForeColor = System.Drawing.Color.White;
             this.textBox9.Location = new System.Drawing.Point(47, 8);
             this.textBox9.MaxLength = 28;
-            this.textBox9.Multiline = true;
             this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(324, 31);
+            this.textBox9.Size = new System.Drawing.Size(324, 28);
             this.textBox9.TabIndex = 1;
             this.textBox9.TabStop = false;
             this.textBox9.Text = "Denmark";
@@ -4004,7 +3810,7 @@ namespace RankingApp
             this.panel4.Controls.Add(this.textBox8);
             this.panel4.Controls.Add(this.textBox7);
             this.panel4.Controls.Add(this.pictureBox4);
-            this.panel4.Location = new System.Drawing.Point(11, 159);
+            this.panel4.Location = new System.Drawing.Point(11, 147);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(455, 43);
             this.panel4.TabIndex = 4;
@@ -4042,9 +3848,8 @@ namespace RankingApp
             this.textBox7.ForeColor = System.Drawing.Color.White;
             this.textBox7.Location = new System.Drawing.Point(47, 8);
             this.textBox7.MaxLength = 28;
-            this.textBox7.Multiline = true;
             this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(324, 31);
+            this.textBox7.Size = new System.Drawing.Size(324, 28);
             this.textBox7.TabIndex = 1;
             this.textBox7.TabStop = false;
             this.textBox7.Text = "Bahrain";
@@ -4067,7 +3872,7 @@ namespace RankingApp
             this.panel3.Controls.Add(this.textBox6);
             this.panel3.Controls.Add(this.textBox5);
             this.panel3.Controls.Add(this.pictureBox3);
-            this.panel3.Location = new System.Drawing.Point(11, 110);
+            this.panel3.Location = new System.Drawing.Point(11, 102);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(455, 43);
             this.panel3.TabIndex = 3;
@@ -4105,9 +3910,8 @@ namespace RankingApp
             this.textBox5.ForeColor = System.Drawing.Color.White;
             this.textBox5.Location = new System.Drawing.Point(47, 8);
             this.textBox5.MaxLength = 28;
-            this.textBox5.Multiline = true;
             this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(324, 31);
+            this.textBox5.Size = new System.Drawing.Size(324, 28);
             this.textBox5.TabIndex = 1;
             this.textBox5.TabStop = false;
             this.textBox5.Text = "Armenia";
@@ -4130,7 +3934,7 @@ namespace RankingApp
             this.panel2.Controls.Add(this.textBox4);
             this.panel2.Controls.Add(this.textBox3);
             this.panel2.Controls.Add(this.pictureBox2);
-            this.panel2.Location = new System.Drawing.Point(11, 61);
+            this.panel2.Location = new System.Drawing.Point(11, 57);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(455, 43);
             this.panel2.TabIndex = 2;
@@ -4168,9 +3972,8 @@ namespace RankingApp
             this.textBox3.ForeColor = System.Drawing.Color.White;
             this.textBox3.Location = new System.Drawing.Point(47, 8);
             this.textBox3.MaxLength = 28;
-            this.textBox3.Multiline = true;
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(324, 31);
+            this.textBox3.Size = new System.Drawing.Size(324, 28);
             this.textBox3.TabIndex = 1;
             this.textBox3.TabStop = false;
             this.textBox3.Text = "Åland Islands";
@@ -4231,9 +4034,8 @@ namespace RankingApp
             this.textBox1.ForeColor = System.Drawing.Color.White;
             this.textBox1.Location = new System.Drawing.Point(47, 8);
             this.textBox1.MaxLength = 28;
-            this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(324, 31);
+            this.textBox1.Size = new System.Drawing.Size(324, 28);
             this.textBox1.TabIndex = 1;
             this.textBox1.TabStop = false;
             this.textBox1.Text = "Bosnia and Herzegovina";
@@ -4253,7 +4055,7 @@ namespace RankingApp
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.LightGray;
+            this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(22, 22);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(20, 24);
@@ -4265,8 +4067,8 @@ namespace RankingApp
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.LightGray;
-            this.label2.Location = new System.Drawing.Point(22, 71);
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(22, 67);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(20, 24);
             this.label2.TabIndex = 3;
@@ -4277,8 +4079,8 @@ namespace RankingApp
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.LightGray;
-            this.label3.Location = new System.Drawing.Point(22, 120);
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(22, 112);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(20, 24);
             this.label3.TabIndex = 4;
@@ -4289,8 +4091,8 @@ namespace RankingApp
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.LightGray;
-            this.label4.Location = new System.Drawing.Point(22, 169);
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(22, 157);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(20, 24);
             this.label4.TabIndex = 5;
@@ -4301,8 +4103,8 @@ namespace RankingApp
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.LightGray;
-            this.label5.Location = new System.Drawing.Point(22, 218);
+            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.Location = new System.Drawing.Point(22, 202);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(20, 24);
             this.label5.TabIndex = 6;
@@ -4313,8 +4115,8 @@ namespace RankingApp
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.LightGray;
-            this.label6.Location = new System.Drawing.Point(22, 267);
+            this.label6.ForeColor = System.Drawing.Color.White;
+            this.label6.Location = new System.Drawing.Point(22, 247);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(20, 24);
             this.label6.TabIndex = 8;
@@ -4325,8 +4127,8 @@ namespace RankingApp
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.LightGray;
-            this.label7.Location = new System.Drawing.Point(22, 316);
+            this.label7.ForeColor = System.Drawing.Color.White;
+            this.label7.Location = new System.Drawing.Point(22, 292);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(20, 24);
             this.label7.TabIndex = 9;
@@ -4337,8 +4139,8 @@ namespace RankingApp
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.LightGray;
-            this.label8.Location = new System.Drawing.Point(22, 365);
+            this.label8.ForeColor = System.Drawing.Color.White;
+            this.label8.Location = new System.Drawing.Point(22, 337);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(20, 24);
             this.label8.TabIndex = 10;
@@ -4349,8 +4151,8 @@ namespace RankingApp
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.LightGray;
-            this.label9.Location = new System.Drawing.Point(22, 414);
+            this.label9.ForeColor = System.Drawing.Color.White;
+            this.label9.Location = new System.Drawing.Point(22, 382);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(20, 24);
             this.label9.TabIndex = 11;
@@ -4361,8 +4163,8 @@ namespace RankingApp
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.Color.LightGray;
-            this.label10.Location = new System.Drawing.Point(12, 463);
+            this.label10.ForeColor = System.Drawing.Color.White;
+            this.label10.Location = new System.Drawing.Point(12, 427);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(30, 24);
             this.label10.TabIndex = 12;
@@ -4374,7 +4176,7 @@ namespace RankingApp
             this.updatedLabel.AutoSize = true;
             this.updatedLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.updatedLabel.ForeColor = System.Drawing.Color.White;
-            this.updatedLabel.Location = new System.Drawing.Point(598, 7);
+            this.updatedLabel.Location = new System.Drawing.Point(611, 8);
             this.updatedLabel.Name = "updatedLabel";
             this.updatedLabel.Size = new System.Drawing.Size(171, 16);
             this.updatedLabel.TabIndex = 24;
@@ -4382,126 +4184,26 @@ namespace RankingApp
             // 
             // changeConfigPathButton
             // 
-            this.changeConfigPathButton.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.changeConfigPathButton.BackColor = System.Drawing.Color.LightGray;
             this.changeConfigPathButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.changeConfigPathButton.FlatAppearance.BorderSize = 0;
             this.changeConfigPathButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.changeConfigPathButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.changeConfigPathButton.Location = new System.Drawing.Point(633, 842);
+            this.changeConfigPathButton.Location = new System.Drawing.Point(630, 704);
             this.changeConfigPathButton.Name = "changeConfigPathButton";
-            this.changeConfigPathButton.Size = new System.Drawing.Size(137, 26);
+            this.changeConfigPathButton.Size = new System.Drawing.Size(136, 26);
             this.changeConfigPathButton.TabIndex = 25;
             this.changeConfigPathButton.TabStop = false;
             this.changeConfigPathButton.Text = "Change Config Path";
             this.changeConfigPathButton.UseVisualStyleBackColor = false;
             this.changeConfigPathButton.Click += new System.EventHandler(this.changeConfigPathButton_Click);
             // 
-            // changePicture10
-            // 
-            this.changePicture10.Image = global::RankingApp.Properties.Resources.arrow_up;
-            this.changePicture10.Location = new System.Drawing.Point(525, 457);
-            this.changePicture10.Name = "changePicture10";
-            this.changePicture10.Size = new System.Drawing.Size(37, 35);
-            this.changePicture10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.changePicture10.TabIndex = 21;
-            this.changePicture10.TabStop = false;
-            // 
-            // changePicture9
-            // 
-            this.changePicture9.Image = global::RankingApp.Properties.Resources.new_entry_image;
-            this.changePicture9.Location = new System.Drawing.Point(525, 408);
-            this.changePicture9.Name = "changePicture9";
-            this.changePicture9.Size = new System.Drawing.Size(37, 35);
-            this.changePicture9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.changePicture9.TabIndex = 20;
-            this.changePicture9.TabStop = false;
-            // 
-            // changePicture8
-            // 
-            this.changePicture8.Image = global::RankingApp.Properties.Resources.minus_symbol;
-            this.changePicture8.Location = new System.Drawing.Point(525, 359);
-            this.changePicture8.Name = "changePicture8";
-            this.changePicture8.Size = new System.Drawing.Size(37, 35);
-            this.changePicture8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.changePicture8.TabIndex = 19;
-            this.changePicture8.TabStop = false;
-            // 
-            // changePicture7
-            // 
-            this.changePicture7.Image = global::RankingApp.Properties.Resources.arrow_down;
-            this.changePicture7.Location = new System.Drawing.Point(525, 310);
-            this.changePicture7.Name = "changePicture7";
-            this.changePicture7.Size = new System.Drawing.Size(37, 35);
-            this.changePicture7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.changePicture7.TabIndex = 18;
-            this.changePicture7.TabStop = false;
-            // 
-            // changePicture6
-            // 
-            this.changePicture6.Image = global::RankingApp.Properties.Resources.arrow_down;
-            this.changePicture6.Location = new System.Drawing.Point(525, 261);
-            this.changePicture6.Name = "changePicture6";
-            this.changePicture6.Size = new System.Drawing.Size(37, 35);
-            this.changePicture6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.changePicture6.TabIndex = 17;
-            this.changePicture6.TabStop = false;
-            // 
-            // changePicture5
-            // 
-            this.changePicture5.Image = global::RankingApp.Properties.Resources.minus_symbol;
-            this.changePicture5.Location = new System.Drawing.Point(525, 212);
-            this.changePicture5.Name = "changePicture5";
-            this.changePicture5.Size = new System.Drawing.Size(37, 35);
-            this.changePicture5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.changePicture5.TabIndex = 16;
-            this.changePicture5.TabStop = false;
-            // 
-            // changePicture4
-            // 
-            this.changePicture4.Image = global::RankingApp.Properties.Resources.arrow_up;
-            this.changePicture4.Location = new System.Drawing.Point(525, 163);
-            this.changePicture4.Name = "changePicture4";
-            this.changePicture4.Size = new System.Drawing.Size(37, 35);
-            this.changePicture4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.changePicture4.TabIndex = 15;
-            this.changePicture4.TabStop = false;
-            // 
-            // changePicture3
-            // 
-            this.changePicture3.Image = global::RankingApp.Properties.Resources.arrow_up;
-            this.changePicture3.Location = new System.Drawing.Point(525, 114);
-            this.changePicture3.Name = "changePicture3";
-            this.changePicture3.Size = new System.Drawing.Size(37, 35);
-            this.changePicture3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.changePicture3.TabIndex = 14;
-            this.changePicture3.TabStop = false;
-            // 
-            // changePicture2
-            // 
-            this.changePicture2.Image = global::RankingApp.Properties.Resources.arrow_down;
-            this.changePicture2.Location = new System.Drawing.Point(525, 65);
-            this.changePicture2.Name = "changePicture2";
-            this.changePicture2.Size = new System.Drawing.Size(37, 35);
-            this.changePicture2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.changePicture2.TabIndex = 13;
-            this.changePicture2.TabStop = false;
-            // 
-            // changePicture1
-            // 
-            this.changePicture1.Image = global::RankingApp.Properties.Resources.arrow_up;
-            this.changePicture1.Location = new System.Drawing.Point(525, 16);
-            this.changePicture1.Name = "changePicture1";
-            this.changePicture1.Size = new System.Drawing.Size(37, 35);
-            this.changePicture1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.changePicture1.TabIndex = 3;
-            this.changePicture1.TabStop = false;
-            // 
             // teamNameLabel
             // 
             this.teamNameLabel.AutoSize = true;
             this.teamNameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.teamNameLabel.ForeColor = System.Drawing.Color.LightGray;
-            this.teamNameLabel.Location = new System.Drawing.Point(97, 47);
+            this.teamNameLabel.ForeColor = System.Drawing.Color.White;
+            this.teamNameLabel.Location = new System.Drawing.Point(80, 32);
             this.teamNameLabel.Name = "teamNameLabel";
             this.teamNameLabel.Size = new System.Drawing.Size(115, 24);
             this.teamNameLabel.TabIndex = 28;
@@ -4511,8 +4213,8 @@ namespace RankingApp
             // 
             this.pointsLabel.AutoSize = true;
             this.pointsLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pointsLabel.ForeColor = System.Drawing.Color.LightGray;
-            this.pointsLabel.Location = new System.Drawing.Point(483, 47);
+            this.pointsLabel.ForeColor = System.Drawing.Color.White;
+            this.pointsLabel.Location = new System.Drawing.Point(466, 32);
             this.pointsLabel.Name = "pointsLabel";
             this.pointsLabel.Size = new System.Drawing.Size(61, 24);
             this.pointsLabel.TabIndex = 29;
@@ -4521,76 +4223,6 @@ namespace RankingApp
             // containerPanel
             // 
             this.containerPanel.AutoScroll = true;
-            this.containerPanel.Controls.Add(this.positionChangeLabel50);
-            this.containerPanel.Controls.Add(this.positionChangeLabel49);
-            this.containerPanel.Controls.Add(this.positionChangeLabel48);
-            this.containerPanel.Controls.Add(this.positionChangeLabel47);
-            this.containerPanel.Controls.Add(this.positionChangeLabel46);
-            this.containerPanel.Controls.Add(this.positionChangeLabel45);
-            this.containerPanel.Controls.Add(this.positionChangeLabel44);
-            this.containerPanel.Controls.Add(this.positionChangeLabel43);
-            this.containerPanel.Controls.Add(this.positionChangeLabel42);
-            this.containerPanel.Controls.Add(this.positionChangeLabel41);
-            this.containerPanel.Controls.Add(this.positionChangeLabel40);
-            this.containerPanel.Controls.Add(this.positionChangeLabel39);
-            this.containerPanel.Controls.Add(this.positionChangeLabel38);
-            this.containerPanel.Controls.Add(this.positionChangeLabel37);
-            this.containerPanel.Controls.Add(this.positionChangeLabel36);
-            this.containerPanel.Controls.Add(this.positionChangeLabel35);
-            this.containerPanel.Controls.Add(this.positionChangeLabel34);
-            this.containerPanel.Controls.Add(this.positionChangeLabel33);
-            this.containerPanel.Controls.Add(this.positionChangeLabel32);
-            this.containerPanel.Controls.Add(this.positionChangeLabel31);
-            this.containerPanel.Controls.Add(this.positionChangeLabel30);
-            this.containerPanel.Controls.Add(this.positionChangeLabel29);
-            this.containerPanel.Controls.Add(this.positionChangeLabel28);
-            this.containerPanel.Controls.Add(this.positionChangeLabel27);
-            this.containerPanel.Controls.Add(this.positionChangeLabel26);
-            this.containerPanel.Controls.Add(this.positionChangeLabel25);
-            this.containerPanel.Controls.Add(this.positionChangeLabel24);
-            this.containerPanel.Controls.Add(this.positionChangeLabel23);
-            this.containerPanel.Controls.Add(this.positionChangeLabel22);
-            this.containerPanel.Controls.Add(this.positionChangeLabel21);
-            this.containerPanel.Controls.Add(this.positionChangeLabel20);
-            this.containerPanel.Controls.Add(this.positionChangeLabel19);
-            this.containerPanel.Controls.Add(this.positionChangeLabel18);
-            this.containerPanel.Controls.Add(this.positionChangeLabel17);
-            this.containerPanel.Controls.Add(this.positionChangeLabel16);
-            this.containerPanel.Controls.Add(this.positionChangeLabel15);
-            this.containerPanel.Controls.Add(this.positionChangeLabel14);
-            this.containerPanel.Controls.Add(this.positionChangeLabel13);
-            this.containerPanel.Controls.Add(this.positionChangeLabel12);
-            this.containerPanel.Controls.Add(this.positionChangeLabel11);
-            this.containerPanel.Controls.Add(this.positionChangeLabel10);
-            this.containerPanel.Controls.Add(this.positionChangeLabel9);
-            this.containerPanel.Controls.Add(this.positionChangeLabel8);
-            this.containerPanel.Controls.Add(this.positionChangeLabel7);
-            this.containerPanel.Controls.Add(this.positionChangeLabel5);
-            this.containerPanel.Controls.Add(this.positionChangeLabel6);
-            this.containerPanel.Controls.Add(this.positionChangeLabel4);
-            this.containerPanel.Controls.Add(this.positionChangeLabel3);
-            this.containerPanel.Controls.Add(this.positionChangeLabel1);
-            this.containerPanel.Controls.Add(this.positionChangeLabel2);
-            this.containerPanel.Controls.Add(this.changePicture50);
-            this.containerPanel.Controls.Add(this.changePicture49);
-            this.containerPanel.Controls.Add(this.changePicture48);
-            this.containerPanel.Controls.Add(this.changePicture47);
-            this.containerPanel.Controls.Add(this.changePicture46);
-            this.containerPanel.Controls.Add(this.changePicture45);
-            this.containerPanel.Controls.Add(this.changePicture44);
-            this.containerPanel.Controls.Add(this.changePicture43);
-            this.containerPanel.Controls.Add(this.changePicture42);
-            this.containerPanel.Controls.Add(this.changePicture41);
-            this.containerPanel.Controls.Add(this.changePicture40);
-            this.containerPanel.Controls.Add(this.changePicture37);
-            this.containerPanel.Controls.Add(this.changePicture39);
-            this.containerPanel.Controls.Add(this.changePicture38);
-            this.containerPanel.Controls.Add(this.changePicture36);
-            this.containerPanel.Controls.Add(this.changePicture35);
-            this.containerPanel.Controls.Add(this.changePicture34);
-            this.containerPanel.Controls.Add(this.changePicture33);
-            this.containerPanel.Controls.Add(this.changePicture32);
-            this.containerPanel.Controls.Add(this.changePicture31);
             this.containerPanel.Controls.Add(this.label50);
             this.containerPanel.Controls.Add(this.label49);
             this.containerPanel.Controls.Add(this.label48);
@@ -4626,26 +4258,6 @@ namespace RankingApp
             this.containerPanel.Controls.Add(this.label23);
             this.containerPanel.Controls.Add(this.label24);
             this.containerPanel.Controls.Add(this.label25);
-            this.containerPanel.Controls.Add(this.changePicture30);
-            this.containerPanel.Controls.Add(this.changePicture29);
-            this.containerPanel.Controls.Add(this.changePicture28);
-            this.containerPanel.Controls.Add(this.changePicture27);
-            this.containerPanel.Controls.Add(this.changePicture26);
-            this.containerPanel.Controls.Add(this.changePicture25);
-            this.containerPanel.Controls.Add(this.changePicture24);
-            this.containerPanel.Controls.Add(this.changePicture23);
-            this.containerPanel.Controls.Add(this.changePicture22);
-            this.containerPanel.Controls.Add(this.changePicture21);
-            this.containerPanel.Controls.Add(this.changePicture20);
-            this.containerPanel.Controls.Add(this.changePicture19);
-            this.containerPanel.Controls.Add(this.changePicture16);
-            this.containerPanel.Controls.Add(this.changePicture18);
-            this.containerPanel.Controls.Add(this.changePicture17);
-            this.containerPanel.Controls.Add(this.changePicture15);
-            this.containerPanel.Controls.Add(this.changePicture14);
-            this.containerPanel.Controls.Add(this.changePicture13);
-            this.containerPanel.Controls.Add(this.changePicture12);
-            this.containerPanel.Controls.Add(this.changePicture11);
             this.containerPanel.Controls.Add(this.label15);
             this.containerPanel.Controls.Add(this.label14);
             this.containerPanel.Controls.Add(this.label13);
@@ -4656,783 +4268,23 @@ namespace RankingApp
             this.containerPanel.Controls.Add(this.label2);
             this.containerPanel.Controls.Add(this.label3);
             this.containerPanel.Controls.Add(this.label4);
-            this.containerPanel.Controls.Add(this.changePicture10);
             this.containerPanel.Controls.Add(this.label5);
-            this.containerPanel.Controls.Add(this.changePicture9);
             this.containerPanel.Controls.Add(this.label6);
-            this.containerPanel.Controls.Add(this.changePicture8);
             this.containerPanel.Controls.Add(this.label7);
-            this.containerPanel.Controls.Add(this.changePicture7);
             this.containerPanel.Controls.Add(this.label8);
-            this.containerPanel.Controls.Add(this.changePicture6);
             this.containerPanel.Controls.Add(this.label9);
-            this.containerPanel.Controls.Add(this.changePicture5);
             this.containerPanel.Controls.Add(this.label10);
-            this.containerPanel.Controls.Add(this.changePicture4);
-            this.containerPanel.Controls.Add(this.changePicture1);
-            this.containerPanel.Controls.Add(this.changePicture3);
-            this.containerPanel.Controls.Add(this.changePicture2);
-            this.containerPanel.Location = new System.Drawing.Point(39, 75);
+            this.containerPanel.Location = new System.Drawing.Point(22, 60);
             this.containerPanel.Name = "containerPanel";
-            this.containerPanel.Size = new System.Drawing.Size(730, 747);
+            this.containerPanel.Size = new System.Drawing.Size(556, 687);
             this.containerPanel.TabIndex = 30;
-            // 
-            // positionChangeLabel50
-            // 
-            this.positionChangeLabel50.AutoSize = true;
-            this.positionChangeLabel50.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.positionChangeLabel50.ForeColor = System.Drawing.Color.Red;
-            this.positionChangeLabel50.Location = new System.Drawing.Point(554, 2431);
-            this.positionChangeLabel50.Name = "positionChangeLabel50";
-            this.positionChangeLabel50.Size = new System.Drawing.Size(21, 13);
-            this.positionChangeLabel50.TabIndex = 151;
-            this.positionChangeLabel50.Text = "50";
-            // 
-            // positionChangeLabel49
-            // 
-            this.positionChangeLabel49.AutoSize = true;
-            this.positionChangeLabel49.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.positionChangeLabel49.ForeColor = System.Drawing.Color.Red;
-            this.positionChangeLabel49.Location = new System.Drawing.Point(554, 2382);
-            this.positionChangeLabel49.Name = "positionChangeLabel49";
-            this.positionChangeLabel49.Size = new System.Drawing.Size(21, 13);
-            this.positionChangeLabel49.TabIndex = 150;
-            this.positionChangeLabel49.Text = "50";
-            // 
-            // positionChangeLabel48
-            // 
-            this.positionChangeLabel48.AutoSize = true;
-            this.positionChangeLabel48.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.positionChangeLabel48.ForeColor = System.Drawing.Color.Red;
-            this.positionChangeLabel48.Location = new System.Drawing.Point(554, 2333);
-            this.positionChangeLabel48.Name = "positionChangeLabel48";
-            this.positionChangeLabel48.Size = new System.Drawing.Size(21, 13);
-            this.positionChangeLabel48.TabIndex = 149;
-            this.positionChangeLabel48.Text = "50";
-            // 
-            // positionChangeLabel47
-            // 
-            this.positionChangeLabel47.AutoSize = true;
-            this.positionChangeLabel47.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.positionChangeLabel47.ForeColor = System.Drawing.Color.Red;
-            this.positionChangeLabel47.Location = new System.Drawing.Point(554, 2284);
-            this.positionChangeLabel47.Name = "positionChangeLabel47";
-            this.positionChangeLabel47.Size = new System.Drawing.Size(21, 13);
-            this.positionChangeLabel47.TabIndex = 148;
-            this.positionChangeLabel47.Text = "50";
-            // 
-            // positionChangeLabel46
-            // 
-            this.positionChangeLabel46.AutoSize = true;
-            this.positionChangeLabel46.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.positionChangeLabel46.ForeColor = System.Drawing.Color.Red;
-            this.positionChangeLabel46.Location = new System.Drawing.Point(554, 2235);
-            this.positionChangeLabel46.Name = "positionChangeLabel46";
-            this.positionChangeLabel46.Size = new System.Drawing.Size(21, 13);
-            this.positionChangeLabel46.TabIndex = 147;
-            this.positionChangeLabel46.Text = "50";
-            // 
-            // positionChangeLabel45
-            // 
-            this.positionChangeLabel45.AutoSize = true;
-            this.positionChangeLabel45.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.positionChangeLabel45.ForeColor = System.Drawing.Color.Red;
-            this.positionChangeLabel45.Location = new System.Drawing.Point(554, 2186);
-            this.positionChangeLabel45.Name = "positionChangeLabel45";
-            this.positionChangeLabel45.Size = new System.Drawing.Size(21, 13);
-            this.positionChangeLabel45.TabIndex = 146;
-            this.positionChangeLabel45.Text = "50";
-            // 
-            // positionChangeLabel44
-            // 
-            this.positionChangeLabel44.AutoSize = true;
-            this.positionChangeLabel44.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.positionChangeLabel44.ForeColor = System.Drawing.Color.Red;
-            this.positionChangeLabel44.Location = new System.Drawing.Point(554, 2137);
-            this.positionChangeLabel44.Name = "positionChangeLabel44";
-            this.positionChangeLabel44.Size = new System.Drawing.Size(21, 13);
-            this.positionChangeLabel44.TabIndex = 145;
-            this.positionChangeLabel44.Text = "50";
-            // 
-            // positionChangeLabel43
-            // 
-            this.positionChangeLabel43.AutoSize = true;
-            this.positionChangeLabel43.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.positionChangeLabel43.ForeColor = System.Drawing.Color.Red;
-            this.positionChangeLabel43.Location = new System.Drawing.Point(554, 2088);
-            this.positionChangeLabel43.Name = "positionChangeLabel43";
-            this.positionChangeLabel43.Size = new System.Drawing.Size(21, 13);
-            this.positionChangeLabel43.TabIndex = 144;
-            this.positionChangeLabel43.Text = "50";
-            // 
-            // positionChangeLabel42
-            // 
-            this.positionChangeLabel42.AutoSize = true;
-            this.positionChangeLabel42.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.positionChangeLabel42.ForeColor = System.Drawing.Color.Red;
-            this.positionChangeLabel42.Location = new System.Drawing.Point(554, 2039);
-            this.positionChangeLabel42.Name = "positionChangeLabel42";
-            this.positionChangeLabel42.Size = new System.Drawing.Size(21, 13);
-            this.positionChangeLabel42.TabIndex = 143;
-            this.positionChangeLabel42.Text = "50";
-            // 
-            // positionChangeLabel41
-            // 
-            this.positionChangeLabel41.AutoSize = true;
-            this.positionChangeLabel41.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.positionChangeLabel41.ForeColor = System.Drawing.Color.Red;
-            this.positionChangeLabel41.Location = new System.Drawing.Point(554, 1990);
-            this.positionChangeLabel41.Name = "positionChangeLabel41";
-            this.positionChangeLabel41.Size = new System.Drawing.Size(21, 13);
-            this.positionChangeLabel41.TabIndex = 142;
-            this.positionChangeLabel41.Text = "50";
-            // 
-            // positionChangeLabel40
-            // 
-            this.positionChangeLabel40.AutoSize = true;
-            this.positionChangeLabel40.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.positionChangeLabel40.ForeColor = System.Drawing.Color.Red;
-            this.positionChangeLabel40.Location = new System.Drawing.Point(554, 1941);
-            this.positionChangeLabel40.Name = "positionChangeLabel40";
-            this.positionChangeLabel40.Size = new System.Drawing.Size(21, 13);
-            this.positionChangeLabel40.TabIndex = 141;
-            this.positionChangeLabel40.Text = "50";
-            // 
-            // positionChangeLabel39
-            // 
-            this.positionChangeLabel39.AutoSize = true;
-            this.positionChangeLabel39.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.positionChangeLabel39.ForeColor = System.Drawing.Color.Red;
-            this.positionChangeLabel39.Location = new System.Drawing.Point(554, 1892);
-            this.positionChangeLabel39.Name = "positionChangeLabel39";
-            this.positionChangeLabel39.Size = new System.Drawing.Size(21, 13);
-            this.positionChangeLabel39.TabIndex = 140;
-            this.positionChangeLabel39.Text = "50";
-            // 
-            // positionChangeLabel38
-            // 
-            this.positionChangeLabel38.AutoSize = true;
-            this.positionChangeLabel38.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.positionChangeLabel38.ForeColor = System.Drawing.Color.Red;
-            this.positionChangeLabel38.Location = new System.Drawing.Point(554, 1843);
-            this.positionChangeLabel38.Name = "positionChangeLabel38";
-            this.positionChangeLabel38.Size = new System.Drawing.Size(21, 13);
-            this.positionChangeLabel38.TabIndex = 139;
-            this.positionChangeLabel38.Text = "50";
-            // 
-            // positionChangeLabel37
-            // 
-            this.positionChangeLabel37.AutoSize = true;
-            this.positionChangeLabel37.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.positionChangeLabel37.ForeColor = System.Drawing.Color.Red;
-            this.positionChangeLabel37.Location = new System.Drawing.Point(554, 1794);
-            this.positionChangeLabel37.Name = "positionChangeLabel37";
-            this.positionChangeLabel37.Size = new System.Drawing.Size(21, 13);
-            this.positionChangeLabel37.TabIndex = 138;
-            this.positionChangeLabel37.Text = "50";
-            // 
-            // positionChangeLabel36
-            // 
-            this.positionChangeLabel36.AutoSize = true;
-            this.positionChangeLabel36.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.positionChangeLabel36.ForeColor = System.Drawing.Color.Red;
-            this.positionChangeLabel36.Location = new System.Drawing.Point(554, 1745);
-            this.positionChangeLabel36.Name = "positionChangeLabel36";
-            this.positionChangeLabel36.Size = new System.Drawing.Size(21, 13);
-            this.positionChangeLabel36.TabIndex = 137;
-            this.positionChangeLabel36.Text = "50";
-            // 
-            // positionChangeLabel35
-            // 
-            this.positionChangeLabel35.AutoSize = true;
-            this.positionChangeLabel35.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.positionChangeLabel35.ForeColor = System.Drawing.Color.Red;
-            this.positionChangeLabel35.Location = new System.Drawing.Point(554, 1696);
-            this.positionChangeLabel35.Name = "positionChangeLabel35";
-            this.positionChangeLabel35.Size = new System.Drawing.Size(21, 13);
-            this.positionChangeLabel35.TabIndex = 136;
-            this.positionChangeLabel35.Text = "50";
-            // 
-            // positionChangeLabel34
-            // 
-            this.positionChangeLabel34.AutoSize = true;
-            this.positionChangeLabel34.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.positionChangeLabel34.ForeColor = System.Drawing.Color.Red;
-            this.positionChangeLabel34.Location = new System.Drawing.Point(554, 1647);
-            this.positionChangeLabel34.Name = "positionChangeLabel34";
-            this.positionChangeLabel34.Size = new System.Drawing.Size(21, 13);
-            this.positionChangeLabel34.TabIndex = 135;
-            this.positionChangeLabel34.Text = "50";
-            // 
-            // positionChangeLabel33
-            // 
-            this.positionChangeLabel33.AutoSize = true;
-            this.positionChangeLabel33.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.positionChangeLabel33.ForeColor = System.Drawing.Color.Red;
-            this.positionChangeLabel33.Location = new System.Drawing.Point(554, 1598);
-            this.positionChangeLabel33.Name = "positionChangeLabel33";
-            this.positionChangeLabel33.Size = new System.Drawing.Size(21, 13);
-            this.positionChangeLabel33.TabIndex = 134;
-            this.positionChangeLabel33.Text = "50";
-            // 
-            // positionChangeLabel32
-            // 
-            this.positionChangeLabel32.AutoSize = true;
-            this.positionChangeLabel32.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.positionChangeLabel32.ForeColor = System.Drawing.Color.Red;
-            this.positionChangeLabel32.Location = new System.Drawing.Point(554, 1549);
-            this.positionChangeLabel32.Name = "positionChangeLabel32";
-            this.positionChangeLabel32.Size = new System.Drawing.Size(21, 13);
-            this.positionChangeLabel32.TabIndex = 133;
-            this.positionChangeLabel32.Text = "50";
-            // 
-            // positionChangeLabel31
-            // 
-            this.positionChangeLabel31.AutoSize = true;
-            this.positionChangeLabel31.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.positionChangeLabel31.ForeColor = System.Drawing.Color.Red;
-            this.positionChangeLabel31.Location = new System.Drawing.Point(554, 1500);
-            this.positionChangeLabel31.Name = "positionChangeLabel31";
-            this.positionChangeLabel31.Size = new System.Drawing.Size(21, 13);
-            this.positionChangeLabel31.TabIndex = 132;
-            this.positionChangeLabel31.Text = "50";
-            // 
-            // positionChangeLabel30
-            // 
-            this.positionChangeLabel30.AutoSize = true;
-            this.positionChangeLabel30.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.positionChangeLabel30.ForeColor = System.Drawing.Color.Red;
-            this.positionChangeLabel30.Location = new System.Drawing.Point(554, 1452);
-            this.positionChangeLabel30.Name = "positionChangeLabel30";
-            this.positionChangeLabel30.Size = new System.Drawing.Size(21, 13);
-            this.positionChangeLabel30.TabIndex = 131;
-            this.positionChangeLabel30.Text = "50";
-            // 
-            // positionChangeLabel29
-            // 
-            this.positionChangeLabel29.AutoSize = true;
-            this.positionChangeLabel29.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.positionChangeLabel29.ForeColor = System.Drawing.Color.Red;
-            this.positionChangeLabel29.Location = new System.Drawing.Point(554, 1402);
-            this.positionChangeLabel29.Name = "positionChangeLabel29";
-            this.positionChangeLabel29.Size = new System.Drawing.Size(21, 13);
-            this.positionChangeLabel29.TabIndex = 130;
-            this.positionChangeLabel29.Text = "50";
-            // 
-            // positionChangeLabel28
-            // 
-            this.positionChangeLabel28.AutoSize = true;
-            this.positionChangeLabel28.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.positionChangeLabel28.ForeColor = System.Drawing.Color.Red;
-            this.positionChangeLabel28.Location = new System.Drawing.Point(554, 1353);
-            this.positionChangeLabel28.Name = "positionChangeLabel28";
-            this.positionChangeLabel28.Size = new System.Drawing.Size(21, 13);
-            this.positionChangeLabel28.TabIndex = 129;
-            this.positionChangeLabel28.Text = "50";
-            // 
-            // positionChangeLabel27
-            // 
-            this.positionChangeLabel27.AutoSize = true;
-            this.positionChangeLabel27.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.positionChangeLabel27.ForeColor = System.Drawing.Color.Red;
-            this.positionChangeLabel27.Location = new System.Drawing.Point(554, 1305);
-            this.positionChangeLabel27.Name = "positionChangeLabel27";
-            this.positionChangeLabel27.Size = new System.Drawing.Size(21, 13);
-            this.positionChangeLabel27.TabIndex = 128;
-            this.positionChangeLabel27.Text = "50";
-            // 
-            // positionChangeLabel26
-            // 
-            this.positionChangeLabel26.AutoSize = true;
-            this.positionChangeLabel26.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.positionChangeLabel26.ForeColor = System.Drawing.Color.Red;
-            this.positionChangeLabel26.Location = new System.Drawing.Point(554, 1255);
-            this.positionChangeLabel26.Name = "positionChangeLabel26";
-            this.positionChangeLabel26.Size = new System.Drawing.Size(21, 13);
-            this.positionChangeLabel26.TabIndex = 127;
-            this.positionChangeLabel26.Text = "50";
-            // 
-            // positionChangeLabel25
-            // 
-            this.positionChangeLabel25.AutoSize = true;
-            this.positionChangeLabel25.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.positionChangeLabel25.ForeColor = System.Drawing.Color.Red;
-            this.positionChangeLabel25.Location = new System.Drawing.Point(554, 1206);
-            this.positionChangeLabel25.Name = "positionChangeLabel25";
-            this.positionChangeLabel25.Size = new System.Drawing.Size(21, 13);
-            this.positionChangeLabel25.TabIndex = 126;
-            this.positionChangeLabel25.Text = "50";
-            // 
-            // positionChangeLabel24
-            // 
-            this.positionChangeLabel24.AutoSize = true;
-            this.positionChangeLabel24.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.positionChangeLabel24.ForeColor = System.Drawing.Color.Red;
-            this.positionChangeLabel24.Location = new System.Drawing.Point(554, 1157);
-            this.positionChangeLabel24.Name = "positionChangeLabel24";
-            this.positionChangeLabel24.Size = new System.Drawing.Size(21, 13);
-            this.positionChangeLabel24.TabIndex = 125;
-            this.positionChangeLabel24.Text = "50";
-            // 
-            // positionChangeLabel23
-            // 
-            this.positionChangeLabel23.AutoSize = true;
-            this.positionChangeLabel23.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.positionChangeLabel23.ForeColor = System.Drawing.Color.Red;
-            this.positionChangeLabel23.Location = new System.Drawing.Point(554, 1108);
-            this.positionChangeLabel23.Name = "positionChangeLabel23";
-            this.positionChangeLabel23.Size = new System.Drawing.Size(21, 13);
-            this.positionChangeLabel23.TabIndex = 124;
-            this.positionChangeLabel23.Text = "50";
-            // 
-            // positionChangeLabel22
-            // 
-            this.positionChangeLabel22.AutoSize = true;
-            this.positionChangeLabel22.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.positionChangeLabel22.ForeColor = System.Drawing.Color.Red;
-            this.positionChangeLabel22.Location = new System.Drawing.Point(554, 1059);
-            this.positionChangeLabel22.Name = "positionChangeLabel22";
-            this.positionChangeLabel22.Size = new System.Drawing.Size(21, 13);
-            this.positionChangeLabel22.TabIndex = 123;
-            this.positionChangeLabel22.Text = "50";
-            // 
-            // positionChangeLabel21
-            // 
-            this.positionChangeLabel21.AutoSize = true;
-            this.positionChangeLabel21.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.positionChangeLabel21.ForeColor = System.Drawing.Color.Red;
-            this.positionChangeLabel21.Location = new System.Drawing.Point(554, 1010);
-            this.positionChangeLabel21.Name = "positionChangeLabel21";
-            this.positionChangeLabel21.Size = new System.Drawing.Size(21, 13);
-            this.positionChangeLabel21.TabIndex = 122;
-            this.positionChangeLabel21.Text = "50";
-            // 
-            // positionChangeLabel20
-            // 
-            this.positionChangeLabel20.AutoSize = true;
-            this.positionChangeLabel20.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.positionChangeLabel20.ForeColor = System.Drawing.Color.Red;
-            this.positionChangeLabel20.Location = new System.Drawing.Point(554, 961);
-            this.positionChangeLabel20.Name = "positionChangeLabel20";
-            this.positionChangeLabel20.Size = new System.Drawing.Size(21, 13);
-            this.positionChangeLabel20.TabIndex = 121;
-            this.positionChangeLabel20.Text = "50";
-            // 
-            // positionChangeLabel19
-            // 
-            this.positionChangeLabel19.AutoSize = true;
-            this.positionChangeLabel19.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.positionChangeLabel19.ForeColor = System.Drawing.Color.Red;
-            this.positionChangeLabel19.Location = new System.Drawing.Point(554, 913);
-            this.positionChangeLabel19.Name = "positionChangeLabel19";
-            this.positionChangeLabel19.Size = new System.Drawing.Size(21, 13);
-            this.positionChangeLabel19.TabIndex = 120;
-            this.positionChangeLabel19.Text = "50";
-            // 
-            // positionChangeLabel18
-            // 
-            this.positionChangeLabel18.AutoSize = true;
-            this.positionChangeLabel18.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.positionChangeLabel18.ForeColor = System.Drawing.Color.Red;
-            this.positionChangeLabel18.Location = new System.Drawing.Point(554, 863);
-            this.positionChangeLabel18.Name = "positionChangeLabel18";
-            this.positionChangeLabel18.Size = new System.Drawing.Size(21, 13);
-            this.positionChangeLabel18.TabIndex = 119;
-            this.positionChangeLabel18.Text = "50";
-            // 
-            // positionChangeLabel17
-            // 
-            this.positionChangeLabel17.AutoSize = true;
-            this.positionChangeLabel17.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.positionChangeLabel17.ForeColor = System.Drawing.Color.Red;
-            this.positionChangeLabel17.Location = new System.Drawing.Point(554, 814);
-            this.positionChangeLabel17.Name = "positionChangeLabel17";
-            this.positionChangeLabel17.Size = new System.Drawing.Size(21, 13);
-            this.positionChangeLabel17.TabIndex = 118;
-            this.positionChangeLabel17.Text = "50";
-            // 
-            // positionChangeLabel16
-            // 
-            this.positionChangeLabel16.AutoSize = true;
-            this.positionChangeLabel16.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.positionChangeLabel16.ForeColor = System.Drawing.Color.Red;
-            this.positionChangeLabel16.Location = new System.Drawing.Point(554, 765);
-            this.positionChangeLabel16.Name = "positionChangeLabel16";
-            this.positionChangeLabel16.Size = new System.Drawing.Size(21, 13);
-            this.positionChangeLabel16.TabIndex = 117;
-            this.positionChangeLabel16.Text = "50";
-            // 
-            // positionChangeLabel15
-            // 
-            this.positionChangeLabel15.AutoSize = true;
-            this.positionChangeLabel15.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.positionChangeLabel15.ForeColor = System.Drawing.Color.Red;
-            this.positionChangeLabel15.Location = new System.Drawing.Point(554, 716);
-            this.positionChangeLabel15.Name = "positionChangeLabel15";
-            this.positionChangeLabel15.Size = new System.Drawing.Size(21, 13);
-            this.positionChangeLabel15.TabIndex = 116;
-            this.positionChangeLabel15.Text = "50";
-            // 
-            // positionChangeLabel14
-            // 
-            this.positionChangeLabel14.AutoSize = true;
-            this.positionChangeLabel14.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.positionChangeLabel14.ForeColor = System.Drawing.Color.Red;
-            this.positionChangeLabel14.Location = new System.Drawing.Point(554, 668);
-            this.positionChangeLabel14.Name = "positionChangeLabel14";
-            this.positionChangeLabel14.Size = new System.Drawing.Size(21, 13);
-            this.positionChangeLabel14.TabIndex = 115;
-            this.positionChangeLabel14.Text = "50";
-            // 
-            // positionChangeLabel13
-            // 
-            this.positionChangeLabel13.AutoSize = true;
-            this.positionChangeLabel13.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.positionChangeLabel13.ForeColor = System.Drawing.Color.Red;
-            this.positionChangeLabel13.Location = new System.Drawing.Point(554, 619);
-            this.positionChangeLabel13.Name = "positionChangeLabel13";
-            this.positionChangeLabel13.Size = new System.Drawing.Size(21, 13);
-            this.positionChangeLabel13.TabIndex = 114;
-            this.positionChangeLabel13.Text = "50";
-            // 
-            // positionChangeLabel12
-            // 
-            this.positionChangeLabel12.AutoSize = true;
-            this.positionChangeLabel12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.positionChangeLabel12.ForeColor = System.Drawing.Color.Red;
-            this.positionChangeLabel12.Location = new System.Drawing.Point(554, 569);
-            this.positionChangeLabel12.Name = "positionChangeLabel12";
-            this.positionChangeLabel12.Size = new System.Drawing.Size(21, 13);
-            this.positionChangeLabel12.TabIndex = 113;
-            this.positionChangeLabel12.Text = "50";
-            // 
-            // positionChangeLabel11
-            // 
-            this.positionChangeLabel11.AutoSize = true;
-            this.positionChangeLabel11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.positionChangeLabel11.ForeColor = System.Drawing.Color.Red;
-            this.positionChangeLabel11.Location = new System.Drawing.Point(554, 520);
-            this.positionChangeLabel11.Name = "positionChangeLabel11";
-            this.positionChangeLabel11.Size = new System.Drawing.Size(21, 13);
-            this.positionChangeLabel11.TabIndex = 112;
-            this.positionChangeLabel11.Text = "50";
-            // 
-            // positionChangeLabel10
-            // 
-            this.positionChangeLabel10.AutoSize = true;
-            this.positionChangeLabel10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.positionChangeLabel10.ForeColor = System.Drawing.Color.Red;
-            this.positionChangeLabel10.Location = new System.Drawing.Point(554, 472);
-            this.positionChangeLabel10.Name = "positionChangeLabel10";
-            this.positionChangeLabel10.Size = new System.Drawing.Size(21, 13);
-            this.positionChangeLabel10.TabIndex = 111;
-            this.positionChangeLabel10.Text = "50";
-            // 
-            // positionChangeLabel9
-            // 
-            this.positionChangeLabel9.AutoSize = true;
-            this.positionChangeLabel9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.positionChangeLabel9.ForeColor = System.Drawing.Color.Red;
-            this.positionChangeLabel9.Location = new System.Drawing.Point(554, 422);
-            this.positionChangeLabel9.Name = "positionChangeLabel9";
-            this.positionChangeLabel9.Size = new System.Drawing.Size(21, 13);
-            this.positionChangeLabel9.TabIndex = 110;
-            this.positionChangeLabel9.Text = "50";
-            // 
-            // positionChangeLabel8
-            // 
-            this.positionChangeLabel8.AutoSize = true;
-            this.positionChangeLabel8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.positionChangeLabel8.ForeColor = System.Drawing.Color.Red;
-            this.positionChangeLabel8.Location = new System.Drawing.Point(554, 373);
-            this.positionChangeLabel8.Name = "positionChangeLabel8";
-            this.positionChangeLabel8.Size = new System.Drawing.Size(21, 13);
-            this.positionChangeLabel8.TabIndex = 109;
-            this.positionChangeLabel8.Text = "50";
-            // 
-            // positionChangeLabel7
-            // 
-            this.positionChangeLabel7.AutoSize = true;
-            this.positionChangeLabel7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.positionChangeLabel7.ForeColor = System.Drawing.Color.Red;
-            this.positionChangeLabel7.Location = new System.Drawing.Point(554, 324);
-            this.positionChangeLabel7.Name = "positionChangeLabel7";
-            this.positionChangeLabel7.Size = new System.Drawing.Size(21, 13);
-            this.positionChangeLabel7.TabIndex = 108;
-            this.positionChangeLabel7.Text = "50";
-            // 
-            // positionChangeLabel5
-            // 
-            this.positionChangeLabel5.AutoSize = true;
-            this.positionChangeLabel5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.positionChangeLabel5.ForeColor = System.Drawing.Color.Red;
-            this.positionChangeLabel5.Location = new System.Drawing.Point(554, 227);
-            this.positionChangeLabel5.Name = "positionChangeLabel5";
-            this.positionChangeLabel5.Size = new System.Drawing.Size(21, 13);
-            this.positionChangeLabel5.TabIndex = 107;
-            this.positionChangeLabel5.Text = "50";
-            // 
-            // positionChangeLabel6
-            // 
-            this.positionChangeLabel6.AutoSize = true;
-            this.positionChangeLabel6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.positionChangeLabel6.ForeColor = System.Drawing.Color.Red;
-            this.positionChangeLabel6.Location = new System.Drawing.Point(554, 275);
-            this.positionChangeLabel6.Name = "positionChangeLabel6";
-            this.positionChangeLabel6.Size = new System.Drawing.Size(21, 13);
-            this.positionChangeLabel6.TabIndex = 106;
-            this.positionChangeLabel6.Text = "50";
-            // 
-            // positionChangeLabel4
-            // 
-            this.positionChangeLabel4.AutoSize = true;
-            this.positionChangeLabel4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.positionChangeLabel4.ForeColor = System.Drawing.Color.Red;
-            this.positionChangeLabel4.Location = new System.Drawing.Point(554, 177);
-            this.positionChangeLabel4.Name = "positionChangeLabel4";
-            this.positionChangeLabel4.Size = new System.Drawing.Size(21, 13);
-            this.positionChangeLabel4.TabIndex = 105;
-            this.positionChangeLabel4.Text = "50";
-            // 
-            // positionChangeLabel3
-            // 
-            this.positionChangeLabel3.AutoSize = true;
-            this.positionChangeLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.positionChangeLabel3.ForeColor = System.Drawing.Color.Red;
-            this.positionChangeLabel3.Location = new System.Drawing.Point(554, 128);
-            this.positionChangeLabel3.Name = "positionChangeLabel3";
-            this.positionChangeLabel3.Size = new System.Drawing.Size(21, 13);
-            this.positionChangeLabel3.TabIndex = 104;
-            this.positionChangeLabel3.Text = "50";
-            // 
-            // positionChangeLabel1
-            // 
-            this.positionChangeLabel1.AutoSize = true;
-            this.positionChangeLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.positionChangeLabel1.ForeColor = System.Drawing.Color.Red;
-            this.positionChangeLabel1.Location = new System.Drawing.Point(554, 30);
-            this.positionChangeLabel1.Name = "positionChangeLabel1";
-            this.positionChangeLabel1.Size = new System.Drawing.Size(21, 13);
-            this.positionChangeLabel1.TabIndex = 103;
-            this.positionChangeLabel1.Text = "50";
-            // 
-            // positionChangeLabel2
-            // 
-            this.positionChangeLabel2.AutoSize = true;
-            this.positionChangeLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.positionChangeLabel2.ForeColor = System.Drawing.Color.Red;
-            this.positionChangeLabel2.Location = new System.Drawing.Point(554, 79);
-            this.positionChangeLabel2.Name = "positionChangeLabel2";
-            this.positionChangeLabel2.Size = new System.Drawing.Size(21, 13);
-            this.positionChangeLabel2.TabIndex = 102;
-            this.positionChangeLabel2.Text = "50";
-            // 
-            // changePicture50
-            // 
-            this.changePicture50.Image = global::RankingApp.Properties.Resources.arrow_up;
-            this.changePicture50.Location = new System.Drawing.Point(525, 2417);
-            this.changePicture50.Name = "changePicture50";
-            this.changePicture50.Size = new System.Drawing.Size(37, 35);
-            this.changePicture50.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.changePicture50.TabIndex = 101;
-            this.changePicture50.TabStop = false;
-            // 
-            // changePicture49
-            // 
-            this.changePicture49.Image = global::RankingApp.Properties.Resources.arrow_up;
-            this.changePicture49.Location = new System.Drawing.Point(525, 2368);
-            this.changePicture49.Name = "changePicture49";
-            this.changePicture49.Size = new System.Drawing.Size(37, 35);
-            this.changePicture49.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.changePicture49.TabIndex = 100;
-            this.changePicture49.TabStop = false;
-            // 
-            // changePicture48
-            // 
-            this.changePicture48.Image = global::RankingApp.Properties.Resources.arrow_up;
-            this.changePicture48.Location = new System.Drawing.Point(525, 2319);
-            this.changePicture48.Name = "changePicture48";
-            this.changePicture48.Size = new System.Drawing.Size(37, 35);
-            this.changePicture48.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.changePicture48.TabIndex = 99;
-            this.changePicture48.TabStop = false;
-            // 
-            // changePicture47
-            // 
-            this.changePicture47.Image = global::RankingApp.Properties.Resources.arrow_up;
-            this.changePicture47.Location = new System.Drawing.Point(525, 2270);
-            this.changePicture47.Name = "changePicture47";
-            this.changePicture47.Size = new System.Drawing.Size(37, 35);
-            this.changePicture47.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.changePicture47.TabIndex = 98;
-            this.changePicture47.TabStop = false;
-            // 
-            // changePicture46
-            // 
-            this.changePicture46.Image = global::RankingApp.Properties.Resources.arrow_up;
-            this.changePicture46.Location = new System.Drawing.Point(525, 2221);
-            this.changePicture46.Name = "changePicture46";
-            this.changePicture46.Size = new System.Drawing.Size(37, 35);
-            this.changePicture46.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.changePicture46.TabIndex = 97;
-            this.changePicture46.TabStop = false;
-            // 
-            // changePicture45
-            // 
-            this.changePicture45.Image = global::RankingApp.Properties.Resources.new_entry_image;
-            this.changePicture45.Location = new System.Drawing.Point(525, 2172);
-            this.changePicture45.Name = "changePicture45";
-            this.changePicture45.Size = new System.Drawing.Size(37, 35);
-            this.changePicture45.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.changePicture45.TabIndex = 96;
-            this.changePicture45.TabStop = false;
-            // 
-            // changePicture44
-            // 
-            this.changePicture44.Image = global::RankingApp.Properties.Resources.minus_symbol;
-            this.changePicture44.Location = new System.Drawing.Point(525, 2123);
-            this.changePicture44.Name = "changePicture44";
-            this.changePicture44.Size = new System.Drawing.Size(37, 35);
-            this.changePicture44.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.changePicture44.TabIndex = 95;
-            this.changePicture44.TabStop = false;
-            // 
-            // changePicture43
-            // 
-            this.changePicture43.Image = global::RankingApp.Properties.Resources.arrow_down;
-            this.changePicture43.Location = new System.Drawing.Point(525, 2074);
-            this.changePicture43.Name = "changePicture43";
-            this.changePicture43.Size = new System.Drawing.Size(37, 35);
-            this.changePicture43.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.changePicture43.TabIndex = 94;
-            this.changePicture43.TabStop = false;
-            // 
-            // changePicture42
-            // 
-            this.changePicture42.Image = global::RankingApp.Properties.Resources.arrow_down;
-            this.changePicture42.Location = new System.Drawing.Point(525, 2025);
-            this.changePicture42.Name = "changePicture42";
-            this.changePicture42.Size = new System.Drawing.Size(37, 35);
-            this.changePicture42.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.changePicture42.TabIndex = 93;
-            this.changePicture42.TabStop = false;
-            // 
-            // changePicture41
-            // 
-            this.changePicture41.Image = global::RankingApp.Properties.Resources.minus_symbol;
-            this.changePicture41.Location = new System.Drawing.Point(525, 1976);
-            this.changePicture41.Name = "changePicture41";
-            this.changePicture41.Size = new System.Drawing.Size(37, 35);
-            this.changePicture41.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.changePicture41.TabIndex = 92;
-            this.changePicture41.TabStop = false;
-            // 
-            // changePicture40
-            // 
-            this.changePicture40.Image = global::RankingApp.Properties.Resources.arrow_up;
-            this.changePicture40.Location = new System.Drawing.Point(525, 1927);
-            this.changePicture40.Name = "changePicture40";
-            this.changePicture40.Size = new System.Drawing.Size(37, 35);
-            this.changePicture40.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.changePicture40.TabIndex = 91;
-            this.changePicture40.TabStop = false;
-            // 
-            // changePicture37
-            // 
-            this.changePicture37.Image = global::RankingApp.Properties.Resources.arrow_up;
-            this.changePicture37.Location = new System.Drawing.Point(525, 1780);
-            this.changePicture37.Name = "changePicture37";
-            this.changePicture37.Size = new System.Drawing.Size(37, 35);
-            this.changePicture37.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.changePicture37.TabIndex = 88;
-            this.changePicture37.TabStop = false;
-            // 
-            // changePicture39
-            // 
-            this.changePicture39.Image = global::RankingApp.Properties.Resources.arrow_up;
-            this.changePicture39.Location = new System.Drawing.Point(525, 1878);
-            this.changePicture39.Name = "changePicture39";
-            this.changePicture39.Size = new System.Drawing.Size(37, 35);
-            this.changePicture39.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.changePicture39.TabIndex = 90;
-            this.changePicture39.TabStop = false;
-            // 
-            // changePicture38
-            // 
-            this.changePicture38.Image = global::RankingApp.Properties.Resources.arrow_down;
-            this.changePicture38.Location = new System.Drawing.Point(525, 1829);
-            this.changePicture38.Name = "changePicture38";
-            this.changePicture38.Size = new System.Drawing.Size(37, 35);
-            this.changePicture38.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.changePicture38.TabIndex = 89;
-            this.changePicture38.TabStop = false;
-            // 
-            // changePicture36
-            // 
-            this.changePicture36.Image = global::RankingApp.Properties.Resources.arrow_up;
-            this.changePicture36.Location = new System.Drawing.Point(525, 1731);
-            this.changePicture36.Name = "changePicture36";
-            this.changePicture36.Size = new System.Drawing.Size(37, 35);
-            this.changePicture36.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.changePicture36.TabIndex = 87;
-            this.changePicture36.TabStop = false;
-            // 
-            // changePicture35
-            // 
-            this.changePicture35.Image = global::RankingApp.Properties.Resources.arrow_up;
-            this.changePicture35.Location = new System.Drawing.Point(525, 1682);
-            this.changePicture35.Name = "changePicture35";
-            this.changePicture35.Size = new System.Drawing.Size(37, 35);
-            this.changePicture35.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.changePicture35.TabIndex = 86;
-            this.changePicture35.TabStop = false;
-            // 
-            // changePicture34
-            // 
-            this.changePicture34.Image = global::RankingApp.Properties.Resources.arrow_up;
-            this.changePicture34.Location = new System.Drawing.Point(525, 1633);
-            this.changePicture34.Name = "changePicture34";
-            this.changePicture34.Size = new System.Drawing.Size(37, 35);
-            this.changePicture34.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.changePicture34.TabIndex = 85;
-            this.changePicture34.TabStop = false;
-            // 
-            // changePicture33
-            // 
-            this.changePicture33.Image = global::RankingApp.Properties.Resources.arrow_up;
-            this.changePicture33.Location = new System.Drawing.Point(525, 1584);
-            this.changePicture33.Name = "changePicture33";
-            this.changePicture33.Size = new System.Drawing.Size(37, 35);
-            this.changePicture33.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.changePicture33.TabIndex = 84;
-            this.changePicture33.TabStop = false;
-            // 
-            // changePicture32
-            // 
-            this.changePicture32.Image = global::RankingApp.Properties.Resources.arrow_up;
-            this.changePicture32.Location = new System.Drawing.Point(525, 1535);
-            this.changePicture32.Name = "changePicture32";
-            this.changePicture32.Size = new System.Drawing.Size(37, 35);
-            this.changePicture32.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.changePicture32.TabIndex = 83;
-            this.changePicture32.TabStop = false;
-            // 
-            // changePicture31
-            // 
-            this.changePicture31.Image = global::RankingApp.Properties.Resources.arrow_up;
-            this.changePicture31.Location = new System.Drawing.Point(525, 1486);
-            this.changePicture31.Name = "changePicture31";
-            this.changePicture31.Size = new System.Drawing.Size(37, 35);
-            this.changePicture31.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.changePicture31.TabIndex = 82;
-            this.changePicture31.TabStop = false;
             // 
             // label50
             // 
             this.label50.AutoSize = true;
             this.label50.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label50.ForeColor = System.Drawing.Color.DarkGray;
-            this.label50.Location = new System.Drawing.Point(12, 2423);
+            this.label50.Location = new System.Drawing.Point(12, 2227);
             this.label50.Name = "label50";
             this.label50.Size = new System.Drawing.Size(30, 24);
             this.label50.TabIndex = 81;
@@ -5444,7 +4296,7 @@ namespace RankingApp
             this.label49.AutoSize = true;
             this.label49.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label49.ForeColor = System.Drawing.Color.DarkGray;
-            this.label49.Location = new System.Drawing.Point(12, 2374);
+            this.label49.Location = new System.Drawing.Point(12, 2182);
             this.label49.Name = "label49";
             this.label49.Size = new System.Drawing.Size(30, 24);
             this.label49.TabIndex = 80;
@@ -5456,7 +4308,7 @@ namespace RankingApp
             this.label48.AutoSize = true;
             this.label48.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label48.ForeColor = System.Drawing.Color.DarkGray;
-            this.label48.Location = new System.Drawing.Point(12, 2325);
+            this.label48.Location = new System.Drawing.Point(12, 2137);
             this.label48.Name = "label48";
             this.label48.Size = new System.Drawing.Size(30, 24);
             this.label48.TabIndex = 79;
@@ -5468,7 +4320,7 @@ namespace RankingApp
             this.label47.AutoSize = true;
             this.label47.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label47.ForeColor = System.Drawing.Color.DarkGray;
-            this.label47.Location = new System.Drawing.Point(12, 2276);
+            this.label47.Location = new System.Drawing.Point(12, 2092);
             this.label47.Name = "label47";
             this.label47.Size = new System.Drawing.Size(30, 24);
             this.label47.TabIndex = 78;
@@ -5480,7 +4332,7 @@ namespace RankingApp
             this.label46.AutoSize = true;
             this.label46.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label46.ForeColor = System.Drawing.Color.DarkGray;
-            this.label46.Location = new System.Drawing.Point(12, 2227);
+            this.label46.Location = new System.Drawing.Point(12, 2047);
             this.label46.Name = "label46";
             this.label46.Size = new System.Drawing.Size(30, 24);
             this.label46.TabIndex = 77;
@@ -5492,7 +4344,7 @@ namespace RankingApp
             this.label45.AutoSize = true;
             this.label45.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label45.ForeColor = System.Drawing.Color.DarkGray;
-            this.label45.Location = new System.Drawing.Point(12, 2178);
+            this.label45.Location = new System.Drawing.Point(12, 2002);
             this.label45.Name = "label45";
             this.label45.Size = new System.Drawing.Size(30, 24);
             this.label45.TabIndex = 76;
@@ -5504,7 +4356,7 @@ namespace RankingApp
             this.label44.AutoSize = true;
             this.label44.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label44.ForeColor = System.Drawing.Color.DarkGray;
-            this.label44.Location = new System.Drawing.Point(12, 2129);
+            this.label44.Location = new System.Drawing.Point(12, 1957);
             this.label44.Name = "label44";
             this.label44.Size = new System.Drawing.Size(30, 24);
             this.label44.TabIndex = 75;
@@ -5516,7 +4368,7 @@ namespace RankingApp
             this.label43.AutoSize = true;
             this.label43.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label43.ForeColor = System.Drawing.Color.DarkGray;
-            this.label43.Location = new System.Drawing.Point(12, 2080);
+            this.label43.Location = new System.Drawing.Point(12, 1912);
             this.label43.Name = "label43";
             this.label43.Size = new System.Drawing.Size(30, 24);
             this.label43.TabIndex = 74;
@@ -5528,7 +4380,7 @@ namespace RankingApp
             this.label42.AutoSize = true;
             this.label42.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label42.ForeColor = System.Drawing.Color.DarkGray;
-            this.label42.Location = new System.Drawing.Point(12, 2031);
+            this.label42.Location = new System.Drawing.Point(12, 1867);
             this.label42.Name = "label42";
             this.label42.Size = new System.Drawing.Size(30, 24);
             this.label42.TabIndex = 73;
@@ -5540,7 +4392,7 @@ namespace RankingApp
             this.label41.AutoSize = true;
             this.label41.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label41.ForeColor = System.Drawing.Color.DarkGray;
-            this.label41.Location = new System.Drawing.Point(12, 1982);
+            this.label41.Location = new System.Drawing.Point(12, 1822);
             this.label41.Name = "label41";
             this.label41.Size = new System.Drawing.Size(30, 24);
             this.label41.TabIndex = 72;
@@ -5552,7 +4404,7 @@ namespace RankingApp
             this.label31.AutoSize = true;
             this.label31.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label31.ForeColor = System.Drawing.Color.DarkGray;
-            this.label31.Location = new System.Drawing.Point(12, 1492);
+            this.label31.Location = new System.Drawing.Point(12, 1372);
             this.label31.Name = "label31";
             this.label31.Size = new System.Drawing.Size(30, 24);
             this.label31.TabIndex = 62;
@@ -5564,7 +4416,7 @@ namespace RankingApp
             this.label32.AutoSize = true;
             this.label32.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label32.ForeColor = System.Drawing.Color.DarkGray;
-            this.label32.Location = new System.Drawing.Point(12, 1541);
+            this.label32.Location = new System.Drawing.Point(12, 1417);
             this.label32.Name = "label32";
             this.label32.Size = new System.Drawing.Size(30, 24);
             this.label32.TabIndex = 63;
@@ -5576,7 +4428,7 @@ namespace RankingApp
             this.label33.AutoSize = true;
             this.label33.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label33.ForeColor = System.Drawing.Color.DarkGray;
-            this.label33.Location = new System.Drawing.Point(12, 1590);
+            this.label33.Location = new System.Drawing.Point(12, 1462);
             this.label33.Name = "label33";
             this.label33.Size = new System.Drawing.Size(30, 24);
             this.label33.TabIndex = 64;
@@ -5588,7 +4440,7 @@ namespace RankingApp
             this.label34.AutoSize = true;
             this.label34.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label34.ForeColor = System.Drawing.Color.DarkGray;
-            this.label34.Location = new System.Drawing.Point(12, 1639);
+            this.label34.Location = new System.Drawing.Point(12, 1507);
             this.label34.Name = "label34";
             this.label34.Size = new System.Drawing.Size(30, 24);
             this.label34.TabIndex = 65;
@@ -5600,7 +4452,7 @@ namespace RankingApp
             this.label35.AutoSize = true;
             this.label35.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label35.ForeColor = System.Drawing.Color.DarkGray;
-            this.label35.Location = new System.Drawing.Point(12, 1688);
+            this.label35.Location = new System.Drawing.Point(12, 1552);
             this.label35.Name = "label35";
             this.label35.Size = new System.Drawing.Size(30, 24);
             this.label35.TabIndex = 66;
@@ -5612,7 +4464,7 @@ namespace RankingApp
             this.label36.AutoSize = true;
             this.label36.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label36.ForeColor = System.Drawing.Color.DarkGray;
-            this.label36.Location = new System.Drawing.Point(12, 1737);
+            this.label36.Location = new System.Drawing.Point(12, 1597);
             this.label36.Name = "label36";
             this.label36.Size = new System.Drawing.Size(30, 24);
             this.label36.TabIndex = 67;
@@ -5624,7 +4476,7 @@ namespace RankingApp
             this.label37.AutoSize = true;
             this.label37.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label37.ForeColor = System.Drawing.Color.DarkGray;
-            this.label37.Location = new System.Drawing.Point(12, 1786);
+            this.label37.Location = new System.Drawing.Point(12, 1642);
             this.label37.Name = "label37";
             this.label37.Size = new System.Drawing.Size(30, 24);
             this.label37.TabIndex = 68;
@@ -5636,7 +4488,7 @@ namespace RankingApp
             this.label38.AutoSize = true;
             this.label38.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label38.ForeColor = System.Drawing.Color.DarkGray;
-            this.label38.Location = new System.Drawing.Point(12, 1835);
+            this.label38.Location = new System.Drawing.Point(12, 1687);
             this.label38.Name = "label38";
             this.label38.Size = new System.Drawing.Size(30, 24);
             this.label38.TabIndex = 69;
@@ -5648,7 +4500,7 @@ namespace RankingApp
             this.label39.AutoSize = true;
             this.label39.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label39.ForeColor = System.Drawing.Color.DarkGray;
-            this.label39.Location = new System.Drawing.Point(12, 1884);
+            this.label39.Location = new System.Drawing.Point(12, 1732);
             this.label39.Name = "label39";
             this.label39.Size = new System.Drawing.Size(30, 24);
             this.label39.TabIndex = 70;
@@ -5660,7 +4512,7 @@ namespace RankingApp
             this.label40.AutoSize = true;
             this.label40.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label40.ForeColor = System.Drawing.Color.DarkGray;
-            this.label40.Location = new System.Drawing.Point(12, 1933);
+            this.label40.Location = new System.Drawing.Point(12, 1777);
             this.label40.Name = "label40";
             this.label40.Size = new System.Drawing.Size(30, 24);
             this.label40.TabIndex = 71;
@@ -5671,8 +4523,8 @@ namespace RankingApp
             // 
             this.label30.AutoSize = true;
             this.label30.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label30.ForeColor = System.Drawing.Color.LightGray;
-            this.label30.Location = new System.Drawing.Point(12, 1443);
+            this.label30.ForeColor = System.Drawing.Color.White;
+            this.label30.Location = new System.Drawing.Point(12, 1327);
             this.label30.Name = "label30";
             this.label30.Size = new System.Drawing.Size(30, 24);
             this.label30.TabIndex = 61;
@@ -5683,8 +4535,8 @@ namespace RankingApp
             // 
             this.label29.AutoSize = true;
             this.label29.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label29.ForeColor = System.Drawing.Color.LightGray;
-            this.label29.Location = new System.Drawing.Point(12, 1394);
+            this.label29.ForeColor = System.Drawing.Color.White;
+            this.label29.Location = new System.Drawing.Point(12, 1282);
             this.label29.Name = "label29";
             this.label29.Size = new System.Drawing.Size(30, 24);
             this.label29.TabIndex = 60;
@@ -5695,8 +4547,8 @@ namespace RankingApp
             // 
             this.label28.AutoSize = true;
             this.label28.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label28.ForeColor = System.Drawing.Color.LightGray;
-            this.label28.Location = new System.Drawing.Point(12, 1345);
+            this.label28.ForeColor = System.Drawing.Color.White;
+            this.label28.Location = new System.Drawing.Point(12, 1237);
             this.label28.Name = "label28";
             this.label28.Size = new System.Drawing.Size(30, 24);
             this.label28.TabIndex = 59;
@@ -5707,8 +4559,8 @@ namespace RankingApp
             // 
             this.label27.AutoSize = true;
             this.label27.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label27.ForeColor = System.Drawing.Color.LightGray;
-            this.label27.Location = new System.Drawing.Point(12, 1296);
+            this.label27.ForeColor = System.Drawing.Color.White;
+            this.label27.Location = new System.Drawing.Point(12, 1192);
             this.label27.Name = "label27";
             this.label27.Size = new System.Drawing.Size(30, 24);
             this.label27.TabIndex = 58;
@@ -5719,8 +4571,8 @@ namespace RankingApp
             // 
             this.label26.AutoSize = true;
             this.label26.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label26.ForeColor = System.Drawing.Color.LightGray;
-            this.label26.Location = new System.Drawing.Point(12, 1247);
+            this.label26.ForeColor = System.Drawing.Color.White;
+            this.label26.Location = new System.Drawing.Point(12, 1147);
             this.label26.Name = "label26";
             this.label26.Size = new System.Drawing.Size(30, 24);
             this.label26.TabIndex = 57;
@@ -5731,8 +4583,8 @@ namespace RankingApp
             // 
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.ForeColor = System.Drawing.Color.LightGray;
-            this.label16.Location = new System.Drawing.Point(12, 757);
+            this.label16.ForeColor = System.Drawing.Color.White;
+            this.label16.Location = new System.Drawing.Point(12, 697);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(30, 24);
             this.label16.TabIndex = 47;
@@ -5743,8 +4595,8 @@ namespace RankingApp
             // 
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.ForeColor = System.Drawing.Color.LightGray;
-            this.label17.Location = new System.Drawing.Point(12, 806);
+            this.label17.ForeColor = System.Drawing.Color.White;
+            this.label17.Location = new System.Drawing.Point(12, 742);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(30, 24);
             this.label17.TabIndex = 48;
@@ -5755,8 +4607,8 @@ namespace RankingApp
             // 
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.ForeColor = System.Drawing.Color.LightGray;
-            this.label18.Location = new System.Drawing.Point(12, 855);
+            this.label18.ForeColor = System.Drawing.Color.White;
+            this.label18.Location = new System.Drawing.Point(12, 787);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(30, 24);
             this.label18.TabIndex = 49;
@@ -5767,8 +4619,8 @@ namespace RankingApp
             // 
             this.label19.AutoSize = true;
             this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.ForeColor = System.Drawing.Color.LightGray;
-            this.label19.Location = new System.Drawing.Point(12, 904);
+            this.label19.ForeColor = System.Drawing.Color.White;
+            this.label19.Location = new System.Drawing.Point(12, 832);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(30, 24);
             this.label19.TabIndex = 50;
@@ -5779,8 +4631,8 @@ namespace RankingApp
             // 
             this.label20.AutoSize = true;
             this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.ForeColor = System.Drawing.Color.LightGray;
-            this.label20.Location = new System.Drawing.Point(12, 953);
+            this.label20.ForeColor = System.Drawing.Color.White;
+            this.label20.Location = new System.Drawing.Point(12, 877);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(30, 24);
             this.label20.TabIndex = 51;
@@ -5791,8 +4643,8 @@ namespace RankingApp
             // 
             this.label21.AutoSize = true;
             this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.ForeColor = System.Drawing.Color.LightGray;
-            this.label21.Location = new System.Drawing.Point(12, 1002);
+            this.label21.ForeColor = System.Drawing.Color.White;
+            this.label21.Location = new System.Drawing.Point(12, 922);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(30, 24);
             this.label21.TabIndex = 52;
@@ -5803,8 +4655,8 @@ namespace RankingApp
             // 
             this.label22.AutoSize = true;
             this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.ForeColor = System.Drawing.Color.LightGray;
-            this.label22.Location = new System.Drawing.Point(12, 1051);
+            this.label22.ForeColor = System.Drawing.Color.White;
+            this.label22.Location = new System.Drawing.Point(12, 967);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(30, 24);
             this.label22.TabIndex = 53;
@@ -5815,8 +4667,8 @@ namespace RankingApp
             // 
             this.label23.AutoSize = true;
             this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.ForeColor = System.Drawing.Color.LightGray;
-            this.label23.Location = new System.Drawing.Point(12, 1100);
+            this.label23.ForeColor = System.Drawing.Color.White;
+            this.label23.Location = new System.Drawing.Point(12, 1012);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(30, 24);
             this.label23.TabIndex = 54;
@@ -5827,8 +4679,8 @@ namespace RankingApp
             // 
             this.label24.AutoSize = true;
             this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label24.ForeColor = System.Drawing.Color.LightGray;
-            this.label24.Location = new System.Drawing.Point(12, 1149);
+            this.label24.ForeColor = System.Drawing.Color.White;
+            this.label24.Location = new System.Drawing.Point(12, 1057);
             this.label24.Name = "label24";
             this.label24.Size = new System.Drawing.Size(30, 24);
             this.label24.TabIndex = 55;
@@ -5839,220 +4691,20 @@ namespace RankingApp
             // 
             this.label25.AutoSize = true;
             this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label25.ForeColor = System.Drawing.Color.LightGray;
-            this.label25.Location = new System.Drawing.Point(12, 1198);
+            this.label25.ForeColor = System.Drawing.Color.White;
+            this.label25.Location = new System.Drawing.Point(12, 1102);
             this.label25.Name = "label25";
             this.label25.Size = new System.Drawing.Size(30, 24);
             this.label25.TabIndex = 56;
             this.label25.Text = "25";
             this.label25.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
-            // changePicture30
-            // 
-            this.changePicture30.Image = global::RankingApp.Properties.Resources.arrow_up;
-            this.changePicture30.Location = new System.Drawing.Point(525, 1437);
-            this.changePicture30.Name = "changePicture30";
-            this.changePicture30.Size = new System.Drawing.Size(37, 35);
-            this.changePicture30.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.changePicture30.TabIndex = 46;
-            this.changePicture30.TabStop = false;
-            // 
-            // changePicture29
-            // 
-            this.changePicture29.Image = global::RankingApp.Properties.Resources.arrow_up;
-            this.changePicture29.Location = new System.Drawing.Point(525, 1388);
-            this.changePicture29.Name = "changePicture29";
-            this.changePicture29.Size = new System.Drawing.Size(37, 35);
-            this.changePicture29.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.changePicture29.TabIndex = 45;
-            this.changePicture29.TabStop = false;
-            // 
-            // changePicture28
-            // 
-            this.changePicture28.Image = global::RankingApp.Properties.Resources.arrow_up;
-            this.changePicture28.Location = new System.Drawing.Point(525, 1339);
-            this.changePicture28.Name = "changePicture28";
-            this.changePicture28.Size = new System.Drawing.Size(37, 35);
-            this.changePicture28.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.changePicture28.TabIndex = 44;
-            this.changePicture28.TabStop = false;
-            // 
-            // changePicture27
-            // 
-            this.changePicture27.Image = global::RankingApp.Properties.Resources.arrow_up;
-            this.changePicture27.Location = new System.Drawing.Point(525, 1290);
-            this.changePicture27.Name = "changePicture27";
-            this.changePicture27.Size = new System.Drawing.Size(37, 35);
-            this.changePicture27.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.changePicture27.TabIndex = 43;
-            this.changePicture27.TabStop = false;
-            // 
-            // changePicture26
-            // 
-            this.changePicture26.Image = global::RankingApp.Properties.Resources.arrow_up;
-            this.changePicture26.Location = new System.Drawing.Point(525, 1241);
-            this.changePicture26.Name = "changePicture26";
-            this.changePicture26.Size = new System.Drawing.Size(37, 35);
-            this.changePicture26.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.changePicture26.TabIndex = 42;
-            this.changePicture26.TabStop = false;
-            // 
-            // changePicture25
-            // 
-            this.changePicture25.Image = global::RankingApp.Properties.Resources.arrow_up;
-            this.changePicture25.Location = new System.Drawing.Point(525, 1192);
-            this.changePicture25.Name = "changePicture25";
-            this.changePicture25.Size = new System.Drawing.Size(37, 35);
-            this.changePicture25.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.changePicture25.TabIndex = 41;
-            this.changePicture25.TabStop = false;
-            // 
-            // changePicture24
-            // 
-            this.changePicture24.Image = global::RankingApp.Properties.Resources.new_entry_image;
-            this.changePicture24.Location = new System.Drawing.Point(525, 1143);
-            this.changePicture24.Name = "changePicture24";
-            this.changePicture24.Size = new System.Drawing.Size(37, 35);
-            this.changePicture24.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.changePicture24.TabIndex = 40;
-            this.changePicture24.TabStop = false;
-            // 
-            // changePicture23
-            // 
-            this.changePicture23.Image = global::RankingApp.Properties.Resources.minus_symbol;
-            this.changePicture23.Location = new System.Drawing.Point(525, 1094);
-            this.changePicture23.Name = "changePicture23";
-            this.changePicture23.Size = new System.Drawing.Size(37, 35);
-            this.changePicture23.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.changePicture23.TabIndex = 39;
-            this.changePicture23.TabStop = false;
-            // 
-            // changePicture22
-            // 
-            this.changePicture22.Image = global::RankingApp.Properties.Resources.arrow_down;
-            this.changePicture22.Location = new System.Drawing.Point(525, 1045);
-            this.changePicture22.Name = "changePicture22";
-            this.changePicture22.Size = new System.Drawing.Size(37, 35);
-            this.changePicture22.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.changePicture22.TabIndex = 38;
-            this.changePicture22.TabStop = false;
-            // 
-            // changePicture21
-            // 
-            this.changePicture21.Image = global::RankingApp.Properties.Resources.arrow_down;
-            this.changePicture21.Location = new System.Drawing.Point(525, 996);
-            this.changePicture21.Name = "changePicture21";
-            this.changePicture21.Size = new System.Drawing.Size(37, 35);
-            this.changePicture21.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.changePicture21.TabIndex = 37;
-            this.changePicture21.TabStop = false;
-            // 
-            // changePicture20
-            // 
-            this.changePicture20.Image = global::RankingApp.Properties.Resources.minus_symbol;
-            this.changePicture20.Location = new System.Drawing.Point(525, 947);
-            this.changePicture20.Name = "changePicture20";
-            this.changePicture20.Size = new System.Drawing.Size(37, 35);
-            this.changePicture20.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.changePicture20.TabIndex = 36;
-            this.changePicture20.TabStop = false;
-            // 
-            // changePicture19
-            // 
-            this.changePicture19.Image = global::RankingApp.Properties.Resources.arrow_up;
-            this.changePicture19.Location = new System.Drawing.Point(525, 898);
-            this.changePicture19.Name = "changePicture19";
-            this.changePicture19.Size = new System.Drawing.Size(37, 35);
-            this.changePicture19.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.changePicture19.TabIndex = 35;
-            this.changePicture19.TabStop = false;
-            // 
-            // changePicture16
-            // 
-            this.changePicture16.Image = global::RankingApp.Properties.Resources.arrow_up;
-            this.changePicture16.Location = new System.Drawing.Point(525, 751);
-            this.changePicture16.Name = "changePicture16";
-            this.changePicture16.Size = new System.Drawing.Size(37, 35);
-            this.changePicture16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.changePicture16.TabIndex = 32;
-            this.changePicture16.TabStop = false;
-            // 
-            // changePicture18
-            // 
-            this.changePicture18.Image = global::RankingApp.Properties.Resources.arrow_up;
-            this.changePicture18.Location = new System.Drawing.Point(525, 849);
-            this.changePicture18.Name = "changePicture18";
-            this.changePicture18.Size = new System.Drawing.Size(37, 35);
-            this.changePicture18.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.changePicture18.TabIndex = 34;
-            this.changePicture18.TabStop = false;
-            // 
-            // changePicture17
-            // 
-            this.changePicture17.Image = global::RankingApp.Properties.Resources.arrow_down;
-            this.changePicture17.Location = new System.Drawing.Point(525, 800);
-            this.changePicture17.Name = "changePicture17";
-            this.changePicture17.Size = new System.Drawing.Size(37, 35);
-            this.changePicture17.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.changePicture17.TabIndex = 33;
-            this.changePicture17.TabStop = false;
-            // 
-            // changePicture15
-            // 
-            this.changePicture15.Image = global::RankingApp.Properties.Resources.arrow_up;
-            this.changePicture15.Location = new System.Drawing.Point(525, 702);
-            this.changePicture15.Name = "changePicture15";
-            this.changePicture15.Size = new System.Drawing.Size(37, 35);
-            this.changePicture15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.changePicture15.TabIndex = 31;
-            this.changePicture15.TabStop = false;
-            // 
-            // changePicture14
-            // 
-            this.changePicture14.Image = global::RankingApp.Properties.Resources.arrow_up;
-            this.changePicture14.Location = new System.Drawing.Point(525, 653);
-            this.changePicture14.Name = "changePicture14";
-            this.changePicture14.Size = new System.Drawing.Size(37, 35);
-            this.changePicture14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.changePicture14.TabIndex = 30;
-            this.changePicture14.TabStop = false;
-            // 
-            // changePicture13
-            // 
-            this.changePicture13.Image = global::RankingApp.Properties.Resources.arrow_up;
-            this.changePicture13.Location = new System.Drawing.Point(525, 604);
-            this.changePicture13.Name = "changePicture13";
-            this.changePicture13.Size = new System.Drawing.Size(37, 35);
-            this.changePicture13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.changePicture13.TabIndex = 29;
-            this.changePicture13.TabStop = false;
-            // 
-            // changePicture12
-            // 
-            this.changePicture12.Image = global::RankingApp.Properties.Resources.arrow_up;
-            this.changePicture12.Location = new System.Drawing.Point(525, 555);
-            this.changePicture12.Name = "changePicture12";
-            this.changePicture12.Size = new System.Drawing.Size(37, 35);
-            this.changePicture12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.changePicture12.TabIndex = 28;
-            this.changePicture12.TabStop = false;
-            // 
-            // changePicture11
-            // 
-            this.changePicture11.Image = global::RankingApp.Properties.Resources.arrow_up;
-            this.changePicture11.Location = new System.Drawing.Point(525, 506);
-            this.changePicture11.Name = "changePicture11";
-            this.changePicture11.Size = new System.Drawing.Size(37, 35);
-            this.changePicture11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.changePicture11.TabIndex = 27;
-            this.changePicture11.TabStop = false;
-            // 
             // label15
             // 
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.ForeColor = System.Drawing.Color.LightGray;
-            this.label15.Location = new System.Drawing.Point(12, 708);
+            this.label15.ForeColor = System.Drawing.Color.White;
+            this.label15.Location = new System.Drawing.Point(12, 652);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(30, 24);
             this.label15.TabIndex = 26;
@@ -6063,8 +4715,8 @@ namespace RankingApp
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.ForeColor = System.Drawing.Color.LightGray;
-            this.label14.Location = new System.Drawing.Point(12, 659);
+            this.label14.ForeColor = System.Drawing.Color.White;
+            this.label14.Location = new System.Drawing.Point(12, 607);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(30, 24);
             this.label14.TabIndex = 25;
@@ -6075,8 +4727,8 @@ namespace RankingApp
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.ForeColor = System.Drawing.Color.LightGray;
-            this.label13.Location = new System.Drawing.Point(12, 610);
+            this.label13.ForeColor = System.Drawing.Color.White;
+            this.label13.Location = new System.Drawing.Point(12, 562);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(30, 24);
             this.label13.TabIndex = 24;
@@ -6087,8 +4739,8 @@ namespace RankingApp
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.ForeColor = System.Drawing.Color.LightGray;
-            this.label12.Location = new System.Drawing.Point(12, 561);
+            this.label12.ForeColor = System.Drawing.Color.White;
+            this.label12.Location = new System.Drawing.Point(12, 517);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(30, 24);
             this.label12.TabIndex = 23;
@@ -6099,8 +4751,8 @@ namespace RankingApp
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.Color.LightGray;
-            this.label11.Location = new System.Drawing.Point(12, 512);
+            this.label11.ForeColor = System.Drawing.Color.White;
+            this.label11.Location = new System.Drawing.Point(12, 472);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(30, 24);
             this.label11.TabIndex = 22;
@@ -6114,21 +4766,55 @@ namespace RankingApp
             this.updateButton.FlatAppearance.BorderSize = 0;
             this.updateButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.updateButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.updateButton.Location = new System.Drawing.Point(699, 31);
+            this.updateButton.Location = new System.Drawing.Point(630, 80);
             this.updateButton.Name = "updateButton";
-            this.updateButton.Size = new System.Drawing.Size(70, 26);
+            this.updateButton.Size = new System.Drawing.Size(136, 26);
             this.updateButton.TabIndex = 31;
             this.updateButton.TabStop = false;
             this.updateButton.Text = "Update";
             this.updateButton.UseVisualStyleBackColor = false;
             this.updateButton.Click += new System.EventHandler(this.updateButton_Click);
             // 
-            // Form
+            // saveButton
+            // 
+            this.saveButton.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.saveButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.saveButton.FlatAppearance.BorderSize = 0;
+            this.saveButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.saveButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.saveButton.Location = new System.Drawing.Point(630, 112);
+            this.saveButton.Name = "saveButton";
+            this.saveButton.Size = new System.Drawing.Size(136, 26);
+            this.saveButton.TabIndex = 32;
+            this.saveButton.TabStop = false;
+            this.saveButton.Text = "Save";
+            this.saveButton.UseVisualStyleBackColor = false;
+            this.saveButton.Click += new System.EventHandler(this.saveButton_Click);
+            // 
+            // getConfigPathButton
+            // 
+            this.getConfigPathButton.BackColor = System.Drawing.Color.LightGray;
+            this.getConfigPathButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.getConfigPathButton.FlatAppearance.BorderSize = 0;
+            this.getConfigPathButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.getConfigPathButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.getConfigPathButton.Location = new System.Drawing.Point(630, 672);
+            this.getConfigPathButton.Name = "getConfigPathButton";
+            this.getConfigPathButton.Size = new System.Drawing.Size(136, 26);
+            this.getConfigPathButton.TabIndex = 33;
+            this.getConfigPathButton.TabStop = false;
+            this.getConfigPathButton.Text = "Show Config Path";
+            this.getConfigPathButton.UseVisualStyleBackColor = false;
+            this.getConfigPathButton.Click += new System.EventHandler(this.getConfigPathButton_Click);
+            // 
+            // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(13)))), ((int)(((byte)(13)))));
-            this.ClientSize = new System.Drawing.Size(769, 888);
+            this.ClientSize = new System.Drawing.Size(785, 789);
+            this.Controls.Add(this.getConfigPathButton);
+            this.Controls.Add(this.saveButton);
             this.Controls.Add(this.updateButton);
             this.Controls.Add(this.pointsLabel);
             this.Controls.Add(this.teamNameLabel);
@@ -6138,9 +4824,10 @@ namespace RankingApp
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.KeyPreview = true;
-            this.Name = "Form";
+            this.Name = "Form1";
             this.Text = "Ranker";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form_Closing);
+            this.Load += new System.EventHandler(this.Form_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
             this.backgroundPanel.ResumeLayout(false);
             this.panel50.ResumeLayout(false);
@@ -6293,58 +4980,8 @@ namespace RankingApp
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.changePicture10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.changePicture9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.changePicture8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.changePicture7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.changePicture6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.changePicture5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.changePicture4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.changePicture3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.changePicture2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.changePicture1)).EndInit();
             this.containerPanel.ResumeLayout(false);
             this.containerPanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.changePicture50)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.changePicture49)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.changePicture48)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.changePicture47)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.changePicture46)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.changePicture45)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.changePicture44)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.changePicture43)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.changePicture42)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.changePicture41)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.changePicture40)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.changePicture37)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.changePicture39)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.changePicture38)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.changePicture36)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.changePicture35)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.changePicture34)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.changePicture33)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.changePicture32)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.changePicture31)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.changePicture30)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.changePicture29)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.changePicture28)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.changePicture27)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.changePicture26)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.changePicture25)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.changePicture24)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.changePicture23)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.changePicture22)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.changePicture21)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.changePicture20)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.changePicture19)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.changePicture16)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.changePicture18)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.changePicture17)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.changePicture15)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.changePicture14)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.changePicture13)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.changePicture12)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.changePicture11)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -6413,16 +5050,6 @@ namespace RankingApp
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.PictureBox changePicture1;
-        private System.Windows.Forms.PictureBox changePicture2;
-        private System.Windows.Forms.PictureBox changePicture3;
-        private System.Windows.Forms.PictureBox changePicture4;
-        private System.Windows.Forms.PictureBox changePicture5;
-        private System.Windows.Forms.PictureBox changePicture6;
-        private System.Windows.Forms.PictureBox changePicture7;
-        private System.Windows.Forms.PictureBox changePicture8;
-        private System.Windows.Forms.PictureBox changePicture9;
-        private System.Windows.Forms.PictureBox changePicture10;
         private System.Windows.Forms.TextBox countryBox1;
         private System.Windows.Forms.TextBox countryBox3;
         private System.Windows.Forms.TextBox countryBox2;
@@ -6472,11 +5099,6 @@ namespace RankingApp
         private System.Windows.Forms.Panel locationPanel13;
         private System.Windows.Forms.Panel locationPanel14;
         private System.Windows.Forms.Panel locationPanel15;
-        private System.Windows.Forms.PictureBox changePicture15;
-        private System.Windows.Forms.PictureBox changePicture14;
-        private System.Windows.Forms.PictureBox changePicture13;
-        private System.Windows.Forms.PictureBox changePicture12;
-        private System.Windows.Forms.PictureBox changePicture11;
         private System.Windows.Forms.Button updateButton;
         private System.Windows.Forms.Panel panel30;
         private System.Windows.Forms.TextBox countryBox30;
@@ -6568,21 +5190,6 @@ namespace RankingApp
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.Label label25;
-        private System.Windows.Forms.PictureBox changePicture30;
-        private System.Windows.Forms.PictureBox changePicture29;
-        private System.Windows.Forms.PictureBox changePicture28;
-        private System.Windows.Forms.PictureBox changePicture27;
-        private System.Windows.Forms.PictureBox changePicture26;
-        private System.Windows.Forms.PictureBox changePicture25;
-        private System.Windows.Forms.PictureBox changePicture24;
-        private System.Windows.Forms.PictureBox changePicture23;
-        private System.Windows.Forms.PictureBox changePicture22;
-        private System.Windows.Forms.PictureBox changePicture21;
-        private System.Windows.Forms.PictureBox changePicture20;
-        private System.Windows.Forms.PictureBox changePicture19;
-        private System.Windows.Forms.PictureBox changePicture16;
-        private System.Windows.Forms.PictureBox changePicture18;
-        private System.Windows.Forms.PictureBox changePicture17;
         private System.Windows.Forms.Label updatedLabel;
         private System.Windows.Forms.Panel locationPanel30;
         private System.Windows.Forms.Panel locationPanel29;
@@ -6739,76 +5346,8 @@ namespace RankingApp
         private System.Windows.Forms.Label label38;
         private System.Windows.Forms.Label label39;
         private System.Windows.Forms.Label label40;
-        private System.Windows.Forms.PictureBox changePicture50;
-        private System.Windows.Forms.PictureBox changePicture49;
-        private System.Windows.Forms.PictureBox changePicture48;
-        private System.Windows.Forms.PictureBox changePicture47;
-        private System.Windows.Forms.PictureBox changePicture46;
-        private System.Windows.Forms.PictureBox changePicture45;
-        private System.Windows.Forms.PictureBox changePicture44;
-        private System.Windows.Forms.PictureBox changePicture43;
-        private System.Windows.Forms.PictureBox changePicture42;
-        private System.Windows.Forms.PictureBox changePicture41;
-        private System.Windows.Forms.PictureBox changePicture40;
-        private System.Windows.Forms.PictureBox changePicture37;
-        private System.Windows.Forms.PictureBox changePicture39;
-        private System.Windows.Forms.PictureBox changePicture38;
-        private System.Windows.Forms.PictureBox changePicture36;
-        private System.Windows.Forms.PictureBox changePicture35;
-        private System.Windows.Forms.PictureBox changePicture34;
-        private System.Windows.Forms.PictureBox changePicture33;
-        private System.Windows.Forms.PictureBox changePicture32;
-        private System.Windows.Forms.PictureBox changePicture31;
-        private System.Windows.Forms.Label positionChangeLabel2;
-        private System.Windows.Forms.Label positionChangeLabel1;
-        private System.Windows.Forms.Label positionChangeLabel32;
-        private System.Windows.Forms.Label positionChangeLabel31;
-        private System.Windows.Forms.Label positionChangeLabel30;
-        private System.Windows.Forms.Label positionChangeLabel29;
-        private System.Windows.Forms.Label positionChangeLabel28;
-        private System.Windows.Forms.Label positionChangeLabel27;
-        private System.Windows.Forms.Label positionChangeLabel26;
-        private System.Windows.Forms.Label positionChangeLabel25;
-        private System.Windows.Forms.Label positionChangeLabel24;
-        private System.Windows.Forms.Label positionChangeLabel23;
-        private System.Windows.Forms.Label positionChangeLabel22;
-        private System.Windows.Forms.Label positionChangeLabel21;
-        private System.Windows.Forms.Label positionChangeLabel20;
-        private System.Windows.Forms.Label positionChangeLabel19;
-        private System.Windows.Forms.Label positionChangeLabel18;
-        private System.Windows.Forms.Label positionChangeLabel17;
-        private System.Windows.Forms.Label positionChangeLabel16;
-        private System.Windows.Forms.Label positionChangeLabel15;
-        private System.Windows.Forms.Label positionChangeLabel14;
-        private System.Windows.Forms.Label positionChangeLabel13;
-        private System.Windows.Forms.Label positionChangeLabel12;
-        private System.Windows.Forms.Label positionChangeLabel11;
-        private System.Windows.Forms.Label positionChangeLabel10;
-        private System.Windows.Forms.Label positionChangeLabel9;
-        private System.Windows.Forms.Label positionChangeLabel8;
-        private System.Windows.Forms.Label positionChangeLabel7;
-        private System.Windows.Forms.Label positionChangeLabel5;
-        private System.Windows.Forms.Label positionChangeLabel6;
-        private System.Windows.Forms.Label positionChangeLabel4;
-        private System.Windows.Forms.Label positionChangeLabel3;
-        private System.Windows.Forms.Label positionChangeLabel50;
-        private System.Windows.Forms.Label positionChangeLabel49;
-        private System.Windows.Forms.Label positionChangeLabel48;
-        private System.Windows.Forms.Label positionChangeLabel47;
-        private System.Windows.Forms.Label positionChangeLabel46;
-        private System.Windows.Forms.Label positionChangeLabel45;
-        private System.Windows.Forms.Label positionChangeLabel44;
-        private System.Windows.Forms.Label positionChangeLabel43;
-        private System.Windows.Forms.Label positionChangeLabel42;
-        private System.Windows.Forms.Label positionChangeLabel41;
-        private System.Windows.Forms.Label positionChangeLabel40;
-        private System.Windows.Forms.Label positionChangeLabel39;
-        private System.Windows.Forms.Label positionChangeLabel38;
-        private System.Windows.Forms.Label positionChangeLabel37;
-        private System.Windows.Forms.Label positionChangeLabel36;
-        private System.Windows.Forms.Label positionChangeLabel35;
-        private System.Windows.Forms.Label positionChangeLabel34;
-        private System.Windows.Forms.Label positionChangeLabel33;
+        private System.Windows.Forms.Button saveButton;
+        private System.Windows.Forms.Button getConfigPathButton;
     }
 }
 

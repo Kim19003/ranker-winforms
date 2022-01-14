@@ -8,6 +8,8 @@ DZ
 Algeria
 AS
 American Samoa
+ASE
+Asean
 AD
 Andorra
 AO
@@ -140,6 +142,8 @@ EE
 Estonia
 ET
 Ethiopia
+EU
+European Union
 FK
 Falkland Islands
 FO
