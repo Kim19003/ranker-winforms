@@ -25,3 +25,17 @@ C:\Users\grill\Documents\GitHub\ranking-app\RankingApp\obj\Debug\RankingApp.cspr
 D:\stuff\- GITHUB -\ranking-app\RankingApp\obj\Debug\RankingApp.Form1.resources
 D:\stuff\- GITHUB -\ranking-app\RankingApp\obj\Debug\RankingApp.csproj.AssemblyReference.cache
 D:\stuff\- GITHUB -\ranking-app\RankingApp\obj\Debug\RankingApp.csproj.SuggestedBindingRedirects.cache
+D:\stuff\- GITHUB -\ranking-appl\RankingApp\obj\Debug\RankingApp.csproj.AssemblyReference.cache
+D:\stuff\- GITHUB -\ranking-appl\RankingApp\obj\Debug\RankingApp.csproj.SuggestedBindingRedirects.cache
+D:\stuff\- GITHUB -\ranking-appl\RankingApp\obj\Debug\RankingApp.Form1.resources
+D:\stuff\- GITHUB -\ranking-appl\RankingApp\obj\Debug\RankingApp.Properties.Resources.resources
+D:\stuff\- GITHUB -\ranking-appl\RankingApp\obj\Debug\RankingApp.csproj.GenerateResource.cache
+D:\stuff\- GITHUB -\ranking-appl\RankingApp\obj\Debug\RankingApp.csproj.CoreCompileInputs.cache
+D:\stuff\- GITHUB -\ranking-appl\RankingApp\obj\Debug\RankingApp.exe
+D:\stuff\- GITHUB -\ranking-appl\RankingApp\obj\Debug\RankingApp.pdb
+D:\stuff\- GITHUB -\ranking-appl\RankingApp\bin\Debug\RankingApp.exe.config
+D:\stuff\- GITHUB -\ranking-appl\RankingApp\bin\Debug\RankingApp.exe
+D:\stuff\- GITHUB -\ranking-appl\RankingApp\bin\Debug\RankingApp.pdb
+D:\stuff\- GITHUB -\ranking-appl\RankingApp\bin\Debug\Newtonsoft.Json.dll
+D:\stuff\- GITHUB -\ranking-appl\RankingApp\bin\Debug\Newtonsoft.Json.xml
+D:\stuff\- GITHUB -\ranking-appl\RankingApp\obj\Debug\RankingApp.csproj.CopyComplete

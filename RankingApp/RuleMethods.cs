@@ -1,5 +1,5 @@
-﻿using System.Collections.Generic;
-using System.Drawing;
+﻿using RankingApp.Models;
+using System.Collections.Generic;
 using System.IO;
 using System.Windows.Forms;
 
@@ -7,19 +7,21 @@ namespace RankingApp
 {
     class RuleMethods
     {
-        public static void TryToUpdate(string AppName, List<TextBox> pointBoxes, List<TextBox> teamNameBoxes, Dictionary<TextBox, Panel> panelRelations, List<Panel> locationPanels, int DefaultPanelLocationX, string configPath, string settingsPath, ref bool isCurrentSession,
-            ref List<Structure> structures, List<Structure> loadedStructures, List<Panel> panels, Dictionary<Panel, PictureBox> pictureBoxRelationsV, Dictionary<string, string> teamLastCountry,
-            Control.ControlCollection Controls, Label updatedLabel)
+        public static void TryToUpdate(string appName, List<TextBox> teamPointTextBoxes, List<TextBox> teamNameTextBoxes,
+            Dictionary<PictureBox, Panel> teamPictureBoxAndTeamPanelRelations, Dictionary<TextBox, Panel> teamPointTextBoxAndTeamPanelRelations,
+            List<Panel> locationPointerPanels, int defaultPanelLocationX, string configPath, string settingsPath, ref bool isCurrentSession,
+            List<Structure> currentStructures, List<Panel> teamPanels, Dictionary<string, string> teamLastCountry, Label updatedLabel)
         {
-            if (!IsThereDuplicates(pointBoxes, teamNameBoxes)) // Do nothing if there's duplicates
+            if (!IsThereTeamDuplicates(teamPointTextBoxes, teamNameTextBoxes))
             {
-                CalculatingMethods.OrderCalculator(pointBoxes, panelRelations, locationPanels, DefaultPanelLocationX, configPath, ref isCurrentSession, ref structures, loadedStructures, panels, 
-                   pictureBoxRelationsV, teamLastCountry, Controls);
+                CalculatingMethods.OrderCalculator(teamPointTextBoxes, teamPictureBoxAndTeamPanelRelations, teamPointTextBoxAndTeamPanelRelations, locationPointerPanels,
+                    defaultPanelLocationX, ref isCurrentSession, currentStructures, teamPanels, teamLastCountry);
+
                 SavingAndLoadingMethods.SetSettings(settingsPath, configPath, updatedLabel, false);
             }
             else
             {
-                MessageBox.Show("Duplicates detected!", AppName, MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Duplicates detected!", appName, MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
 
@@ -45,11 +47,11 @@ namespace RankingApp
             return Path.Combine(Directory.GetParent(Directory.GetCurrentDirectory()).Parent.FullName, "Resources", fullQuery);
         }
 
-        public static bool IsThereDuplicates(List<TextBox> pointBoxes, List<TextBox> teamNameBoxes) // Check for team name and point duplicates
+        public static bool IsThereTeamDuplicates(List<TextBox> teamPointTextBoxes, List<TextBox> teamNameTextBoxes)
         {
-            foreach (TextBox pointBox in pointBoxes)
+            foreach (TextBox pointBox in teamPointTextBoxes)
             {
-                foreach (TextBox otherPointBox in pointBoxes)
+                foreach (TextBox otherPointBox in teamPointTextBoxes)
                 {
                     if (pointBox != otherPointBox)
                     {
@@ -60,9 +62,9 @@ namespace RankingApp
                     }
                 }
             }
-            foreach (TextBox teamNameBox in teamNameBoxes)
+            foreach (TextBox teamNameBox in teamNameTextBoxes)
             {
-                foreach (TextBox otherTeamNameBox in teamNameBoxes)
+                foreach (TextBox otherTeamNameBox in teamNameTextBoxes)
                 {
                     if (teamNameBox != otherTeamNameBox)
                     {

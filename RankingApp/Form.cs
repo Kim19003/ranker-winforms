@@ -1,35 +1,48 @@
-﻿using RankingApp.Properties;
+﻿using RankingApp.Models;
 using System;
 using System.Collections.Generic;
 using System.Drawing;
+using System.Timers;
 using System.Windows.Forms;
+using Timer = System.Windows.Forms.Timer;
 
 namespace RankingApp
 {
-    public partial class Form1 : System.Windows.Forms.Form
+    public partial class Form1 : Form
     {
-        public static string AppName { get { return "Ranker"; } }
+        public static string AppName { get; } = "Ranker";
 
-        static Dictionary<TextBox, Panel> panelRelations; // Panel relations to points boxes
-        static Dictionary<PictureBox, Panel> pictureBoxRelations; // Picture box relations to panels
-        static Dictionary<Panel, PictureBox> pictureBoxRelationsV; // Picture box relations to panels (vice versa)
-        static Dictionary<TextBox, PictureBox> countryBoxRelations; // country box relations to picture boxes
-        static Dictionary<TextBox, TextBox> teamPointRelations; // team box relations to point boxes
-        static Dictionary<string, string> teamLastCountry; // Used in country saving
-        static Dictionary<string, string> countryAbbreviations; // Used in search queries
+        static readonly Dictionary<TextBox, Panel> teamPointTextBoxAndTeamPanelRelations = new Dictionary<TextBox, Panel>();
+        static readonly Dictionary<PictureBox, Panel> teamPictureBoxAndTeamPanelRelations = new Dictionary<PictureBox, Panel>();
+        static readonly Dictionary<TextBox, PictureBox> teamCountryTextBoxAndTeamPictureBoxRelations = new Dictionary<TextBox, PictureBox>();
+        static readonly Dictionary<TextBox, TextBox> teamNameTextBoxAndPointBoxRelations = new Dictionary<TextBox, TextBox>();
 
-        static List<Panel> panels, locationPanels;
-        static List<TextBox> teamNameBoxes, pointBoxes, countryBoxes;
-        static List<PictureBox> pictureBoxes;
+        static readonly Dictionary<string, string> teamLastCountry = new Dictionary<string, string>();
+        static Dictionary<string, string> countryAbbreviations = new Dictionary<string, string>();
 
-        static List<Structure> structures; // Current structures
-        static List<Structure> loadedStructures; // Loaded structures
+        static readonly List<Panel> teamPanels = new List<Panel>();
+        static readonly List<Panel> locationPointerPanels = new List<Panel>();
+        static readonly List<TextBox> teamNameTextBoxes = new List<TextBox>();
+        static readonly List<TextBox> teamPointTextBoxes = new List<TextBox>();
+        static readonly List<TextBox> teamCountryTextBoxes = new List<TextBox>();
+        static readonly List<PictureBox> teamPictureBoxes = new List<PictureBox>();
 
-        static string configPath, settingsPath, abbreviationsPath;
+        static readonly List<Structure> currentStructures = new List<Structure>();
+        static readonly List<Structure> loadedStructures = new List<Structure>();
+
+        static string configPath = AppDomain.CurrentDomain.BaseDirectory + "Config.json";
+        static readonly string settingsPath = AppDomain.CurrentDomain.BaseDirectory + "Settings.json";
+        static readonly string abbreviationsPath = AppDomain.CurrentDomain.BaseDirectory + "CountryAbbreviations.txt";
 
         static int DefaultPanelLocationX { get; set; }
 
         static bool isCurrentSession; // Used to change the change images based by position changes since last session
+
+        readonly Timer loopTimer = new Timer()
+        {
+            Interval = 1,
+            Enabled = false
+        };
 
         public Form1()
         {
@@ -37,80 +50,52 @@ namespace RankingApp
 
             MaximizeBox = false;
 
-            // -- Dictionaries --
-            panelRelations = new Dictionary<TextBox, Panel>();
-            pictureBoxRelations = new Dictionary<PictureBox, Panel>();
-            pictureBoxRelationsV = new Dictionary<Panel, PictureBox>();
-            countryBoxRelations = new Dictionary<TextBox, PictureBox>();
-            teamPointRelations = new Dictionary<TextBox, TextBox>();
-            teamLastCountry = new Dictionary<string, string>();
-            countryAbbreviations = new Dictionary<string, string>();
-            // ---
+            InitializeObjects.InitTeamPanels(Controls, teamPanels);
+            InitializeObjects.InitLocationPointerPanels(Controls, locationPointerPanels);
+            InitializeObjects.InitTeamNameTextBoxes(Controls, teamNameTextBoxes);
+            InitializeObjects.InitTeamPointTextBoxes(Controls, teamPointTextBoxes);
+            InitializeObjects.InitTeamCountryTextBoxes(Controls, teamCountryTextBoxes);
+            InitializeObjects.InitTeamPictureBoxes(Controls, teamPictureBoxes);
 
-            // -- Lists --
-            panels = new List<Panel>();
-            locationPanels = new List<Panel>();
-            teamNameBoxes = new List<TextBox>();
-            pointBoxes = new List<TextBox>();
-            countryBoxes = new List<TextBox>(); 
-            pictureBoxes = new List<PictureBox>();
-            structures = new List<Structure>();
-            loadedStructures = new List<Structure>();
-            // ---
-
-            // -- Paths --
-            configPath = AppDomain.CurrentDomain.BaseDirectory + "Config.json";
-            settingsPath = AppDomain.CurrentDomain.BaseDirectory + "Settings.json";
-            abbreviationsPath = AppDomain.CurrentDomain.BaseDirectory + "CountryAbbreviations.txt";
-            // ---
-
-            InitializeObjects.InitPanels(Controls, panels);
-            InitializeObjects.InitLocationPanels(Controls, locationPanels);
-            InitializeObjects.InitTeamNameBoxes(Controls, teamNameBoxes);
-            InitializeObjects.InitPointBoxes(Controls, pointBoxes);
-            InitializeObjects.InitCountryBoxes(Controls, countryBoxes);
-            InitializeObjects.InitPictureBoxes(Controls, pictureBoxes);
-
-            RelationCreatingMethods.CreatePanelRelation(panels, pointBoxes, panelRelations);
-            RelationCreatingMethods.CreatePictureBoxRelation(pictureBoxes, panels, pictureBoxRelations);
-            RelationCreatingMethods.CreatePictureBoxRelationV(panels, pictureBoxes, pictureBoxRelationsV);
-            RelationCreatingMethods.CreateCountryBoxRelation(countryBoxes, pictureBoxes, countryBoxRelations);
-            RelationCreatingMethods.CreatePointBoxRelation(teamNameBoxes, pointBoxes, teamPointRelations);
+            RelationCreatingMethods.CreateTeamPanelAndTeamPointTextBoxRelations(teamPanels, teamPointTextBoxes, teamPointTextBoxAndTeamPanelRelations);
+            RelationCreatingMethods.CreateTeamPictureBoxAndTeamPanelRelations(teamPictureBoxes, teamPanels, teamPictureBoxAndTeamPanelRelations);
+            RelationCreatingMethods.CreateTeamCountryTextBoxAndTeamPictureBoxRelations(teamCountryTextBoxes, teamPictureBoxes, teamCountryTextBoxAndTeamPictureBoxRelations);
+            RelationCreatingMethods.CreateTeamNameTextBoxAndTeamPointTextBoxRelations(teamNameTextBoxes, teamPointTextBoxes, teamNameTextBoxAndPointBoxRelations);
 
             DefaultPanelLocationX = panel1.Location.X;
 
-            // -- Event Adding --
-            foreach (TextBox teamNameBox in teamNameBoxes)
+            foreach (TextBox teamNameTextBox in teamNameTextBoxes)
             {
-                teamNameBox.KeyDown += new KeyEventHandler(TeamNameBox_KeyDown);
-                teamNameBox.AutoSize = false;
-                teamNameBox.Size = new Size(324, 31);
+                teamNameTextBox.KeyDown += new KeyEventHandler(TeamNameBox_KeyDown);
+                teamNameTextBox.AutoSize = false;
+                teamNameTextBox.Size = new Size(324, 31);
             }
-            foreach (TextBox pointsBox in pointBoxes)
+            foreach (TextBox pointsTextBox in teamPointTextBoxes)
             {
-                pointsBox.KeyPress += new KeyPressEventHandler(PointBox_KeyPress);
+                pointsTextBox.KeyPress += new KeyPressEventHandler(PointBox_KeyPress);
             }
-            foreach (TextBox countryBox in countryBoxes)
+            foreach (TextBox countryTextBox in teamCountryTextBoxes)
             {
-                countryBox.KeyPress += new KeyPressEventHandler(CountryTextBox_Submit);
-                countryBox.Leave += new EventHandler(CountryBox_Leave);
-                countryBox.Visible = false;
+                countryTextBox.KeyPress += new KeyPressEventHandler(CountryTextBox_Submit);
+                countryTextBox.Leave += new EventHandler(CountryBox_Leave);
+                countryTextBox.Visible = false;
             }
-            foreach (PictureBox pictureBox in pictureBoxes)
+            foreach (PictureBox pictureTextBox in teamPictureBoxes)
             {
-                pictureBox.Click += new EventHandler(PictureBox_Click);
+                pictureTextBox.Click += new EventHandler(PictureBox_Click);
             }
-            // ---
 
             if (!SavingAndLoadingMethods.GetSettings(settingsPath, ref configPath, updatedLabel))
             {
-                // Error
+                throw new Exception("Can't get settings!");
             }
-            SavingAndLoadingMethods.LoadData(Controls, ref loadedStructures, pictureBoxRelationsV, teamLastCountry, configPath, teamNameBoxes, pointBoxes, locationPanels,
-                countryAbbreviations, DefaultPanelLocationX); // Load config
+            SavingAndLoadingMethods.LoadData(Controls, loadedStructures, teamLastCountry, configPath, teamNameTextBoxes, teamPointTextBoxes,
+                locationPointerPanels, countryAbbreviations, DefaultPanelLocationX, teamPictureBoxAndTeamPanelRelations);
 
             countryAbbreviations = RuleMethods.GetCountryAbbreviations(abbreviationsPath);
             isCurrentSession = false;
+
+            loopTimer.Tick += new EventHandler(loopTimerEvent);
         }
 
         private void Form_Load(object sender, EventArgs e)
@@ -122,11 +107,12 @@ namespace RankingApp
         {
             isCurrentSession = false;
 
-            if (structures.Count > 0 && SavingAndLoadingMethods.IsThereChanges(configPath, structures))
+            if (currentStructures.Count > 0 && SavingAndLoadingMethods.IsThereChanges(configPath, currentStructures))
             {
-                if (MessageBox.Show("Unsaved changes detected! Do you want to save before exiting?", AppName, MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+                if (MessageBox.Show("Unsaved changes detected! Do you want to save before exiting?", AppName,
+                    MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
                 {
-                    SavingAndLoadingMethods.SaveToConfig(configPath, structures);
+                    SavingAndLoadingMethods.SaveToConfig(configPath, currentStructures);
                 }
             }
 
@@ -136,9 +122,9 @@ namespace RankingApp
 
         private void saveButton_Click(object sender, EventArgs e)
         {
-            if (SavingAndLoadingMethods.IsThereChanges(configPath, structures))
+            if (SavingAndLoadingMethods.IsThereChanges(configPath, currentStructures))
             {
-                SavingAndLoadingMethods.SaveToConfig(configPath, structures);
+                SavingAndLoadingMethods.SaveToConfig(configPath, currentStructures);
             }
         }
 
@@ -149,23 +135,25 @@ namespace RankingApp
 
         public void updateButton_Click(object sender, EventArgs e)
         {
-            RuleMethods.TryToUpdate(AppName, pointBoxes, teamNameBoxes, panelRelations, locationPanels, DefaultPanelLocationX, configPath, settingsPath, ref isCurrentSession, ref structures, loadedStructures,
-                panels, pictureBoxRelationsV, teamLastCountry, Controls, updatedLabel);
+            RuleMethods.TryToUpdate(AppName, teamPointTextBoxes, teamNameTextBoxes, teamPictureBoxAndTeamPanelRelations, teamPointTextBoxAndTeamPanelRelations,
+                locationPointerPanels, DefaultPanelLocationX, configPath, settingsPath, ref isCurrentSession, currentStructures, teamPanels, teamLastCountry,
+                updatedLabel);
         }
 
         public void Form1_KeyDown(object sender, KeyEventArgs e)
         {
-            if (e.KeyCode == Keys.F5) // F5, refresh
+            if (e.KeyCode == Keys.F5) // Refresh
             {
-                RuleMethods.TryToUpdate(AppName, pointBoxes, teamNameBoxes, panelRelations, locationPanels, DefaultPanelLocationX, configPath, settingsPath, ref isCurrentSession, ref structures, loadedStructures,
-                    panels, pictureBoxRelationsV, teamLastCountry, Controls, updatedLabel);
+                RuleMethods.TryToUpdate(AppName, teamPointTextBoxes, teamNameTextBoxes, teamPictureBoxAndTeamPanelRelations, teamPointTextBoxAndTeamPanelRelations,
+                    locationPointerPanels, DefaultPanelLocationX, configPath, settingsPath, ref isCurrentSession, currentStructures, teamPanels, teamLastCountry,
+                    updatedLabel);
             }
 
-            if (e.Control && e.KeyCode == Keys.S) // CTRL + S, save
+            if (e.Control && e.KeyCode == Keys.S) // Save
             {
-                if (SavingAndLoadingMethods.IsThereChanges(configPath, structures))
+                if (SavingAndLoadingMethods.IsThereChanges(configPath, currentStructures))
                 {
-                    SavingAndLoadingMethods.SaveToConfig(configPath, structures);
+                    SavingAndLoadingMethods.SaveToConfig(configPath, currentStructures);
                 }
             }
         }
@@ -178,24 +166,26 @@ namespace RankingApp
             }
         }
 
-        public void TeamNameBox_KeyDown(object sender, KeyEventArgs e) // Disable line breaks
+        public void TeamNameBox_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode.Equals(Keys.Enter))
             {
-                RuleMethods.TryToUpdate(AppName, pointBoxes, teamNameBoxes, panelRelations, locationPanels, DefaultPanelLocationX, configPath, settingsPath, ref isCurrentSession, ref structures, loadedStructures,
-                    panels, pictureBoxRelationsV, teamLastCountry, Controls, updatedLabel);
+                RuleMethods.TryToUpdate(AppName, teamPointTextBoxes, teamNameTextBoxes, teamPictureBoxAndTeamPanelRelations, teamPointTextBoxAndTeamPanelRelations,
+                    locationPointerPanels, DefaultPanelLocationX, configPath, settingsPath, ref isCurrentSession, currentStructures, teamPanels, teamLastCountry,
+                    updatedLabel);
 
                 e.SuppressKeyPress = true;
             }
         }
 
 
-        public void PointBox_KeyPress(object sender, KeyPressEventArgs e) // Allow only numbers to points boxes
+        public void PointBox_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (e.KeyChar == (char)Keys.Enter)
             {
-                RuleMethods.TryToUpdate(AppName, pointBoxes, teamNameBoxes, panelRelations, locationPanels, DefaultPanelLocationX, configPath, settingsPath, ref isCurrentSession, ref structures, loadedStructures,
-                    panels, pictureBoxRelationsV, teamLastCountry, Controls, updatedLabel);
+                RuleMethods.TryToUpdate(AppName, teamPointTextBoxes, teamNameTextBoxes, teamPictureBoxAndTeamPanelRelations, teamPointTextBoxAndTeamPanelRelations,
+                    locationPointerPanels, DefaultPanelLocationX, configPath, settingsPath, ref isCurrentSession, currentStructures, teamPanels, teamLastCountry,
+                    updatedLabel);
 
                 e.Handled = true;
             }
@@ -210,7 +200,7 @@ namespace RankingApp
         {
             PictureBox pictureBox = (PictureBox)sender;
 
-            Panel panel = pictureBoxRelations[pictureBox];
+            Panel panel = teamPictureBoxAndTeamPanelRelations[pictureBox];
             TextBox countryBox = (TextBox)panel.Controls.Find("countryBox" + panel.Name.Substring(5), true)[0];
 
             if (countryBox.Visible)
@@ -229,23 +219,23 @@ namespace RankingApp
 
             if (e.KeyChar == (char)Keys.Enter)
             {
-                PictureBox pictureBox = countryBoxRelations[textBox];
+                PictureBox pictureBox = teamCountryTextBoxAndTeamPictureBoxRelations[textBox];
 
                 pictureBox.ImageLocation = RuleMethods.TryGetImageLocationWithSearchQuery(textBox.Text, ".png", countryAbbreviations);
                 if (textBox.Text.Length == 2)
                 {
-                    try
+                    if (countryAbbreviations.ContainsKey(textBox.Text))
                     {
                         pictureBox.Tag = countryAbbreviations[textBox.Text];
                     }
-                    catch
+                    else
                     {
                         pictureBox.Tag = string.Empty;
                     }
                 }
                 else if (textBox.Text.Length > 1)
                 {
-                    pictureBox.Tag = textBox.Text.Substring(0, 1).ToUpper() + textBox.Text.Substring(1);
+                    pictureBox.Tag = textBox.Text[0].ToString().ToUpper() + textBox.Text.Substring(1);
                 }
                 else
                 {
@@ -264,24 +254,39 @@ namespace RankingApp
 
             textBox.Visible = false;
         }
-    }
 
-    public enum Change { Up, Down, None, New }
+        bool isDragging = false;
+        private void panel1_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+            {
+                if (!isDragging)
+                {
+                    panel1.BringToFront();
 
-    class Structure
-    {
-        public int Rank { get; set; }
-        public string Team { get; set; }
-        public string Country { get; set; }
-        public int Points { get; set; }
-        public Change Change { get; set; }
-        public int PositionChange { get; set; }
-        public string Panel { get; set; }
-    }
+                    loopTimer.Start();
+                    isDragging = true;
+                }
+            }
+        }
 
-    class Settings
-    {
-        public string Date { get; set; }
-        public string ConfigPath { get; set; }
+        private void panel1_MouseUp(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+            {
+                if (isDragging)
+                {
+                    panel1.SendToBack();
+
+                    loopTimer.Stop();
+                    isDragging = false;
+                }
+            }
+        }
+
+        private void loopTimerEvent(object sender, EventArgs e)
+        {
+            panel1.Location = new Point(panel1.Location.X, PointToClient(MousePosition).Y);
+        }
     }
 }

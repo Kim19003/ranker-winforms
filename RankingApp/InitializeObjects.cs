@@ -9,7 +9,7 @@ namespace RankingApp
 {
     class InitializeObjects
     {
-        public static void InitPanels(Control.ControlCollection Controls, List<Panel> panels)
+        public static void InitTeamPanels(Control.ControlCollection Controls, List<Panel> teamPanels)
         {
             for (int i = 1; i < 1000; i++)
             {
@@ -17,7 +17,7 @@ namespace RankingApp
                 {
                     Panel panel = (Panel)Controls.Find("panel" + i.ToString(), true)[0];
 
-                    panels.Add(panel);
+                    teamPanels.Add(panel);
                 }
                 catch
                 {
@@ -26,7 +26,7 @@ namespace RankingApp
             }
         }
 
-        public static void InitLocationPanels(Control.ControlCollection Controls, List<Panel> locationPanels)
+        public static void InitLocationPointerPanels(Control.ControlCollection Controls, List<Panel> locationPointerPanels)
         {
             for (int i = 1; i < 1000; i++)
             {
@@ -34,7 +34,7 @@ namespace RankingApp
                 {
                     Panel panel = (Panel)Controls.Find("locationPanel" + i.ToString(), true)[0];
 
-                    locationPanels.Add(panel);
+                    locationPointerPanels.Add(panel);
                 }
                 catch
                 {
@@ -43,7 +43,7 @@ namespace RankingApp
             }
         }
 
-        public static void InitTeamNameBoxes(Control.ControlCollection Controls, List<TextBox> teamNameBoxes)
+        public static void InitTeamNameTextBoxes(Control.ControlCollection Controls, List<TextBox> teamNameTextBoxes)
         {
             for (int i = 1; i < 1000; i += 2)
             {
@@ -51,7 +51,7 @@ namespace RankingApp
                 {
                     TextBox textBox = (TextBox)Controls.Find("textBox" + i.ToString(), true)[0];
 
-                    teamNameBoxes.Add(textBox);
+                    teamNameTextBoxes.Add(textBox);
                 }
                 catch
                 {
@@ -60,7 +60,7 @@ namespace RankingApp
             }
         }
 
-        public static void InitPointBoxes(Control.ControlCollection Controls, List<TextBox> pointBoxes)
+        public static void InitTeamPointTextBoxes(Control.ControlCollection Controls, List<TextBox> teamPointTextBoxes)
         {
             for (int i = 2; i < 1000; i += 2)
             {
@@ -68,7 +68,7 @@ namespace RankingApp
                 {
                     TextBox textBox = (TextBox)Controls.Find("textBox" + i.ToString(), true)[0];
 
-                    pointBoxes.Add(textBox);
+                    teamPointTextBoxes.Add(textBox);
                 }
                 catch
                 {
@@ -77,7 +77,7 @@ namespace RankingApp
             }
         }
 
-        public static void InitCountryBoxes(Control.ControlCollection Controls, List<TextBox> countryBoxes)
+        public static void InitTeamCountryTextBoxes(Control.ControlCollection Controls, List<TextBox> teamCountryTextBoxes)
         {
             for (int i = 1; i < 1000; i++)
             {
@@ -85,7 +85,7 @@ namespace RankingApp
                 {
                     TextBox textBox = (TextBox)Controls.Find("countryBox" + i.ToString(), true)[0];
 
-                    countryBoxes.Add(textBox);
+                    teamCountryTextBoxes.Add(textBox);
                 }
                 catch
                 {
@@ -94,7 +94,7 @@ namespace RankingApp
             }
         }
 
-        public static void InitPictureBoxes(Control.ControlCollection Controls, List<PictureBox> pictureBoxes)
+        public static void InitTeamPictureBoxes(Control.ControlCollection Controls, List<PictureBox> teamPictureBoxes)
         {
             for (int i = 1; i < 1000; i++)
             {
@@ -102,7 +102,7 @@ namespace RankingApp
                 {
                     PictureBox pictureBox = (PictureBox)Controls.Find("pictureBox" + i.ToString(), true)[0];
 
-                    pictureBoxes.Add(pictureBox);
+                    teamPictureBoxes.Add(pictureBox);
                 }
                 catch
                 {

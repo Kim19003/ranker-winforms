@@ -3991,7 +3991,7 @@ namespace RankingApp
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(43)))), ((int)(((byte)(53)))));
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.panel1.Controls.Add(this.countryBox1);
             this.panel1.Controls.Add(this.textBox2);
             this.panel1.Controls.Add(this.textBox1);
@@ -4000,6 +4000,8 @@ namespace RankingApp
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(455, 43);
             this.panel1.TabIndex = 0;
+            this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseDown);
+            this.panel1.MouseUp += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseUp);
             // 
             // countryBox1
             // 
@@ -4178,7 +4180,7 @@ namespace RankingApp
             this.updatedLabel.ForeColor = System.Drawing.Color.White;
             this.updatedLabel.Location = new System.Drawing.Point(611, 8);
             this.updatedLabel.Name = "updatedLabel";
-            this.updatedLabel.Size = new System.Drawing.Size(171, 16);
+            this.updatedLabel.Size = new System.Drawing.Size(170, 16);
             this.updatedLabel.TabIndex = 24;
             this.updatedLabel.Text = "Updated: 12.08.2021 (12:00)";
             // 

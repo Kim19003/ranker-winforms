@@ -1,36 +1,32 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace RankingApp
 {
     class OrderingAndPlacingMethods
     {
-        public static Dictionary<int, TextBox> OrderByPoints(List<int> biggestOrder, List<TextBox> pointBoxes)
+        public static Dictionary<int, TextBox> OrderByPoints(List<int> biggestOrder, List<TextBox> teamPointTextBoxes)
         {
-            Dictionary<int, TextBox> orderByPoints = new Dictionary<int, TextBox>();
+            Dictionary<int, TextBox> pointsTextBoxesOrderedByPoints = new Dictionary<int, TextBox>();
 
-            for (int i = 0; i < biggestOrder.Count; i++) // Always starts from the biggest points
+            for (int i = 0; i < biggestOrder.Count; i++)
             {
-                foreach (TextBox points in pointBoxes)
+                foreach (TextBox points in teamPointTextBoxes)
                 {
-                    if (biggestOrder[i] == int.Parse(points.Text)) // Match the points with the point boxes (places indexes ascending from '1', as it should ALWAYS match with some points box)
+                    if (biggestOrder[i] == int.Parse(points.Text))
                     {
-                        orderByPoints.Add(i + 1, points); // Add the matched ones to the dictionary
+                        pointsTextBoxesOrderedByPoints.Add(i + 1, points);
                     }
                 }
             }
 
-            return orderByPoints;
+            return pointsTextBoxesOrderedByPoints;
         }
 
-        public static void PlacePanelWithLocationPanels(int placement, Panel panel, List<Panel> locationPanels, int DefaultPanelLocationX)
+        public static void PlacePanelWithLocationPanels(int placement, Panel panel, List<Panel> locationPointerPanels, int defaultPanelLocationX)
         {
-            panel.Location = new Point(DefaultPanelLocationX, locationPanels[placement - 1].Location.Y);
+            panel.Location = new Point(defaultPanelLocationX, locationPointerPanels[placement - 1].Location.Y);
         }
 
         public static PictureBox GetPictureBoxByRank(int rank, Control.ControlCollection Controls)

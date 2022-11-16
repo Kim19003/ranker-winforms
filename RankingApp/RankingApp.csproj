@@ -61,7 +61,10 @@
       <DependentUpon>Form.cs</DependentUpon>
     </Compile>
     <Compile Include="InitializeObjects.cs" />
+    <Compile Include="Models\Settings.cs" />
+    <Compile Include="Models\Structure.cs" />
     <Compile Include="OrderingAndPlacingMethods.cs" />
+    <Compile Include="Other\Helpers.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RelationCreatingMethods.cs" />

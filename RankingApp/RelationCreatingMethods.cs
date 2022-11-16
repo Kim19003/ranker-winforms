@@ -1,86 +1,72 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace RankingApp
 {
     class RelationCreatingMethods
     {
-        public static void CreatePanelRelation(List<Panel> panels, List<TextBox> pointBoxes, Dictionary<TextBox, Panel> panelRelations)
+        public static void CreateTeamPanelAndTeamPointTextBoxRelations(List<Panel> teamPanels, List<TextBox> teamPointTextBoxes,
+            Dictionary<TextBox, Panel> teamPointTextBoxAndTeamPanelRelations)
         {
-            if (panels.Count == pointBoxes.Count)
+            if (teamPanels.Count == teamPointTextBoxes.Count)
             {
-                for (int i = 0; i < panels.Count; i++)
+                for (int i = 0; i < teamPanels.Count; i++)
                 {
-                    panelRelations.Add(pointBoxes[i], panels[i]);
+                    teamPointTextBoxAndTeamPanelRelations.Add(teamPointTextBoxes[i], teamPanels[i]);
                 }
             }
             else
             {
-                throw new Exception("'panels' and 'pointBoxes' lists are not the same size!");
+                throw new Exception("'teamPanels' and 'teamPointTextBoxes' lists are not the same size!");
             }
         }
 
-        public static void CreatePictureBoxRelation(List<PictureBox> pictureBoxes, List<Panel> panels, Dictionary<PictureBox, Panel> pictureBoxRelations)
+        public static void CreateTeamPictureBoxAndTeamPanelRelations(List<PictureBox> teamPictureBoxes, List<Panel> teamPanels,
+            Dictionary<PictureBox, Panel> teamPictureBoxAndTeamPanelRelations)
         {
-            if (pictureBoxes.Count == panels.Count)
+            if (teamPictureBoxes.Count == teamPanels.Count)
             {
-                for (int i = 0; i < pictureBoxes.Count; i++)
+                for (int i = 0; i < teamPictureBoxes.Count; i++)
                 {
-                    pictureBoxRelations.Add(pictureBoxes[i], panels[i]);
+                    teamPictureBoxAndTeamPanelRelations.Add(teamPictureBoxes[i], teamPanels[i]);
                 }
             }
             else
             {
-                throw new Exception("'pictureBoxes' and 'panels' lists are not the same size!");
+                throw new Exception("'teamPictureBoxes' and 'teamPanels' lists are not the same size!");
             }
         }
 
-        public static void CreatePictureBoxRelationV(List<Panel> panels, List<PictureBox> pictureBoxes, Dictionary<Panel, PictureBox> pictureBoxRelationsV)
+        public static void CreateTeamCountryTextBoxAndTeamPictureBoxRelations(List<TextBox> teamCountryTextBoxes, List<PictureBox> teamPictureBoxes,
+            Dictionary<TextBox, PictureBox> teamCountryTextBoxAndTeamPictureBoxRelations)
         {
-            if (panels.Count == pictureBoxes.Count)
+            if (teamCountryTextBoxes.Count == teamPictureBoxes.Count)
             {
-                for (int i = 0; i < panels.Count; i++)
+                for (int i = 0; i < teamCountryTextBoxes.Count; i++)
                 {
-                    pictureBoxRelationsV.Add(panels[i], pictureBoxes[i]);
+                    teamCountryTextBoxAndTeamPictureBoxRelations.Add(teamCountryTextBoxes[i], teamPictureBoxes[i]);
                 }
             }
             else
             {
-                throw new Exception("'panels' and 'pictureBoxes' lists are not the same size!");
+                throw new Exception("'teamCountryTextBoxes' and 'teamPictureBoxes' lists are not the same size!");
             }
         }
 
-        public static void CreateCountryBoxRelation(List<TextBox> countryBoxes, List<PictureBox> pictureBoxes, Dictionary<TextBox, PictureBox> countryBoxRelations)
+        public static void CreateTeamNameTextBoxAndTeamPointTextBoxRelations(List<TextBox> teamNameTextBoxes, List<TextBox> teamPointTextBoxes,
+            Dictionary<TextBox, TextBox> teamNameTextBoxAndPointBoxRelations)
         {
-            if (countryBoxes.Count == pictureBoxes.Count)
+            if (teamNameTextBoxes.Count == teamPointTextBoxes.Count)
             {
-                for (int i = 0; i < countryBoxes.Count; i++)
+                for (int i = 0; i < teamNameTextBoxes.Count; i++)
                 {
-                    countryBoxRelations.Add(countryBoxes[i], pictureBoxes[i]);
+                    teamNameTextBoxAndPointBoxRelations.Add(teamNameTextBoxes[i], teamPointTextBoxes[i]);
                 }
             }
             else
             {
-                throw new Exception("'countryBoxes' and 'pictureBoxes' lists are not the same size!");
-            }
-        }
-
-        public static void CreatePointBoxRelation(List<TextBox> teamNameBoxes, List<TextBox> pointBoxes, Dictionary<TextBox, TextBox> teamPointRelations)
-        {
-            if (teamNameBoxes.Count == pointBoxes.Count)
-            {
-                for (int i = 0; i < teamNameBoxes.Count; i++)
-                {
-                    teamPointRelations.Add(teamNameBoxes[i], pointBoxes[i]);
-                }
-            }
-            else
-            {
-                throw new Exception("'teamNameBoxes' and 'pointBoxes' lists are not the same size!");
+                throw new Exception("'teamNameTextBoxes' and 'teamPointTextBoxes' lists are not the same size!");
             }
         }
     }

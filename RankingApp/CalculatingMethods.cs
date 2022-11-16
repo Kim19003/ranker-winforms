@@ -1,38 +1,37 @@
-﻿using Newtonsoft.Json;
+﻿using RankingApp.Models;
 using System.Collections.Generic;
-using System.Drawing;
-using System.IO;
 using System.Windows.Forms;
 
 namespace RankingApp
 {
     class CalculatingMethods
     {
-        public static void OrderCalculator(List<TextBox> pointBoxes, Dictionary<TextBox, Panel> panelRelations, List<Panel> locationPanels, int DefaultPanelLocationX, string configPath, ref bool isCurrentSession,
-            ref List<Structure> structures, List<Structure> loadedStructures, List<Panel> panels, Dictionary<Panel, PictureBox> pictureBoxRelationsV, Dictionary<string, string> teamLastCountry,
-            Control.ControlCollection Controls)
+        public static void OrderCalculator(List<TextBox> teamPointTextBoxes, Dictionary<PictureBox, Panel> teamPictureBoxAndTeamPanelRelations, 
+            Dictionary<TextBox, Panel> teamPointTextBoxAndTeamPanelRelations, List<Panel> locationPointerPanels, int defaultPanelLocationX,
+            ref bool isCurrentSession, List<Structure> currentStructures, List<Panel> teamPanels, Dictionary<string, string> teamLastCountry)
         {
             List<int> biggestOrder = new List<int>();
-            Dictionary<int, TextBox> orderByPoints = new Dictionary<int, TextBox>();
+            Dictionary<int, TextBox> pointsTextBoxesOrderedByPoints = new Dictionary<int, TextBox>();
 
-            foreach (TextBox points in pointBoxes)
+            foreach (TextBox points in teamPointTextBoxes)
             {
                 biggestOrder.Add(int.Parse(points.Text));
             }
 
             biggestOrder.Sort((a, b) => b.CompareTo(a));
 
-            orderByPoints = OrderingAndPlacingMethods.OrderByPoints(biggestOrder, pointBoxes); // Correct (ascending) order of the point boxes sorted by the highest points
+            pointsTextBoxesOrderedByPoints = OrderingAndPlacingMethods.OrderByPoints(biggestOrder, teamPointTextBoxes);
 
-            for (int i = 1; i < orderByPoints.Count + 1; i++)
+            for (int i = 1; i < pointsTextBoxesOrderedByPoints.Count + 1; i++)
             {
-                OrderingAndPlacingMethods.PlacePanelWithLocationPanels(i, panelRelations[orderByPoints[i]], locationPanels, DefaultPanelLocationX);
+                OrderingAndPlacingMethods.PlacePanelWithLocationPanels(i, teamPointTextBoxAndTeamPanelRelations[pointsTextBoxesOrderedByPoints[i]], locationPointerPanels,
+                    defaultPanelLocationX);
             }
 
-            CalculateDefaultPoints(pointBoxes, 10000, 100);
+            CalculateDefaultPoints(teamPointTextBoxes, 10000, 100);
 
-            SavingAndLoadingMethods.SaveDataAndChangePositionChangeImages(ref structures, loadedStructures, panels, pictureBoxRelationsV, panelRelations, teamLastCountry, pointBoxes,
-            configPath, orderByPoints, Controls, isCurrentSession);
+            SavingAndLoadingMethods.SaveDataAndChangePositionChangeImages(currentStructures, teamPanels, teamPictureBoxAndTeamPanelRelations,
+                teamPointTextBoxAndTeamPanelRelations, teamLastCountry, pointsTextBoxesOrderedByPoints);
 
             isCurrentSession = true;
         }
@@ -50,26 +49,26 @@ namespace RankingApp
             return -1;
         }
 
-        public static void CalculateDefaultPoints(List<TextBox> pointBoxes, int maxPoints, int gapDifference)
+        public static void CalculateDefaultPoints(List<TextBox> teamPointTextBoxes, int maxPoints, int gapDifference)
         {
             List<int> biggestOrder = new List<int>();
 
-            Dictionary<int, TextBox> orderByPoints = new Dictionary<int, TextBox>();
+            Dictionary<int, TextBox> pointsTextBoxesOrderedByPoints = new Dictionary<int, TextBox>();
 
-            foreach (TextBox points in pointBoxes)
+            foreach (TextBox points in teamPointTextBoxes)
             {
                 biggestOrder.Add(int.Parse(points.Text));
             }
 
             biggestOrder.Sort((a, b) => b.CompareTo(a));
 
-            orderByPoints = OrderingAndPlacingMethods.OrderByPoints(biggestOrder, pointBoxes); // Correct (ascending) order of the point boxes sorted by the highest points
+            pointsTextBoxesOrderedByPoints = OrderingAndPlacingMethods.OrderByPoints(biggestOrder, teamPointTextBoxes);
 
             int pts = maxPoints + gapDifference;
-            for (int i = 1; i < orderByPoints.Count + 1; i++)
+            for (int i = 1; i < pointsTextBoxesOrderedByPoints.Count + 1; i++)
             {
                 pts -= gapDifference;
-                orderByPoints[i].Text = pts.ToString();
+                pointsTextBoxesOrderedByPoints[i].Text = pts.ToString();
             }
         }
     }

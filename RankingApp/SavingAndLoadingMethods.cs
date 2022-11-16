@@ -1,4 +1,6 @@
 ﻿using Newtonsoft.Json;
+using RankingApp.Models;
+using RankingApp.Other;
 using System;
 using System.Collections.Generic;
 using System.Drawing;
@@ -10,82 +12,67 @@ namespace RankingApp
 {
     class SavingAndLoadingMethods
     {
-        public static void SaveDataAndChangePositionChangeImages(ref List<Structure> structures, List<Structure> loadedStructures, List<Panel> panels, Dictionary<Panel, PictureBox> pictureBoxRelationsV, Dictionary<TextBox, Panel> panelRelations, Dictionary<string, string> teamLastCountry, List<TextBox> pointBoxes,
-            string configPath, Dictionary<int, TextBox> orderByPoints, Control.ControlCollection Controls, bool isCurrentSession)
+        public static void SaveDataAndChangePositionChangeImages(List<Structure> currentStructures, List<Panel> teamPanels,
+            Dictionary<PictureBox, Panel> teamPictureBoxAndTeamPanelRelations, Dictionary<TextBox, Panel> teamPointTextBoxAndTeamPanelRelations,
+            Dictionary<string, string> teamLastCountry, Dictionary<int, TextBox> pointsTextBoxesOrderedByPoints)
         {
-            structures.Clear(); // ALWAYS OVERWRITE THE STRUCTURES LIST
+            currentStructures.Clear();
 
             int c = 1;
-            foreach (Panel panel in panels)
+            foreach (Panel panel in teamPanels)
             {
-                /*
-                 * Team Name TextBoxes (c): 1, 3, 5...
-                 * Points TextBoxes (c): 2, 4, 6...
-                 * Country Flag Picture Boxes (b): 1, 2, 3...
-                 */
-
                 Control[] _teamNameTextBox = panel.Controls.Find("textBox" + c.ToString(), true),
                 _pointsTextBox = panel.Controls.Find("textBox" + (c + 1).ToString(), true);
 
                 TextBox teamNameTextBox = (TextBox)_teamNameTextBox[0], pointsTextBox = (TextBox)_pointsTextBox[0];
 
                 Structure structure = new Structure();
-                for (int i = 1; i < orderByPoints.Count + 1; i++)
+
+                for (int i = 1; i < pointsTextBoxesOrderedByPoints.Count + 1; i++)
                 {
-                    if (orderByPoints[i] == pointsTextBox)
+                    if (pointsTextBoxesOrderedByPoints[i] == pointsTextBox)
                     {
-                        structure.Rank = i; // 1
+                        structure.Rank = i;
 
                         break;
                     }
                 }
 
-                structure.Team = teamNameTextBox.Text; // 2
-                if ((string)pictureBoxRelationsV[panelRelations[pointsTextBox]].Tag != null) // 3
+                structure.Team = teamNameTextBox.Text;
+
+                Panel foundPanel = teamPictureBoxAndTeamPanelRelations.First(p => p.Value == teamPointTextBoxAndTeamPanelRelations[pointsTextBox]).Value;
+
+                if ((string)foundPanel.Tag != null)
                 {
-                    structure.Country = (string)pictureBoxRelationsV[panelRelations[pointsTextBox]].Tag;
+                    structure.Country = (string)foundPanel.Tag;
                 }
                 else
                 {
-                    try
+                    if (teamLastCountry.ContainsKey(structure.Team))
                     {
                         structure.Country = teamLastCountry[structure.Team];
                     }
-                    catch
+                    else
                     {
                         structure.Country = null;
                     }
                 }
-                structure.Points = int.Parse(pointsTextBox.Text); // 4
-                structure.Panel = panel.Name; // 5
+                structure.Points = int.Parse(pointsTextBox.Text);
+                structure.Panel = panel.Name;
 
-                structures.Add(structure);
+                currentStructures.Add(structure);
 
                 c += 2;
             }
-
-            // ---------------------------------------------------------------------------------------------
-            // NOTE: EVERY STRUCTURE VARIABLE MUST BE OVERWRITTEN, OR THEY ARE DECLARED WITH DEFAULT VALUES!
-            //
-            // public int Rank { get; set; } // 1
-            // public string Team { get; set; } // 2
-            // public string Country { get; set; } // 3
-            // public int Points { get; set; } // 4
-            // public string Panel { get; set; } // 5
-            // ---------------------------------------------------------------------------------------------
         }
 
-        public static void SaveToConfig(string configPath, List<Structure> structures)
+        public static void SaveToConfig(string configPath, List<Structure> currentStructures)
         {
             try
             {
-                if (structures.Count > 0)
+                if (currentStructures.Count > 0)
                 {
-                    File.WriteAllText(configPath, JsonConvert.SerializeObject(structures, Formatting.Indented));
-                }
-                else
-                {
-                    // Do nothing, since there's no changes
+                    File.WriteAllText(configPath, JsonConvert.SerializeObject(currentStructures, Formatting.Indented));
                 }
             }
             catch
@@ -93,22 +80,26 @@ namespace RankingApp
             }
         }
 
-        public static void LoadData(Control.ControlCollection Controls, ref List<Structure> loadedStructures, Dictionary<Panel, PictureBox> pictureBoxRelationsV, Dictionary<string, string> teamLastCountry, string configPath,
-            List<TextBox> teamNameBoxes, List<TextBox> pointBoxes, List<Panel> locationPanels, Dictionary<string, string> countryAbbreviations, int DefaultPanelLocationX)
+        public static void LoadData(Control.ControlCollection Controls, List<Structure> loadedStructures, Dictionary<string, string> teamLastCountry,
+            string configPath, List<TextBox> teamNameTextBoxes, List<TextBox> teamPointTextBoxes, List<Panel> locationPointerPanels,
+            Dictionary<string, string> countryAbbreviations, int defaultPanelLocationX, Dictionary<PictureBox, Panel> teamPictureBoxAndTeamPanelRelations)
         {
             if (File.Exists(configPath))
             {
                 if (File.ReadAllText(configPath).Length > 0)
                 {
-                    UpdateStructuresAndPlaceThem(Controls, ref loadedStructures, pictureBoxRelationsV, teamLastCountry, configPath, teamNameBoxes, pointBoxes, locationPanels, countryAbbreviations, DefaultPanelLocationX);
+                    UpdateStructuresAndPlaceThem(Controls, loadedStructures, teamLastCountry, configPath, teamNameTextBoxes, teamPointTextBoxes, locationPointerPanels,
+                        countryAbbreviations, defaultPanelLocationX, teamPictureBoxAndTeamPanelRelations);
                 }
             }
         }
 
-        public static void UpdateStructuresAndPlaceThem(Control.ControlCollection Controls, ref List<Structure> loadedStructures, Dictionary<Panel, PictureBox> pictureBoxRelationsV, Dictionary<string, string> teamLastCountry, string configPath,
-            List<TextBox> teamNameBoxes, List<TextBox> pointBoxes, List<Panel> locationPanels, Dictionary<string, string> countryAbbreviations, int DefaultPanelLocationX)
+        public static void UpdateStructuresAndPlaceThem(Control.ControlCollection Controls, List<Structure> loadedStructures,
+            Dictionary<string, string> teamLastCountry, string configPath, List<TextBox> teamNameTextBoxes, List<TextBox> teamPointTextBoxes,
+            List<Panel> locationPointerPanels, Dictionary<string, string> countryAbbreviations, int defaultPanelLocationX,
+            Dictionary<PictureBox, Panel> teamPictureBoxAndTeamPanelRelations)
         {
-            loadedStructures = JsonConvert.DeserializeObject<List<Structure>>(File.ReadAllText(configPath));
+            loadedStructures.Fill(JsonConvert.DeserializeObject<List<Structure>>(File.ReadAllText(configPath)), true);
 
             foreach (Structure structure in loadedStructures)
             {
@@ -117,7 +108,7 @@ namespace RankingApp
                 Control[] _teamNameTextBox, _teamPointsTextBox;
                 TextBox teamNameTextBox, teamPointsTextBox;
 
-                foreach (TextBox teamNameBox in teamNameBoxes) // Search for the matching team name box from the teamNameBoxes list
+                foreach (TextBox teamNameBox in teamNameTextBoxes)
                 {
                     _teamNameTextBox = teamPanel.Controls.Find(teamNameBox.Name, true);
 
@@ -125,7 +116,7 @@ namespace RankingApp
                     {
                         teamNameTextBox = (TextBox)_teamNameTextBox[0];
 
-                        foreach (TextBox nameBox in teamNameBoxes) // Update team name box values with the loaded values
+                        foreach (TextBox nameBox in teamNameTextBoxes)
                         {
                             if (nameBox == teamNameTextBox)
                             {
@@ -137,7 +128,7 @@ namespace RankingApp
                         break;
                     }
                 }
-                foreach (TextBox teamPointsBox in pointBoxes) // Search for the matching points box from the pointBoxes list
+                foreach (TextBox teamPointsBox in teamPointTextBoxes)
                 {
                     _teamPointsTextBox = teamPanel.Controls.Find(teamPointsBox.Name, true);
 
@@ -145,7 +136,7 @@ namespace RankingApp
                     {
                         teamPointsTextBox = (TextBox)_teamPointsTextBox[0];
 
-                        foreach (TextBox pointsBox in pointBoxes) // Update point box values with the loaded values
+                        foreach (TextBox pointsBox in teamPointTextBoxes)
                         {
                             if (pointsBox == teamPointsTextBox)
                             {
@@ -158,10 +149,10 @@ namespace RankingApp
                     }
                 }
 
-                OrderingAndPlacingMethods.PlacePanelWithLocationPanels(structure.Rank, teamPanel, locationPanels, DefaultPanelLocationX);
+                OrderingAndPlacingMethods.PlacePanelWithLocationPanels(structure.Rank, teamPanel, locationPointerPanels, defaultPanelLocationX);
 
-                pictureBoxRelationsV[teamPanel].ImageLocation = RuleMethods.TryGetImageLocationWithSearchQuery(structure.Country, ".png", countryAbbreviations); // Change the picture based on country name
-                pictureBoxRelationsV[teamPanel].Tag = structure.Country;
+                teamPictureBoxAndTeamPanelRelations.First(p => p.Value == teamPanel).Key.ImageLocation = RuleMethods.TryGetImageLocationWithSearchQuery(structure.Country, ".png", countryAbbreviations);
+                teamPictureBoxAndTeamPanelRelations.First(p => p.Value == teamPanel).Key.Tag = structure.Country;
 
                 if (!teamLastCountry.ContainsKey(structure.Team))
                 {
@@ -176,8 +167,7 @@ namespace RankingApp
 
         public static bool IsThereChanges(string configPath, List<Structure> currentStructures)
         {
-            List<Structure> savedStructures = new List<Structure>();
-            savedStructures = JsonConvert.DeserializeObject<List<Structure>>(File.ReadAllText(configPath));
+            List<Structure> savedStructures = JsonConvert.DeserializeObject<List<Structure>>(File.ReadAllText(configPath));
 
             string oldStructureJson = JsonConvert.SerializeObject(savedStructures, Formatting.Indented);
             string currentStructureJson = JsonConvert.SerializeObject(currentStructures, Formatting.Indented);
@@ -196,8 +186,10 @@ namespace RankingApp
             {
                 if (File.ReadAllText(settingsPath).Length > 0)
                 {
-                    Settings settings = new Settings();
-                    settings.Date = DateTime.Now.ToString("dd.MM.yyyy (HH:mm)");
+                    Settings settings = new Settings
+                    {
+                        Date = DateTime.Now.ToString("dd.MM.yyyy (HH:mm)")
+                    };
 
                     if (changingPath)
                     {
