@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32804.467
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RankerViewer", "RankerViewer\RankerViewer.csproj", "{6751492D-2869-41EE-846B-2EA5ADFCBB5E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6751492D-2869-41EE-846B-2EA5ADFCBB5E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6751492D-2869-41EE-846B-2EA5ADFCBB5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6751492D-2869-41EE-846B-2EA5ADFCBB5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6751492D-2869-41EE-846B-2EA5ADFCBB5E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {92B5809B-3EB3-4F31-B5C2-3794A2479520}
+	EndGlobalSection
+EndGlobal

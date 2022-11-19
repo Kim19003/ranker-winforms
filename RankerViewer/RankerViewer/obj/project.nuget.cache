@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "HlwFtSPaNyUI3OvIEsZ8/vV/pfEH81xgtCcEWwc81HCMPHBS3QpNZr4z+s18tbs5aF8QLyEf16u7HlJyPUptTg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Kim\\source\\repos\\RankerViewer\\RankerViewer\\RankerViewer.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Kim\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}

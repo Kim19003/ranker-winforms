@@ -1,0 +1,17 @@
+C:\Users\Kim\source\repos\RankerViewer\RankerViewer\bin\Debug\net6.0\RankerViewer.exe
+C:\Users\Kim\source\repos\RankerViewer\RankerViewer\bin\Debug\net6.0\RankerViewer.deps.json
+C:\Users\Kim\source\repos\RankerViewer\RankerViewer\bin\Debug\net6.0\RankerViewer.runtimeconfig.json
+C:\Users\Kim\source\repos\RankerViewer\RankerViewer\bin\Debug\net6.0\RankerViewer.dll
+C:\Users\Kim\source\repos\RankerViewer\RankerViewer\bin\Debug\net6.0\RankerViewer.pdb
+C:\Users\Kim\source\repos\RankerViewer\RankerViewer\obj\Debug\net6.0\RankerViewer.csproj.AssemblyReference.cache
+C:\Users\Kim\source\repos\RankerViewer\RankerViewer\obj\Debug\net6.0\RankerViewer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Kim\source\repos\RankerViewer\RankerViewer\obj\Debug\net6.0\RankerViewer.AssemblyInfoInputs.cache
+C:\Users\Kim\source\repos\RankerViewer\RankerViewer\obj\Debug\net6.0\RankerViewer.AssemblyInfo.cs
+C:\Users\Kim\source\repos\RankerViewer\RankerViewer\obj\Debug\net6.0\RankerViewer.csproj.CoreCompileInputs.cache
+C:\Users\Kim\source\repos\RankerViewer\RankerViewer\obj\Debug\net6.0\RankerViewer.dll
+C:\Users\Kim\source\repos\RankerViewer\RankerViewer\obj\Debug\net6.0\refint\RankerViewer.dll
+C:\Users\Kim\source\repos\RankerViewer\RankerViewer\obj\Debug\net6.0\RankerViewer.pdb
+C:\Users\Kim\source\repos\RankerViewer\RankerViewer\obj\Debug\net6.0\RankerViewer.genruntimeconfig.cache
+C:\Users\Kim\source\repos\RankerViewer\RankerViewer\obj\Debug\net6.0\ref\RankerViewer.dll
+C:\Users\Kim\source\repos\RankerViewer\RankerViewer\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\Kim\source\repos\RankerViewer\RankerViewer\obj\Debug\net6.0\RankerViewer.csproj.CopyComplete
