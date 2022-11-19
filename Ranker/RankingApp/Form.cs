@@ -1,7 +1,9 @@
 ﻿using RankingApp.Models;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Drawing;
+using System.IO;
 using System.Timers;
 using System.Windows.Forms;
 using Timer = System.Windows.Forms.Timer;
@@ -30,9 +32,15 @@ namespace RankingApp
         static readonly List<Structure> currentStructures = new List<Structure>();
         static readonly List<Structure> loadedStructures = new List<Structure>();
 
-        static string configPath = AppDomain.CurrentDomain.BaseDirectory + "Config.json";
-        static readonly string settingsPath = AppDomain.CurrentDomain.BaseDirectory + "Settings.json";
+        static readonly string localPath = @"C:\Ranker\";
+        static readonly string settingsPath = @"C:\Ranker\Settings.json";
+
         static readonly string abbreviationsPath = AppDomain.CurrentDomain.BaseDirectory + "CountryAbbreviations.txt";
+
+        static readonly string parentPath = AppDomain.CurrentDomain.BaseDirectory.Replace(@"Ranker\RankingApp\bin\Debug\", string.Empty);
+        static readonly string rankerViewerExePath = Path.Combine(parentPath, @"RankerViewer\RankerViewer\bin\Debug\net6.0\RankerViewer.exe");
+
+        static string structuresPath;
 
         static int DefaultPanelLocationX { get; set; }
         static int MixPanelLocationY { get; set; }
@@ -51,6 +59,16 @@ namespace RankingApp
             InitializeComponent();
 
             MaximizeBox = false;
+
+            if (!Directory.Exists(localPath))
+            {
+                Directory.CreateDirectory(localPath);
+            }
+
+            if (!File.Exists(settingsPath))
+            {
+                File.WriteAllText(settingsPath, "{\n\t\n}");
+            }
 
             InitializeObjects.InitTeamPanels(Controls, teamPanels);
             InitializeObjects.InitLocationPointerPanels(Controls, locationPointerPanels);
@@ -89,11 +107,11 @@ namespace RankingApp
                 pictureTextBox.Click += new EventHandler(PictureBox_Click);
             }
 
-            if (!SavingAndLoadingMethods.GetSettings(settingsPath, ref configPath, updatedLabel))
+            if (!SavingAndLoadingMethods.GetSettings(settingsPath, ref structuresPath, updatedLabel))
             {
                 throw new Exception("Can't get settings!");
             }
-            SavingAndLoadingMethods.LoadData(Controls, loadedStructures, teamLastCountry, configPath, teamNameTextBoxes, teamPointTextBoxes,
+            SavingAndLoadingMethods.LoadData(Controls, loadedStructures, teamLastCountry, structuresPath, teamNameTextBoxes, teamPointTextBoxes,
                 locationPointerPanels, countryAbbreviations, DefaultPanelLocationX, teamPictureBoxAndTeamPanelRelations);
 
             countryAbbreviations = RuleMethods.GetCountryAbbreviations(abbreviationsPath);
@@ -111,36 +129,38 @@ namespace RankingApp
         {
             isCurrentSession = false;
 
-            if (currentStructures.Count > 0 && SavingAndLoadingMethods.IsThereChanges(configPath, currentStructures))
+            if (currentStructures.Count > 0 && SavingAndLoadingMethods.IsThereChanges(structuresPath, currentStructures))
             {
                 if (MessageBox.Show("Unsaved changes detected! Do you want to save before exiting?", AppName,
                     MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
                 {
-                    SavingAndLoadingMethods.SaveToConfig(configPath, currentStructures);
+                    SavingAndLoadingMethods.SaveToConfig(structuresPath, currentStructures);
                 }
             }
 
             Properties.Settings.Default.Form_Location = Location;
             Properties.Settings.Default.Save();
+
+            Process.Start(rankerViewerExePath);
         }
 
         private void saveButton_Click(object sender, EventArgs e)
         {
-            if (SavingAndLoadingMethods.IsThereChanges(configPath, currentStructures))
+            if (SavingAndLoadingMethods.IsThereChanges(structuresPath, currentStructures))
             {
-                SavingAndLoadingMethods.SaveToConfig(configPath, currentStructures);
+                SavingAndLoadingMethods.SaveToConfig(structuresPath, currentStructures);
             }
         }
 
         private void getConfigPathButton_Click(object sender, EventArgs e)
         {
-            MessageBox.Show($"Current config path: {configPath}", AppName, MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show($"Current config path: {structuresPath}", AppName, MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         public void updateButton_Click(object sender, EventArgs e)
         {
             RuleMethods.TryToUpdate(AppName, teamPointTextBoxes, teamNameTextBoxes, teamPictureBoxAndTeamPanelRelations, teamPointTextBoxAndTeamPanelRelations,
-                locationPointerPanels, DefaultPanelLocationX, configPath, settingsPath, ref isCurrentSession, currentStructures, teamPanels, teamLastCountry,
+                locationPointerPanels, DefaultPanelLocationX, structuresPath, settingsPath, ref isCurrentSession, currentStructures, teamPanels, teamLastCountry,
                 updatedLabel);
         }
 
@@ -149,22 +169,22 @@ namespace RankingApp
             if (e.KeyCode == Keys.F5) // Refresh
             {
                 RuleMethods.TryToUpdate(AppName, teamPointTextBoxes, teamNameTextBoxes, teamPictureBoxAndTeamPanelRelations, teamPointTextBoxAndTeamPanelRelations,
-                    locationPointerPanels, DefaultPanelLocationX, configPath, settingsPath, ref isCurrentSession, currentStructures, teamPanels, teamLastCountry,
+                    locationPointerPanels, DefaultPanelLocationX, structuresPath, settingsPath, ref isCurrentSession, currentStructures, teamPanels, teamLastCountry,
                     updatedLabel);
             }
 
             if (e.Control && e.KeyCode == Keys.S) // Save
             {
-                if (SavingAndLoadingMethods.IsThereChanges(configPath, currentStructures))
+                if (SavingAndLoadingMethods.IsThereChanges(structuresPath, currentStructures))
                 {
-                    SavingAndLoadingMethods.SaveToConfig(configPath, currentStructures);
+                    SavingAndLoadingMethods.SaveToConfig(structuresPath, currentStructures);
                 }
             }
         }
 
         public void changeConfigPathButton_Click(object sender, EventArgs e)
         {
-            if (!SavingAndLoadingMethods.SetSettings(settingsPath, configPath, updatedLabel, true))
+            if (!SavingAndLoadingMethods.SetSettings(settingsPath, structuresPath, updatedLabel, true))
             {
                 // Error
             }
@@ -175,7 +195,7 @@ namespace RankingApp
             if (e.KeyCode.Equals(Keys.Enter))
             {
                 RuleMethods.TryToUpdate(AppName, teamPointTextBoxes, teamNameTextBoxes, teamPictureBoxAndTeamPanelRelations, teamPointTextBoxAndTeamPanelRelations,
-                    locationPointerPanels, DefaultPanelLocationX, configPath, settingsPath, ref isCurrentSession, currentStructures, teamPanels, teamLastCountry,
+                    locationPointerPanels, DefaultPanelLocationX, structuresPath, settingsPath, ref isCurrentSession, currentStructures, teamPanels, teamLastCountry,
                     updatedLabel);
 
                 e.SuppressKeyPress = true;
@@ -188,7 +208,7 @@ namespace RankingApp
             if (e.KeyChar == (char)Keys.Enter)
             {
                 RuleMethods.TryToUpdate(AppName, teamPointTextBoxes, teamNameTextBoxes, teamPictureBoxAndTeamPanelRelations, teamPointTextBoxAndTeamPanelRelations,
-                    locationPointerPanels, DefaultPanelLocationX, configPath, settingsPath, ref isCurrentSession, currentStructures, teamPanels, teamLastCountry,
+                    locationPointerPanels, DefaultPanelLocationX, structuresPath, settingsPath, ref isCurrentSession, currentStructures, teamPanels, teamLastCountry,
                     updatedLabel);
 
                 e.Handled = true;

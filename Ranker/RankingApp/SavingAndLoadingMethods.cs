@@ -201,7 +201,7 @@ namespace RankingApp
                         }
                     }
 
-                    settings.ConfigPath = configPath;
+                    settings.StructuresPath = configPath;
 
                     File.WriteAllText(settingsPath, JsonConvert.SerializeObject(settings, Formatting.Indented));
 
@@ -226,9 +226,9 @@ namespace RankingApp
                 {
                     Settings settings = JsonConvert.DeserializeObject<Settings>(File.ReadAllText(settingsPath));
 
-                    if (!string.IsNullOrEmpty(settings.ConfigPath) && !string.IsNullOrEmpty(settings.Date))
+                    if (!string.IsNullOrEmpty(settings.StructuresPath) && !string.IsNullOrEmpty(settings.Date))
                     {
-                        configPath = settings.ConfigPath;
+                        configPath = settings.StructuresPath;
                         updatedLabel.Text = "Updated: " + settings.Date;
 
                         return true;
