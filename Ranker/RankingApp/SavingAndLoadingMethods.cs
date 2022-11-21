@@ -66,13 +66,14 @@ namespace RankingApp
             }
         }
 
-        public static void SaveToConfig(string configPath, List<Structure> currentStructures)
+        public static void SaveToConfig(string configPath, List<Structure> currentStructures, ref bool hasChanges)
         {
             try
             {
                 if (currentStructures.Count > 0)
                 {
                     File.WriteAllText(configPath, JsonConvert.SerializeObject(currentStructures, Formatting.Indented));
+                    hasChanges = true;
                 }
             }
             catch
@@ -165,12 +166,12 @@ namespace RankingApp
             }
         }
 
-        public static bool IsThereChanges(string configPath, List<Structure> currentStructures)
+        public static bool IsThereUnsavedChanges(string configPath, List<Structure> currentStructures)
         {
             List<Structure> savedStructures = JsonConvert.DeserializeObject<List<Structure>>(File.ReadAllText(configPath));
 
-            string oldStructureJson = JsonConvert.SerializeObject(savedStructures, Formatting.Indented);
-            string currentStructureJson = JsonConvert.SerializeObject(currentStructures, Formatting.Indented);
+            string oldStructureJson = JsonConvert.SerializeObject(savedStructures);
+            string currentStructureJson = JsonConvert.SerializeObject(currentStructures);
 
             if (currentStructureJson != oldStructureJson)
             {

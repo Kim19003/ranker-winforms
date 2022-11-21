@@ -48,6 +48,8 @@ namespace RankingApp
 
         static bool isCurrentSession; // Used to change the change images based by position changes since last session
 
+        bool hasChanges = false;
+
         readonly Timer loopTimer = new Timer()
         {
             Interval = 1,
@@ -129,26 +131,29 @@ namespace RankingApp
         {
             isCurrentSession = false;
 
-            if (currentStructures.Count > 0 && SavingAndLoadingMethods.IsThereChanges(structuresPath, currentStructures))
+            Properties.Settings.Default.Form_Location = Location;
+            Properties.Settings.Default.Save();
+
+            if (currentStructures.Count > 0 && SavingAndLoadingMethods.IsThereUnsavedChanges(structuresPath, currentStructures))
             {
                 if (MessageBox.Show("Unsaved changes detected! Do you want to save before exiting?", AppName,
                     MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
                 {
-                    SavingAndLoadingMethods.SaveToConfig(structuresPath, currentStructures);
+                    SavingAndLoadingMethods.SaveToConfig(structuresPath, currentStructures, ref hasChanges);
                 }
             }
 
-            Properties.Settings.Default.Form_Location = Location;
-            Properties.Settings.Default.Save();
-
-            Process.Start(rankerViewerExePath);
+            if (hasChanges)
+            {
+                Process.Start(rankerViewerExePath);
+            }
         }
 
         private void saveButton_Click(object sender, EventArgs e)
         {
-            if (SavingAndLoadingMethods.IsThereChanges(structuresPath, currentStructures))
+            if (SavingAndLoadingMethods.IsThereUnsavedChanges(structuresPath, currentStructures))
             {
-                SavingAndLoadingMethods.SaveToConfig(structuresPath, currentStructures);
+                SavingAndLoadingMethods.SaveToConfig(structuresPath, currentStructures, ref hasChanges);
             }
         }
 
@@ -175,9 +180,9 @@ namespace RankingApp
 
             if (e.Control && e.KeyCode == Keys.S) // Save
             {
-                if (SavingAndLoadingMethods.IsThereChanges(structuresPath, currentStructures))
+                if (SavingAndLoadingMethods.IsThereUnsavedChanges(structuresPath, currentStructures))
                 {
-                    SavingAndLoadingMethods.SaveToConfig(structuresPath, currentStructures);
+                    SavingAndLoadingMethods.SaveToConfig(structuresPath, currentStructures, ref hasChanges);
                 }
             }
         }
